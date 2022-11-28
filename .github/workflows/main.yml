@@ -1,0 +1,9 @@
+on: push
+name: 🚀 Deploy website on push
+jobs:
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@4.3.2
+      with:
+        server: fronde-de-l-espoir.fr/ronde-de-l-espoir.fr/main
+        username: ***REMOVED***
+        password: ***REMOVED***
