@@ -1,0 +1,1 @@
+const warmWelcome = "Hello world! How u doin'?"
