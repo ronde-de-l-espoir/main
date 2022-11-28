@@ -8,6 +8,6 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.2
       with:
-        server: ronde-de-l-espoir.fr/ronde-de-l-espoir.fr/main
+        server: ronde-de-l-espoir.fr
         username: ctzs1179
         password: o2switch2022
