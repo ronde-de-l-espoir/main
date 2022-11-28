@@ -5,10 +5,14 @@ jobs:
     name: Deploy
     runs-on: ubuntu-latest
     steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v3
+      with :
+        ref: main
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.2
       with:
         server: ronde-de-l-espoir.fr
         username: ***REMOVED***
         password: ***REMOVED***
-        server-dir: ronde-de-l-espoir.fr/main/
+        server-dir: ronde-de-l-espoir.fr/ronde-de-l-espoir.fr/main/
