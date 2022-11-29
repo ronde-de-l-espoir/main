@@ -10,3 +10,25 @@
     color: darkcyan;
     text-align: center;
 }
+
+.menu {
+    list-style-type: none;
+    background: rgb(30,86,112);
+    background: linear-gradient(86deg, rgba(30,86,112,1) 4%, rgba(9,181,226,1) 17%, rgba(218,224,255,1) 90%);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.menu-item {
+    display: inline;
+    float: left;
+}
+
+.menu-item a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
