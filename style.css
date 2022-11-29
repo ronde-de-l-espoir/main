@@ -5,3 +5,8 @@
     list-style: none;
     color: blue
 }
+
+h1 {
+    color: aqua;
+    font-family: "Montserrat", sans-serif;
+}
