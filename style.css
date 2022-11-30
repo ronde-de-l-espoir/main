@@ -12,7 +12,7 @@
 }
 
 body {
-    background-color: #222; /* To visualize change in colors of links */
+    background-color: #FFF; /* To visualize change in colors of links */
 }
 
 /* HEADER CSS */
@@ -20,7 +20,7 @@ body {
 header {
     width: 100%;
     height: 8vh;
-    background: linear-gradient(86deg, rgb(52, 91, 146) 1%, rgba(9,181,226,1) 50%, rgb(121, 181, 199) 90%);
+    background: linear-gradient(86deg, rgb(30, 86, 112) 1%, rgb(9, 181, 226) 50%, rgb(218, 224, 255) 90%);
     display: flex;
     font-size: 130%;
     justify-content: center;
@@ -65,13 +65,19 @@ header .future-burger-menu {
     }
 }
 
+@media (max-height: 720px) {
+    header {
+        height: 60px;
+    }
+}
+
 
 /* NAV CSS */
 
 nav {
     width: 100%;
     height: 7vh;
-    background: linear-gradient(86deg, rgb(52, 91, 146) 1%, rgba(9,181,226,1) 50%, rgb(121, 181, 199) 90%);
+    background: linear-gradient(86deg, rgb(30, 86, 112) 1%, rgb(9, 181, 226) 50%, rgb(218, 224, 255) 90%);
     display: flex;
     justify-content: center;
     font-size: 140%;
@@ -105,7 +111,7 @@ nav {
 }
 
 .link-wrapper a {
-    color: #EEE;
+    color: #003459;
     transition: 300ms ease-in-out;
     position: relative;
     /* background-color: aquamarine; */
@@ -135,6 +141,7 @@ nav {
 
 #donate-btn {
     background-color: #003459;
+    color: white;
     padding: 10px;
     border-radius: 3px;
     transition: 400ms ease-in-out;
@@ -161,6 +168,11 @@ nav {
     }
 }
 
+@media (max-height: 720px) {
+    nav {
+        height: 60px;
+    }
+}
 
 
 
