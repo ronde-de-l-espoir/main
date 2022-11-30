@@ -42,6 +42,7 @@ header .future-burger-menu {
 @media (max-width: 650px) {
     header {
         height: 12vh;
+        justify-content: space-around;
     }
 
     header h1 a {
@@ -62,8 +63,8 @@ header .future-burger-menu {
 
     header .future-burger-menu {
         display: flex;
-        position: relative;
-        right: 10px;
+        position: absolute;
+        right: 20px;
     }
 }
 
