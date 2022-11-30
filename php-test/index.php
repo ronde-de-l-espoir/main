@@ -1,6 +1,8 @@
 <?php
 
+    $helloThere = "Hello there!";
 
+    echo $helloThere;
 
 ?>
 
@@ -14,7 +16,9 @@
 </head>
 <body>
 
-    <?php echo "Hello!" ?>
+    <?php echo "General Kenobi! You are a bold one" ?>
+
+    <?php echo "Yeah well in this discussion I might be bold, but I'm a bold high-grounder" ?>
     
 </body>
 </html>
