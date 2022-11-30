@@ -13,7 +13,7 @@
 }
 
 body {
-    background-color: #FFF; /* To visualize change in colors of links */
+    background-color: var(--soft-white); /* To visualize change in colors of links */
 }
 
 /* HEADER CSS */
