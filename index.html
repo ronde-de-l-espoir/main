@@ -5,19 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ronde de l'Espoir</title>
-    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="shortcut icon" href="img/LRDE-logo.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <script src="app.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
 </head>
 <body>
-    <h1 class="title">La Ronde de l'Espoir</h1>
+
+    <header>
+        <h1><a href="index.html">La Ronde de l'Espoir</a></h1>
+        <div class="future-burger-menu"></div>
+    </header>
+
+    <div class="separation"></div>
+    
     <nav>
-        <ul>
-            <li class="nav-item"><a class="nav-item-link" href="#Galerie" target="_blank">Galerie</a></li>
-            <li class="nav-item"><a class="nav-item-link" href="https://lamerci.com/littoral/accueil" target="_blank">Site du lycée</a></li>
-        </ul>
+        <div class="nav-wrapper">
+
+            <img src="img/logo_littoral.png" alt="Logo La Merci Littoral" onclick="javascript:window.location='https://lamerci.com/littoral/accueil';">
+
+            <div class="link-wrapper">
+                <a href="#" class="underline-anim" data-isFocus>Accueil</a>
+                <a href="#" class="underline-anim" data-isFocus>Infos</a>
+                <a href="#" class="underline-anim" data-isFocus>Galerie</a>
+                <a href="#" id="donate-btn">Faire un don</a>
+            </div>
+        </div>
     </nav>
+
 </body> 
 </html>
