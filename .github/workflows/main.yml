@@ -5,7 +5,7 @@ jobs:
     name: Deploy
     runs-on: ubuntu-latest
     steps:
-    - name: 🚚 Get latest code
+    - name: 🚚 Get latest code of main
       uses: actions/checkout@v3
       with :
         ref: main
@@ -16,3 +16,14 @@ jobs:
         username: ***REMOVED***
         password: ${{ secrets.password }}
         server-dir: ronde-de-l-espoir.fr/main/
+    - name: 🚚 Get latest code of nav
+      uses: actions/checkout@v3
+      with :
+        ref: nav
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@4.3.2
+      with:
+        server: ronde-de-l-espoir.fr
+        username: ***REMOVED***
+        password: ${{ secrets.password }}
+        server-dir: ronde-de-l-espoir.fr/nav/
