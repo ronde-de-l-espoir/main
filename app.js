@@ -10,3 +10,5 @@ links.forEach(link => {
         link.style.fontWeight = '600';
     };
 });
+
+console.log('Trying to work here...');
