@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.title {
+    font-family: "Montserrat", sans-serif;
+    color: darkcyan;
+    text-align: center;
+}
+
+nav {
+    list-style-type: none;
+    background: rgb(30,86,112);
+    background: linear-gradient(86deg, rgba(30,86,112,1) 4%, rgba(9,181,226,1) 17%, rgba(218,224,255,1) 90%);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.nav-item {
+    float: left;
+
+}
+
+.nav-item .nav-item-link {
+    display: block;
+    padding: 8px 16px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: large;
+    color: black;
+}
+
+.nav-item .nav-item-link:hover {
+    background-color: rgba(23, 253, 242, 0.315);
+}
