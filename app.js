@@ -1,6 +1,12 @@
-const warmWelcome = "Hello world! How u doin'?"
-console.log(warmWelcome)
+const warmWelcome = "Hello world! How u doin'?";
+console.log(warmWelcome);
 
-const navLinks = document.getElementsByClassName('underline-anim')
-
-console.log(navLinks)
+// To have visual hint as to which page is currently being viewed
+const links = document.querySelectorAll('a');
+links.forEach(link => {
+    console.log(link);
+    const status = link.getAttribute('data-isFocus');
+    if (status == 'true') {
+        link.style.fontWeight = '600';
+    };
+});

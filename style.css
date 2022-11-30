@@ -67,7 +67,7 @@ header .future-burger-menu {
     }
 }
 
-@media (max-height: 720px) {
+@media (max-height: 800px) {
     header {
         height: 60px;
     }
@@ -170,7 +170,7 @@ nav {
     }
 }
 
-@media (max-height: 720px) {
+@media (max-height: 800px) {
     nav {
         height: 60px;
     }
