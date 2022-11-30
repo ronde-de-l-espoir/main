@@ -1,40 +1,172 @@
+:root {
+    --LM-color: #0099D7; /* C'est la couleur principale sur le site du lycée */
+    /* #E5E9EC ; #003459 ; #C08497 ; #222222 --> Sont des couleurs qui vont bien avec celle au dessus */
+}
+
 * {
     padding: 0;
     margin: 0;
     text-decoration: none;
     list-style: none;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.title {
-    font-family: "Montserrat", sans-serif;
-    color: darkcyan;
-    text-align: center;
+body {
+    background-color: #222; /* To visualize change in colors of links */
 }
+
+/* HEADER CSS */
+
+header {
+    width: 100%;
+    height: 8vh;
+    background: linear-gradient(86deg, rgb(52, 91, 146) 1%, rgba(9,181,226,1) 50%, rgb(121, 181, 199) 90%);
+    display: flex;
+    font-size: 130%;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 a {
+    color: white;
+}
+
+header .future-burger-menu {
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    display: none;
+}
+
+@media (max-width: 650px) {
+    header {
+        height: 12vh;
+    }
+
+    header h1 a {
+        color: transparent;
+    }
+
+    header h1 {
+        background-image: url(img/full-size-logo.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 90%;
+    }
+
+    .separation {
+        display: none;
+    }
+
+    header .future-burger-menu {
+        display: relative;
+        
+    }
+}
+
+
+/* NAV CSS */
 
 nav {
-    list-style-type: none;
-    background: rgb(30,86,112);
-    background: linear-gradient(86deg, rgba(30,86,112,1) 4%, rgba(9,181,226,1) 17%, rgba(218,224,255,1) 90%);
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+    width: 100%;
+    height: 7vh;
+    background: linear-gradient(86deg, rgb(52, 91, 146) 1%, rgba(9,181,226,1) 50%, rgb(121, 181, 199) 90%);
+    display: flex;
+    justify-content: center;
+    font-size: 140%;
 }
 
-.nav-item {
-    float: left;
-
+.nav-wrapper {
+    width: 80vw;
+    height: 100%;
+    display: flex;
+    gap: 35px;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.nav-item .nav-item-link {
-    display: block;
-    padding: 8px 16px;
-    text-align: center;
-    font-family: "Montserrat", sans-serif;
-    font-size: large;
+.nav-wrapper img {
+    height: 90%;
+    position: relative;
+}
+
+.nav-wrapper img:hover {
+    cursor: pointer;
+}
+
+.link-wrapper {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    gap: 35px;
+    align-items: center;
+    justify-content: right;
+}
+
+.link-wrapper a {
+    color: #EEE;
+    transition: 300ms ease-in-out;
+    position: relative;
+    /* background-color: aquamarine; */
+}
+
+.link-wrapper a:hover {
+    color: white;
+    transition: 300ms ease-in-out;
+}
+
+.underline-anim::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    /* background: linear-gradient(79deg, #222 1%, #90cae1 100%); */
+    background-color: white;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: 300ms ease-out;
+}
+
+.underline-anim:hover::after {
+    width: 100%;
+    transition: 300ms ease-out;
+}
+
+#donate-btn {
+    background-color: #003459;
+    padding: 10px;
+    border-radius: 3px;
+    transition: 400ms ease-in-out;
+}
+
+#donate-btn:hover {
+    background-color: #E5E9EC;
     color: black;
+    transition: 400ms ease-in-out;
 }
 
-.nav-item .nav-item-link:hover {
-    background-color: rgba(23, 253, 242, 0.315);
-    transition: 600ms ease-in-out;
+@media (max-width: 950px) {
+    .nav-wrapper img {
+        display: none;
+    }
+    .link-wrapper {
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 650px) {
+    nav {
+        display: none;
+    }
+}
+
+
+
+
+
+.separation {
+    width: 100%;
+    height: 1px;
+    background-color: #CCC;
 }
