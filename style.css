@@ -21,7 +21,7 @@ body {
 header {
     width: 100%;
     height: 8vh;
-    background: linear-gradient(86deg, rgb(30, 86, 112) 1%, rgb(9, 181, 226) 50%, rgb(218, 224, 255) 90%);
+    background: linear-gradient(86deg, rgb(30, 86, 112) 1%, rgb(9, 181, 226) 50%, rgb(218, 224, 255) 95%);
     display: flex;
     font-size: 130%;
     justify-content: center;
@@ -147,13 +147,14 @@ nav {
     color: white;
     padding: 10px;
     border-radius: 3px;
-    transition: 400ms ease-in-out;
+    transition: 500ms ease-in-out;
 }
 
 #donate-btn:hover {
     background-color: #E5E9EC;
     color: black;
-    transition: 400ms ease-in-out;
+    /* transform: rotateY(360deg); */
+    transition: 500ms ease-in-out;
 }
 
 @media (max-width: 950px) {
