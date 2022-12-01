@@ -49,8 +49,8 @@ nav {
 
 .menu {
     list-style-type: none;
-    background: rgb(30,86,112);
-    background: linear-gradient(86deg, rgba(30,86,112,1) 4%, rgba(9,181,226,1) 17%, rgba(218,224,255,1) 90%);
+    background: rgb(48,127,180);
+    background: linear-gradient(125deg, rgba(48,127,180,1) 14%, rgba(82,160,203,1) 38%, rgba(123,201,230,1) 64%, rgba(181,223,237,1) 83%, rgba(181,223,237,1) 100%);
     margin: 0;
     padding: 0;
     overflow: hidden;
