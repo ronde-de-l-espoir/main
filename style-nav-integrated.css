@@ -3,6 +3,10 @@
     --LM-color: #0099D7;
 }
 
+body {
+    background-color: #222;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -15,9 +19,11 @@ header {
     width: 100%;
     height: 16vh;
     background: linear-gradient(125deg, rgba(48,127,180,1) 14%, rgba(82,160,203,1) 38%, rgba(123,201,230,1) 64%, rgba(181,223,237,1) 83%, rgba(181,223,237,1) 100%);
-    /* display: flex;
+    display: flex;
     flex-direction: column;
-    justify-content: space-between; */
+    justify-content: space-between;
+    font-size: 125%;
+    overflow: hidden;
 }
 
 header .title {
@@ -38,6 +44,7 @@ header nav {
     align-items: center;
     width: 100vw;
     height: 8vh;
+    position: relative;
 }
 
 header nav .nav-wrapper {
@@ -52,20 +59,51 @@ header nav .link-wrapper {
     display: flex;
     gap: 35px;
     justify-content: right;
+    align-items: center;
 }
 
-header nav .link-wrapper a {
+.link-wrapper a {
     color: #003459;
+    transition: 400ms ease-in-out;
+    position: relative;
+}
+
+.link-wrapper a:hover {
+    color: white;
+    transition: 400ms ease-in-out;
 }
 
 .link-wrapper .underline-anim::after {
     content: "";
     position: absolute;
-    bottom: 0;
     left: 0;
+    bottom: -5px;
+    height: 2px;
+    width: 0;
     background-color: white;
+    transition: 400ms ease-in-out;
+}
+
+.link-wrapper .underline-anim:hover::after {
+    width: 100%;
+    transition: 400ms ease-in-out;
 }
 
 header nav .nav-wrapper img {
     height: 90%;
+}
+
+#donate-btn {
+    background-color: #003459;
+    color: white;
+    padding: 10px;
+    border-radius: 3px;
+    transition: 500ms ease-in-out;
+}
+
+#donate-btn:hover {
+    background-color: #E5E9EC;
+    color: black;
+    /* transform: rotateY(360deg); */
+    transition: 500ms ease-in-out;
 }
