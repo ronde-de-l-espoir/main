@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 15vh;
+    background: linear-gradient(125deg, rgba(48,127,180,1) 14%, rgba(82,160,203,1) 38%, rgba(123,201,230,1) 64%, rgba(181,223,237,1) 83%, rgba(181,223,237,1) 100%);
+    display: flex;
+    flex-direction: column;
+}
+
+header h1 a {
+    color: white;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+header nav .nav-wrapper {
+    width: 80vw; 
+}
+
+header nav .link-wrapper {
+    display: flex;
+    justify-content: right;
+}
