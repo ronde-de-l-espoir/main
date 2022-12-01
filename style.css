@@ -27,6 +27,7 @@ header {
     font-size: 130%;
     justify-content: center;
     align-items: center;
+    /* position: fixed; */
 }
 
 header h1 a {
@@ -86,6 +87,7 @@ nav {
     display: flex;
     justify-content: center;
     font-size: 140%;
+    position: fixed;
 }
 
 .nav-wrapper {
@@ -187,4 +189,16 @@ nav {
     width: 100%;
     height: 1px;
     background-color: #CCC;
+}
+
+main {
+    background-image: url("/img/bg.png");
+    background-size: cover;
+    background-attachment: scroll;
+    width: 100%;
+    height: 100%;
+    border: 2px solid;
+    color: rgb(0, 0, 0);
+    resize: both;
+    overflow: scroll;
 }
