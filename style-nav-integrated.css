@@ -25,6 +25,7 @@ header {
     font-size: 125%;
     overflow: hidden;
     position: fixed;
+    z-index: 1;
 }
 
 header .title {
@@ -110,5 +111,9 @@ header nav .nav-wrapper img {
 }
 
 main {
-    background-image: url(/img/bg.png);
+    background: url(img/bg.png) no-repeat center center fixed;
+    background-size: 100% 100%;
+    height: 100%;
+    overflow: hidden;
+    opacity: 100%;
 }
