@@ -108,3 +108,7 @@ header nav .nav-wrapper img {
     /* transform: rotateY(360deg); */
     transition: 500ms ease-in-out;
 }
+
+main {
+    background-image: url(/img/bg.png);
+}
