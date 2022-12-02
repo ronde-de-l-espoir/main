@@ -33,6 +33,7 @@ header .title {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: 800;
 }
 
 header .title h1 a {
@@ -98,6 +99,7 @@ header nav .nav-wrapper img {
 #donate-btn {
     background-color: #003459;
     color: white;
+    font-weight: bold;
     padding: 10px;
     border-radius: 3px;
     transition: 500ms ease-in-out;
@@ -108,6 +110,7 @@ header nav .nav-wrapper img {
     color: black;
     /* transform: rotateY(360deg); */
     transition: 500ms ease-in-out;
+    font-weight: normal;
 }
 
 main {
