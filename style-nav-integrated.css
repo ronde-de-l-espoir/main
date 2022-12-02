@@ -99,7 +99,7 @@ header nav .nav-wrapper img {
 #donate-btn {
     background-color: #003459;
     color: white;
-    font-weight: bold;
+    font-weight: 500;
     padding: 10px;
     border-radius: 3px;
     transition: 500ms ease-in-out;
@@ -110,7 +110,6 @@ header nav .nav-wrapper img {
     color: black;
     /* transform: rotateY(360deg); */
     transition: 500ms ease-in-out;
-    font-weight: normal;
 }
 
 main {
