@@ -1,11 +1,3 @@
-<?php
-
-    $helloThere = "Hello there!";
-
-    echo $helloThere;
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +8,7 @@
 </head>
 <body>
 
-    <?php echo "General Kenobi! You are a bold one" ?>
+    <?php echo "General Kenobi! You are a bold on" ?>
 
     <?php echo "Yeah well in this discussion I might be bold, but I'm a bold high-grounder" ?>
     
