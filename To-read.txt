@@ -1,0 +1,2 @@
+La prévisualisation du code se fera désormais par l'utilisation d'un outil externe nommé "XAMPP"
+Cet outil permet la prévisualisation de code en .php et l'utilisation de base de donné avec MySQL.

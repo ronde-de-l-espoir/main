@@ -22,13 +22,6 @@
 
         <nav>
             <div class="nav-wrapper">
-                <?php 
-                    $total = file_get_contents("total.txt");
-                    echo $total;
-                    if($_GET["text"] == "hello"){
-                        echo "yes";
-                    }
-                ?>
                 <img src="img/logo_littoral.png" alt="Logo La Merci Littoral" onclick="javascript:window.location='https://lamerci.com/littoral/accueil';">
                 <div class="link-wrapper">
                     <a href="#" class="underline-anim" data-isFocus="true">Accueil</a>
