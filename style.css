@@ -1,7 +1,10 @@
 :root {
-    --LM-color: #0099D7; /* C'est la couleur principale sur le site du lycée */
     --soft-white: #E5E9EC;
-    /* #E5E9EC ; #003459 ; #C08497 ; #222222 --> Sont des couleurs qui vont bien avec celle au dessus */
+    --LM-color: #0099D7;
+}
+
+body {
+    background-color: #222;
 }
 
 * {
@@ -12,143 +15,91 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-body {
-    background-color: var(--soft-white); /* To visualize change in colors of links */
-}
-
-/* HEADER CSS */
-
 header {
     width: 100%;
-    height: 8vh;
-    background: rgb(48,127,180);
+    height: 16vh;
     background: linear-gradient(125deg, rgba(48,127,180,1) 14%, rgba(82,160,203,1) 38%, rgba(123,201,230,1) 64%, rgba(181,223,237,1) 83%, rgba(181,223,237,1) 100%);
     display: flex;
-    font-size: 130%;
-    justify-content: center;
-    align-items: center;
-    /* position: fixed; */
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 125%;
+    overflow: hidden;
+    position: fixed;
+    z-index: 1;
 }
 
-header h1 a {
+header .title {
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+}
+
+header .title h1 a {
     color: white;
 }
 
-header .future-burger-menu {
-    min-width: 35px;
-    min-height: 35px;
-    background-color: white;
-    display: none;
-}
-
-@media (max-width: 650px) {
-    header {
-        height: 12vh;
-        justify-content: space-around;
-    }
-
-    header h1 a {
-        color: transparent;
-    }
-
-    header h1 {
-        background-image: url(img/full-size-logo.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        height: 90%;
-    }
-
-    .separation {
-        display: none;
-    }
-
-    header .future-burger-menu {
-        display: flex;
-        position: absolute;
-        right: 20px;
-    }
-}
-
-@media (max-height: 800px) {
-    header {
-        height: 60px;
-    }
-}
-
-
-/* NAV CSS */
-
-nav {
-    width: 100%;
-    height: 7vh;
-    background: rgb(48,127,180);
-    background: linear-gradient(125deg, rgba(48,127,180,1) 14%, rgba(82,160,203,1) 38%, rgba(123,201,230,1) 64%, rgba(181,223,237,1) 83%, rgba(181,223,237,1) 100%);
+header nav {
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    font-size: 140%;
-    position: fixed;
+    align-items: center;
+    width: 100vw;
+    height: 8vh;
+    position: relative;
 }
 
-.nav-wrapper {
-    width: 80vw;
+header nav .nav-wrapper {
+    width: 80vw; 
     height: 100%;
     display: flex;
-    gap: 35px;
     justify-content: space-between;
     align-items: center;
 }
 
-.nav-wrapper img {
-    height: 90%;
-    position: relative;
-}
-
-.nav-wrapper img:hover {
-    cursor: pointer;
-}
-
-.link-wrapper {
-    width: 100vw;
-    height: 100%;
+header nav .link-wrapper {
     display: flex;
     gap: 35px;
-    align-items: center;
     justify-content: right;
+    align-items: center;
 }
 
 .link-wrapper a {
     color: #003459;
-    transition: 300ms ease-in-out;
+    transition: 400ms ease-in-out;
     position: relative;
-    /* background-color: aquamarine; */
 }
 
 .link-wrapper a:hover {
     color: white;
-    transition: 300ms ease-in-out;
+    transition: 400ms ease-in-out;
 }
 
-.underline-anim::after {
+.link-wrapper .underline-anim::after {
     content: "";
-    width: 0%;
-    height: 2px;
-    /* background: linear-gradient(79deg, #222 1%, #90cae1 100%); */
-    background-color: white;
     position: absolute;
-    bottom: -5px;
     left: 0;
-    transition: 300ms ease-out;
+    bottom: -5px;
+    height: 2px;
+    width: 0;
+    background-color: white;
+    transition: 400ms ease-in-out;
 }
 
-.underline-anim:hover::after {
+.link-wrapper .underline-anim:hover::after {
     width: 100%;
-    transition: 300ms ease-out;
+    transition: 400ms ease-in-out;
+}
+
+header nav .nav-wrapper img {
+    height: 90%;
 }
 
 #donate-btn {
     background-color: #003459;
     color: white;
+    font-weight: 500;
     padding: 10px;
     border-radius: 3px;
     transition: 500ms ease-in-out;
@@ -161,44 +112,10 @@ nav {
     transition: 500ms ease-in-out;
 }
 
-@media (max-width: 950px) {
-    .nav-wrapper img {
-        display: none;
-    }
-    .link-wrapper {
-        justify-content: space-around;
-    }
-}
-
-@media (max-width: 650px) {
-    nav {
-        display: none;
-    }
-}
-
-@media (max-height: 800px) {
-    nav {
-        height: 60px;
-    }
-}
-
-
-
-
-.separation {
-    width: 100%;
-    height: 1px;
-    background-color: #CCC;
-}
-
 main {
-    background-image: url("/img/bg.png");
-    background-size: cover;
-    background-attachment: scroll;
-    width: 100%;
+    background: url(img/bg.png) no-repeat center center fixed;
+    background-size: 100% 100%;
     height: 100%;
-    border: 2px solid;
-    color: rgb(0, 0, 0);
-    resize: both;
-    overflow: scroll;
+    overflow: hidden;
+    opacity: 100%;
 }
