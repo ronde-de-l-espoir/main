@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ronde de l'Espoir</title>
     <link rel="shortcut icon" href="img/LRDE-logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="style-nav-integrated.css">
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,9 +25,9 @@
                 <img src="img/logo_littoral.png" alt="Logo La Merci Littoral" onclick="javascript:window.location='https://lamerci.com/littoral/accueil';">
                 <div class="link-wrapper">
                     <a href="#" class="underline-anim" data-isFocus="true">Accueil</a>
-                    <a href="/infos/" class="underline-anim" data-isFocus="false">Infos</a>
+                    <a href="./infos/" class="underline-anim" data-isFocus="false">Infos</a>
                     <a href="#" class="underline-anim" data-isFocus="false">Galerie</a>
-                    <a href="/donation/" id="donate-btn" data-isFocus="false">Faire un don</a>
+                    <a href="./donation/" id="donate-btn" data-isFocus="false">Faire un don</a>  <!-- C'est plus pratique de rajouter un "./" devant les liens. -->
                 </div>
             </div>
         </nav>
@@ -38,9 +38,16 @@
 
     <main>
         <div class="count-box">
+
+            <?php
+                $counter_value = file_get_contents('database.txt');
+                echo $counter_value;
+            ?>
             
         </div>
     </main>
+
+
     <footer>
     </footer>
 </body> 
