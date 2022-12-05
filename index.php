@@ -1,3 +1,16 @@
+<?php
+    $servername = "ronde-de-l-espoir.fr";
+    $username = "***REMOVED***";
+    $password = "***REMOVED***";
+    $conn = new mysqli($servername, $username, $password);
+
+    // Check connection
+    if ($conn->connect_error) {
+      die("Connection failed: " . $conn->connect_error);
+    }
+    echo "Connected successfully";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,7 +51,7 @@
 
     <main>
         <div class="count-box">
-
+            <p>hello</p>
             <?php
                 $counter_value = file_get_contents('database.txt');
                 echo $counter_value;
