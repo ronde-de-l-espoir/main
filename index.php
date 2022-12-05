@@ -54,6 +54,8 @@
             <?php
                 $sql = "SELECT SUM(`amount_donated`) FROM `donations`";
                 $total = $conn->query($sql);
+                $total = mysqli_fetch_assoc($total); 
+                $total = $total['value_sum'];
                 echo $total
             ?>
             
