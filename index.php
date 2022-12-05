@@ -8,7 +8,6 @@
     if ($conn->connect_error) {
       die("Connection failed: " . $conn->connect_error);
     }
-    echo "Connected successfully";
 ?>
 
 <!DOCTYPE html>
@@ -53,8 +52,9 @@
         <div class="count-box">
             <p>hello</p>
             <?php
-                $counter_value = file_get_contents('database.txt');
-                echo $counter_value;
+                $sql = "SELECT SUM(`amount_donated`) FROM `donations`";
+                $total = $conn->query($sql);
+                echo $total
             ?>
             
         </div>
