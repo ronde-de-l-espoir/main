@@ -54,10 +54,14 @@
             <?php
                 $sql = "SELECT SUM(`amount_donated`) FROM `donations`";
                 $result = mysqli_query($connection, $sql);
-                echo ("This is the sum: $result");
+                $row = mysqli_fetch_assoc($result); 
+                $sum = $row['totalsum'];
+                echo ("This is the sum: $sum");
             ?>
             
         </div>
+
+        <p>some text</p>
     </main>
 
 
