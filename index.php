@@ -2,11 +2,10 @@
     $servername = "ronde-de-l-espoir.fr";
     $username = "***REMOVED***";
     $password = "***REMOVED***";
-    $conn = new mysqli($servername, $username, $password);
-
+    $connection = new mysqli($servername, $username, $password);
     // Check connection
-    if ($conn->connect_error) {
-      die("Connection failed: " . $conn->connect_error);
+    if ($connection->connect_error) {
+      die("Connection failed: " . $connnection->connect_error);
     }
 ?>
 
@@ -53,10 +52,15 @@
             <p>hello</p>
             <?php
                 $sql = "SELECT SUM(`amount_donated`) FROM `donations`";
-                $total = $conn->query($sql);
-                $total = mysqli_fetch_assoc($total); 
-                $total = $total['value_sum'];
-                echo $total
+                $result = ($conn->query($sql));
+                //declare array to store the data of database
+                $row = []; 
+                if ($result->num_rows > 0) 
+                {
+                    // fetch all data from db into array 
+                    $row = $result->fetch_all(MYSQLI_ASSOC);  
+                }
+                echo $row   
             ?>
             
         </div>
