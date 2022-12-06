@@ -54,13 +54,9 @@
                 $sql = "SELECT SUM(`amount_donated`) FROM `donations`";
                 $result = ($conn->query($sql));
                 //declare array to store the data of database
-                $row = []; 
-                if ($result->num_rows > 0) 
-                {
-                    // fetch all data from db into array 
-                    $row = $result->fetch_all(MYSQLI_ASSOC);  
-                }
-                echo $row   
+                $row = mysqli_fetch_assoc($result); 
+                $sum = $row['totalsum'];
+                echo ("This is the sum: $sum");
             ?>
             
         </div>
