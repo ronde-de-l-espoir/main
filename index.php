@@ -53,7 +53,7 @@
         <div class="count-box">
             <p>hello</p>
             <?php
-                $sql = "SELECT SUM(`amount_donated`) FROM `donations`";
+                $sql = "SELECT `amount_donated` FROM `donations`";
                 $result = mysqli_query($connection, $sql);
                 while($row = mysqli_fetch_array($result)) {
                     echo $row['fieldname']; 
