@@ -56,7 +56,7 @@
                 $sql = "SELECT SUM(`amount_donated`) FROM `donations`";
                 $result = mysqli_query($connection, $sql);
                 $array = mysqli_fetch_all($result, MYSQLI_ASSOC);
-                echo ("This is the sum: $array");
+                print_r($array);
             ?>
             
         </div>
