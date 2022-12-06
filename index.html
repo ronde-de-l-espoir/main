@@ -38,20 +38,7 @@
 
     <main>
         <div class="count-box">
-            <p>hello</p>
-            <?php
-                include_once "./db.php";
-                $sql = "SELECT * FROM `donations`";
-                $result = mysqli_query($connection, $sql);
-                mysqli_fetch_column($result, 'amount_donated');
-                while($row = mysqli_fetch_array($result)) {
-                    echo $row['fieldname']; 
-                }
-            ?>
-            
         </div>
-
-        <p>some text</p>
     </main>
 
 
