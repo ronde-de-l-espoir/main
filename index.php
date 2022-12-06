@@ -2,7 +2,8 @@
     $servername = "ronde-de-l-espoir.fr";
     $username = "***REMOVED***";
     $password = "***REMOVED***";
-    $connection = new mysqli($servername, $username, $password);
+    $database = "***REMOVED***_donations";
+    $connection = new mysqli($servername, $username, $password, $database);
     // Check connection
     if ($connection->connect_error) {
       die("Connection failed: " . $connnection->connect_error);
