@@ -1,40 +1,128 @@
+:root {
+    --soft-white: #E5E9EC;
+    --LM-color: #0099D7;
+}
+
+body {
+    background-color: #222;
+}
+
 * {
     padding: 0;
     margin: 0;
     text-decoration: none;
     list-style: none;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.title {
-    font-family: "Montserrat", sans-serif;
-    color: darkcyan;
-    text-align: center;
-}
-
-nav {
-    list-style-type: none;
-    background: rgb(30,86,112);
-    background: linear-gradient(86deg, rgba(30,86,112,1) 4%, rgba(9,181,226,1) 17%, rgba(218,224,255,1) 90%);
-    margin: 0;
-    padding: 0;
+header {
+    width: 100%;
+    height: 16vh;
+    background: linear-gradient(125deg, rgba(48,127,180,1) 14%, rgba(82,160,203,1) 38%, rgba(123,201,230,1) 64%, rgba(181,223,237,1) 83%, rgba(181,223,237,1) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 125%;
     overflow: hidden;
+    position: fixed;
+    z-index: 1;
 }
 
-.nav-item {
-    float: left;
-
+header .title {
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
 }
 
-.nav-item .nav-item-link {
-    display: block;
-    padding: 8px 16px;
-    text-align: center;
-    font-family: "Montserrat", sans-serif;
-    font-size: large;
+header .title h1 a {
+    color: white;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 8vh;
+    position: relative;
+}
+
+header nav .nav-wrapper {
+    width: 80vw; 
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav .link-wrapper {
+    display: flex;
+    gap: 35px;
+    justify-content: right;
+    align-items: center;
+}
+
+.link-wrapper a {
+    color: #003459;
+    transition: 400ms ease-in-out;
+    position: relative;
+}
+
+.link-wrapper a:hover {
+    color: white;
+    transition: 400ms ease-in-out;
+}
+
+.link-wrapper .underline-anim::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 2px;
+    width: 0;
+    background-color: white;
+    transition: 400ms ease-in-out;
+}
+
+.link-wrapper .underline-anim:hover::after {
+    width: 100%;
+    transition: 400ms ease-in-out;
+}
+
+header nav .nav-wrapper img {
+    height: 90%;
+}
+
+#donate-btn {
+    background-color: #003459;
+    color: white;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 3px;
+    transition: 500ms ease-in-out;
+}
+
+#donate-btn:hover {
+    background-color: #E5E9EC;
     color: black;
+    /* transform: rotateY(360deg); */
+    transition: 500ms ease-in-out;
 }
 
-.nav-item .nav-item-link:hover {
-    background-color: rgba(23, 253, 242, 0.315);
-    transition: 600ms ease-in-out;
+/* main {
+    background: url(img/bg.png) no-repeat center center fixed;
+    background-size: 100% 100%;
+    height: 100%;
+    overflow: hidden;
+    opacity: 100%;
+    padding-top: 16vh;
 }
+
+.count-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */

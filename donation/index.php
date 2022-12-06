@@ -4,16 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Settings</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Y a du PhP!!!</title>
 </head>
 <body>
-    
-    <h1 class="title">Settings</h1>
-    <p>You made it!</p>
-    <br>
-    <br>
-    <a href="../index.html">Home</a>
 
+    <?php echo "General Kenobi! You are a bold on" ?>
+
+    <?php echo "Yeah well in this discussion I might be bold, but I'm a bold high-grounder" ?>
+    
 </body>
 </html>
