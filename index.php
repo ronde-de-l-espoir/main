@@ -1,16 +1,3 @@
-<?php
-    $servername = "localhost";
-    $username = "ctzs1179";
-    $password = "o2switch2022";
-    $database = "ctzs1179_donations";
-    $port = "3306";
-    $connection = new mysqli($servername, $username, $password, $database, $port);
-    // Check connection
-    if ($connection->connect_error) {
-      die("Connection failed: " . $connnection->connect_error);
-    }
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,6 +40,7 @@
         <div class="count-box">
             <p>hello</p>
             <?php
+                include_once "./db.php";
                 $sql = "SELECT `amount_donated` FROM `donations`";
                 $result = mysqli_query($connection, $sql);
                 while($row = mysqli_fetch_array($result)) {
