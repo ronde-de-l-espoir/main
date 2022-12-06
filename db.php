@@ -9,4 +9,5 @@
     if ($connection->connect_error) {
       die("Connection failed: " . $connnection->connect_error);
     }
+    echo "connection ok"
 ?>
