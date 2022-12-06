@@ -41,8 +41,9 @@
             <p>hello</p>
             <?php
                 include_once "./db.php";
-                $sql = "SELECT `amount_donated` FROM `donations`";
+                $sql = "SELECT * FROM `donations`";
                 $result = mysqli_query($connection, $sql);
+                mysqli_fetch_column($result, 'amount_donated');
                 while($row = mysqli_fetch_array($result)) {
                     echo $row['fieldname']; 
                 }
