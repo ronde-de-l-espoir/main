@@ -38,12 +38,15 @@
 
     <main>
         <div class="count-box">
+            <p>Total récolté<p>
+            <br>
             <?php
                 include_once "./db.php";
                 $sql = 'SELECT SUM(amount_donated) AS value_sum FROM donations';
                 $stm = $pdo->query($sql);
                 $result = $stm->fetch();
-                echo $result[0];
+                $display = $result[0];
+                echo "\n$diplay";
             ?>
         </div>
     </main>
