@@ -45,12 +45,13 @@
                         $sql = 'SELECT SUM(amount_donated) AS value_sum FROM donations';
                         $stm = $pdo->query($sql);
                         $result = $stm->fetch();
-                        echo "$result[0]€\n";
+                        echo "$result[0] €\n";
                     ?>
                     <br>
                 </p>
                 <p>récoltés pour la Ronde de l'Espoir</p>
             </div>
+            <a href="./donation/" id="donate-btn-2" data-isFocus="false">Contribuer !</a>  
         </div>
     </main>
 
