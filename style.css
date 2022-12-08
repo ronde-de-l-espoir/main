@@ -115,6 +115,7 @@ header nav .nav-wrapper img {
 main {
     background: url(img/bg.png) no-repeat center center fixed;
     background-size: 100% 100%;
+    text-align: center;
     height: 100%;
     overflow: hidden;
     opacity: 100%;
@@ -122,12 +123,19 @@ main {
     
 }
 
+.content-wrapper {
+    margin: 0 30%;
+}
+
 .count-box {
-    display: flex;
-    justify-content: center;
     align-items: center;
-    margin: 25px;
-    width: 350px;
-    height: 200px;
-    outline: dashed 4px black;
+    border: solid black 2px;
+    background: rgba(181,223,237,0.5);
+    padding: 10vh;
+}
+
+
+.count-box .total {
+    font-size: 350%;
+    font-weight: 800;
 }
