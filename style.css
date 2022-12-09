@@ -130,7 +130,11 @@ main {
 .count-box {
     align-items: center;
     border: solid black 2px;
-    background: rgba(181,223,237,0.5);
+    /* border-image: url(./img/box-borders.png) 30 stretch; */
+    /* background: rgba(181,223,237,0.5); */
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,0.927608543417367) 0%, rgba(255,255,255,0.3309698879551821) 76%);
+    /* background-image: url(./img/box-bg.png); */
     padding: 10vh;
     position: relative;
     top: 5vh;
