@@ -42,9 +42,9 @@
                 <p class="total">
                     <?php
                         include_once "./config.php";
-                        $sql = 'SELECT SUM(amount_donated) AS value_sum FROM donations';
-                        $stm = $pdo->query($sql);
-                        $result = $stm->fetch();
+                        // $sql = 'SELECT SUM(amount_donated) AS value_sum FROM donations';
+                        // $stm = $pdo->query($sql);
+                        // $result = $stm->fetch();
                         echo "$result[0] €\n";
                     ?>
                     <br>
