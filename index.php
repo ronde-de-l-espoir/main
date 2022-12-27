@@ -38,7 +38,10 @@ if($_SERVER["HTTPS"] != "on")
                 </div>
             </div>
         </nav>
-        <div class="reduced-menu"></div>
+        <div class="reduced-menu">
+            <div class="menu-trigger"></div>
+            <img class="nav-logo" src="./img/LRDE-logo.png">
+        </div>
         
     </header>
     

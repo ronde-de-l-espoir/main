@@ -111,7 +111,21 @@ header nav .nav-wrapper img {
 
 header .reduced-menu {
     display: none;
+    justify-content: space-between;
+    padding: 0 5%;
+    align-items: center;
 }
+
+header .reduced-menu .menu-trigger {
+    width: 35px;
+    height: 35px;
+    background-color: #003459;
+}
+
+header .reduced-menu .nav-logo {
+    height: 7.5vh;
+}
+
 
 @media (width < 900px) {
     header nav .nav-wrapper {
@@ -121,9 +135,13 @@ header .reduced-menu {
     header nav .nav-wrapper img {
         display: none;
     }
+
+    header nav .nav-wrapper .link-wrapper {
+        gap: 50px;
+    }
 }
 
-@media (width < 600px) {
+@media (width < 620px) {
     header {
         height: 10vh;
     }
@@ -138,16 +156,44 @@ header .reduced-menu {
 
     header .reduced-menu {
         display: flex;
+        height: 10vh;
+    }
+}
+
+@media (height < 600px) {
+    header {
+        height: 96px;
+    }
+    header .title {
+        height: 48px;
+    }
+    header nav {
+        height: 48px;
+    }
+}
+
+@media (height < 600px) and (width < 620px) {
+    header {
+        height: 60px;
+    }
+    header .reduced-menu {
+        padding: 0 12.5px;
+        height: 60px;
+    }
+    header .reduced-menu .nav-logo {
+        height: 45px;
     }
 }
 
 
-/* MAIN's CSS */
+
+
+/* Main's CSS */
 
 main {
     background: url(img/bg.png) no-repeat center center fixed;
     background-size: cover;
-    height: 800vh;
+    height: 80vh;
 }
 
 @media (width < 800px) {
@@ -164,6 +210,10 @@ main {
     align-items: center;
 }
 
+
+
+
+/* Footer's CSS */
 
 footer {
     background-color: #222222;
