@@ -44,6 +44,12 @@ if($_SERVER["HTTPS"] != "on")
             </div>
             <img class="nav-logo" src="./img/LRDE-logo.png">
         </div>
+
+        <div id="side-nav">
+            <div class="side-nav-wrapper">
+
+            </div>
+        </div>
         
     </header>
     
