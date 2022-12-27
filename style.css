@@ -248,20 +248,19 @@ header .reduced-menu .nav-logo {
 
 @keyframes side-nav-appearance {
     0% {
-        transform: translateX(0);
-        display: flex;
+        transform: translate(0)
     }
     100% {
-        transform: translateX(500px);
+        transform: translate(500px);
     }
 }
 
 @keyframes side-nav-disappear {
     0% {
-        transform: translateX(500px);
+        transform: translate(500px);
     }
     100% {
-        transform: translateX(0);
+        transform: translate(0);
         display: none;
     }
 }
