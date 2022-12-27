@@ -38,7 +38,7 @@ if($_SERVER["HTTPS"] != "on")
                 </div>
             </div>
         </nav>
-        <div class="future-burger-menu"></div>
+        <div class="reduced-menu"></div>
         
     </header>
     
