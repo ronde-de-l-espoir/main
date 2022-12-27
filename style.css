@@ -23,9 +23,6 @@ header {
     flex-direction: column;
     justify-content: space-between;
     font-size: 125%;
-    overflow: hidden;
-    position: fixed;
-    z-index: 1;
 }
 
 header .title {
