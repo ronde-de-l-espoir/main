@@ -117,9 +117,30 @@ header .reduced-menu {
 }
 
 header .reduced-menu .menu-trigger {
-    width: 35px;
-    height: 35px;
-    background-color: #003459;
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    position: relative;
+}
+
+.menu-trigger::before {
+    content: "";
+    width: 25px;
+    height: 1.5px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    bottom: 8px;
+}
+
+.menu-trigger::after {
+    content: "";
+    width: 25px;
+    height: 1.5px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
 }
 
 header .reduced-menu .nav-logo {
@@ -141,7 +162,7 @@ header .reduced-menu .nav-logo {
     }
 }
 
-@media (width < 620px) {
+@media (width < 630px) {
     header {
         height: 10vh;
     }
@@ -172,7 +193,7 @@ header .reduced-menu .nav-logo {
     }
 }
 
-@media (height < 600px) and (width < 620px) {
+@media (height < 600px) and (width < 630px) {
     header {
         height: 60px;
     }
