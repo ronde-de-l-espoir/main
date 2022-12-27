@@ -22,11 +22,12 @@ function triggerSideMenu() {
 
         // Code to modify the ::after pseudo element @trigger.
         var styleElem = document.head.appendChild(document.createElement("style"));
-        styleElem.innerHTML = "#menu-trigger::before {transform: rotateZ(40deg); transition:300ms ease-in-out;} #menu-trigger::after {transform: rotateZ(-40deg); transition:300ms ease-in-out;}";
+        styleElem.innerHTML = "#menu-trigger::before {transform: rotateZ(40deg); transition:400ms ease-in-out;} #menu-trigger::after {transform: rotateZ(-40deg); transition:400ms ease-in-out;}";
         
         const sideNav = document.getElementById("side-nav");
         sideNav.style.display = "flex";
-        sideNav.style.transition = "400ms ease-out"
+        sideNav.style.animation = "side-nav-appearance 600ms ease-out";
+        sideNav.style.animationFillMode = "forwards";
         trigger.style.position = "fixed";
         
 
@@ -37,11 +38,12 @@ function triggerSideMenu() {
 
         // Code to modify the ::after pseudo element @trigger.
         var styleElem = document.head.appendChild(document.createElement("style"));
-        styleElem.innerHTML = "#menu-trigger::before {transform: rotateZ(0deg); transition:300ms ease-in-out;} #menu-trigger::after {transform: rotateZ(0deg); transition:300ms ease-in-out;}";
+        styleElem.innerHTML = "#menu-trigger::before {transform: rotateZ(0deg); transition:400ms ease-in-out;} #menu-trigger::after {transform: rotateZ(0deg); transition:400ms ease-in-out;}";
         
         const sideNav = document.getElementById("side-nav");
-        sideNav.style.display = "none";
-        trigger.style.position = "relative"
+        sideNav.style.animation = "side-nav-disappear 600ms ease-in";
+        sideNav.style.animationFillMode = "forwards";
+        trigger.style.position = "relative";
     };
 };
 
