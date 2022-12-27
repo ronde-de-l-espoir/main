@@ -128,6 +128,7 @@ header .reduced-menu #menu-trigger {
     height: 2px;
     background-color: white;
     position: relative;
+    z-index: 2;
 }
 
 #menu-trigger::before {
@@ -230,6 +231,18 @@ header .reduced-menu .nav-logo {
     header .reduced-menu .nav-logo {
         height: 45px;
     }
+}
+
+
+/* Side nav CSS */
+
+#side-nav {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
 }
 
 
