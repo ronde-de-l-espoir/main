@@ -57,7 +57,6 @@ if($_SERVER["HTTPS"] != "on")
 
     <footer>
         <div class="footer-wrapper">
-            <p>Here is a footer!!!</p>
         </div>
     </footer>
 
