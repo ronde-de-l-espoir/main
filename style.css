@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #222;
+    background-color: #DEDEDE;
 }
 
 * {
@@ -118,7 +118,8 @@ main {
 @media (width < 800px) {
     /* When finished, this feature will add a dynamic background in regard with the device's width. */
     main {
-        background: url(img/bg-small.png) no-repeat center center fixed;
+        background: url(img/LRDE-logo.png) no-repeat center center fixed;
+        background-size: 100%;
     }
 }
 
