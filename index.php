@@ -39,7 +39,9 @@ if($_SERVER["HTTPS"] != "on")
             </div>
         </nav>
         <div class="reduced-menu">
-            <div class="menu-trigger"></div>
+            <div class="trigger-wrapper" onclick="triggerSideMenu()">
+                <div id="menu-trigger" data-isOpen='false'></div>
+            </div>
             <img class="nav-logo" src="./img/LRDE-logo.png">
         </div>
         
