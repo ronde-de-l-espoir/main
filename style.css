@@ -112,35 +112,60 @@ header nav .nav-wrapper img {
 header .reduced-menu {
     display: none;
     justify-content: space-between;
-    padding: 0 5%;
+    padding: 0 25px;
     align-items: center;
 }
 
-header .reduced-menu .menu-trigger {
+header .reduced-menu .trigger-wrapper {
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+header .reduced-menu #menu-trigger {
     width: 25px;
     height: 2px;
     background-color: white;
     position: relative;
 }
 
-.menu-trigger::before {
+#menu-trigger::before {
     content: "";
     width: 25px;
-    height: 1.5px;
+    height: 2px;
     background-color: white;
     position: absolute;
     left: 0;
     bottom: 8px;
 }
 
-.menu-trigger::after {
+#menu-trigger::after {
     content: "";
     width: 25px;
-    height: 1.5px;
+    height: 2px;
     background-color: white;
     position: absolute;
     left: 0;
     bottom: -8px;
+}
+
+@keyframes menu-opening {
+    0% {
+        background-color: white;
+    }
+    100% {
+        background-color: transparent;
+    }
+}
+
+@keyframes menu-closing {
+    0% {
+        background-color: transparent;
+    }
+    100% {
+        background-color: white;
+    }
 }
 
 header .reduced-menu .nav-logo {
@@ -198,7 +223,6 @@ header .reduced-menu .nav-logo {
         height: 60px;
     }
     header .reduced-menu {
-        padding: 0 12.5px;
         height: 60px;
     }
     header .reduced-menu .nav-logo {

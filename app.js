@@ -11,4 +11,17 @@ links.forEach(link => {
     };
 });
 
-console.log('Trying to work here...');
+function triggerSideMenu() {
+    const trigger = document.getElementById('menu-trigger');
+    const triggerStatus = trigger.getAttribute('data-isOpen');
+    if (triggerStatus == 'false') {
+        trigger.setAttribute('data-isOpen', 'true');
+        trigger.style.animation = "menu-opening 200ms ease-in-out";
+        trigger.style.backgroundColor = "transparent";
+
+    } else {
+        trigger.setAttribute('data-isOpen', 'false');
+        trigger.style.animation = "menu-closing 200ms ease-in-out";
+        trigger.style.backgroundColor = "white";
+    }
+};
