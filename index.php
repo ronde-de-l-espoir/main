@@ -29,7 +29,7 @@ if($_SERVER["HTTPS"] != "on")
 
         <nav>
             <div class="nav-wrapper">
-                <img src="img/logo_littoral.png" alt="Logo La Merci Littoral" onclick="javascript:window.location='https://lamerci.com/littoral/accueil';">
+                <img src="img/clean_logo_littoral.png" alt="Logo La Merci Littoral" onclick="javascript:window.location='https://lamerci.com/littoral/accueil';">
                 <div class="link-wrapper">
                     <a href="#" class="underline-anim" data-isFocus="true">Accueil</a>
                     <a href="./infos/" class="underline-anim" data-isFocus="false">Infos</a>
