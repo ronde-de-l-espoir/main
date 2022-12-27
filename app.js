@@ -46,5 +46,3 @@ function triggerSideMenu() {
         trigger.style.position = "relative";
     };
 };
-
-console.log(document.querySelectorAll("#menu-trigger::after"));
