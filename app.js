@@ -14,14 +14,25 @@ links.forEach(link => {
 function triggerSideMenu() {
     const trigger = document.getElementById('menu-trigger');
     const triggerStatus = trigger.getAttribute('data-isOpen');
+    
     if (triggerStatus == 'false') {
         trigger.setAttribute('data-isOpen', 'true');
         trigger.style.animation = "menu-opening 200ms ease-in-out";
         trigger.style.backgroundColor = "transparent";
 
+        // Code to modify the ::after pseudo element @trigger.
+        var styleElem = document.head.appendChild(document.createElement("style"));
+        styleElem.innerHTML = "#menu-trigger::before {transform: rotateZ(40deg); transition:300ms ease-in-out;} #menu-trigger::after {transform: rotateZ(-40deg); transition:300ms ease-in-out;}";
+
     } else {
         trigger.setAttribute('data-isOpen', 'false');
         trigger.style.animation = "menu-closing 200ms ease-in-out";
         trigger.style.backgroundColor = "white";
-    }
+
+        // Code to modify the ::after pseudo element @trigger.
+        var styleElem = document.head.appendChild(document.createElement("style"));
+        styleElem.innerHTML = "#menu-trigger::before {transform: rotateZ(0deg); transition:300ms ease-in-out;} #menu-trigger::after {transform: rotateZ(0deg); transition:300ms ease-in-out;}";
+    };
 };
+
+console.log(document.querySelectorAll("#menu-trigger::after"));
