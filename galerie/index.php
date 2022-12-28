@@ -41,17 +41,17 @@
         <div id="side-nav">
             <div class="side-nav-wrapper">
                 <div class="separation"></div>
-                <a href="#" data-isFocus="false">Accueil</a>
+                <a href="../" data-isFocus="false">Accueil</a>
                 <div class="separation"></div>
-                <a href="./infos/" data-isFocus="false">Infos</a>
+                <a href="../infos/" data-isFocus="false">Infos</a>
                 <div class="separation"></div>
-                <a href="./galerie/" data-isFocus="true">Galerie</a>
+                <a href="#" data-isFocus="true">Galerie</a>
                 <div class="separation"></div>
             </div>
 
             
             
-            <a href="./donation/" id="side-nav-donation" class="btn-grad">Faites un don!</a>
+            <a href="../donation/" id="side-nav-donation" class="btn-grad">Faites un don!</a>
             
         </div>
         
