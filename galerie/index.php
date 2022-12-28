@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Informations - Ronde de l'Espoir</title>
+    <title>Galerie - Ronde de l'Espoir</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,14 +22,12 @@
 
         <nav>
             <div class="nav-wrapper">
-    
                 <img src="../img/clean_logo_littoral.png" alt="Logo La Merci Littoral" onclick="javascript:window.location='https://lamerci.com/littoral/accueil';">
-    
                 <div class="link-wrapper">
                     <a href="../" class="underline-anim" data-isFocus="false">Accueil</a>
-                    <a href="#" class="underline-anim" data-isFocus="true">Infos</a>
-                    <a href="../galerie/" class="underline-anim" data-isFocus="false">Galerie</a>
-                    <a href="../donation/" id="donate-btn" data-isFocus="false">Faire un don</a>
+                    <a href="../infos/" class="underline-anim" data-isFocus="false">Infos</a>
+                    <a href="#" class="underline-anim" data-isFocus="true">Galerie</a>
+                    <a href="../donation/" id="donate-btn" data-isFocus="false">Faire un don</a>  <!-- C'est plus pratique de rajouter un "./" devant les liens. -->
                 </div>
             </div>
         </nav>
@@ -45,9 +43,9 @@
                 <div class="separation"></div>
                 <a href="../" data-isFocus="false">Accueil</a>
                 <div class="separation"></div>
-                <a href="#" data-isFocus="true">Infos</a>
+                <a href="../infos/" data-isFocus="false">Infos</a>
                 <div class="separation"></div>
-                <a href="../galerie/" data-isFocus="false">Galerie</a>
+                <a href="#" data-isFocus="true">Galerie</a>
                 <div class="separation"></div>
             </div>
 
@@ -58,12 +56,8 @@
         </div>
         
     </header>
-    
 
-    <main>
-    </main>
 
-    <footer>
-    </footer>
-</body> 
+
+</body>
 </html>
