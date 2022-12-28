@@ -54,9 +54,12 @@ if($_SERVER["HTTPS"] != "on")
                 <div class="separation"></div>
                 <a href="./galerie/" data-isFocus="false">Galerie</a>
                 <div class="separation"></div>
-                <a href="./donation/" data-isFocus="false">Faites un don</a>
-                <div class="separation"></div>
             </div>
+
+            
+            
+            <a href="./donation/" id="side-nav-donation">Faites un don!</a>
+            
         </div>
         
     </header>
