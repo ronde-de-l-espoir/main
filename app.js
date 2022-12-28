@@ -44,5 +44,6 @@ function triggerSideMenu() {
         sideNav.style.animation = "side-nav-disappear 600ms ease-in";
         sideNav.style.animationFillMode = "forwards";
         trigger.style.position = "relative";
+        setTimeout( () => { sideNav.style.display = "none" }, 600);
     };
 };
