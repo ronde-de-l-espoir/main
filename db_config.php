@@ -13,6 +13,14 @@
 
     $sql = 'SELECT SUM(amount_donated) AS value_sum FROM donations';
     $results = mysqli_fetch_all(mysqli_query($conn, $sql));
-    $totalDonations = $results[0][0];
+    $totalDonations = round($results[0][0], 2);
+    
+    $totalDonations = sprintf("%.2f", $totalDonations);
+
+    for ($i = 0; $i < strlen($totalDonations); $i++ ) {
+        if ($totalDonations[$i] == ".") {
+            $totalDonations[$i] = ",";
+        }
+    }
 
 ?>

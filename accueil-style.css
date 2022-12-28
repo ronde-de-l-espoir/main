@@ -10,10 +10,22 @@
 .count-box {
     border-radius: 5px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 80%;
     height: 66%;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    border: white 2px solid;
+    border: var(--soft-white) 2px solid;
+    z-index: 0;
+}
+
+.count-box p {
+    font-size: 200%;
+}
+
+.totalDisplay {
+    font-weight: 600;
+    font-size: 550%;
 }
