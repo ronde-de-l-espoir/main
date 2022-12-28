@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #222;
+    background-color: #DEDEDE;
 }
 
 * {
@@ -23,9 +23,6 @@ header {
     flex-direction: column;
     justify-content: space-between;
     font-size: 125%;
-    overflow: hidden;
-    position: fixed;
-    z-index: 1;
 }
 
 header .title {
@@ -45,7 +42,7 @@ header nav {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     height: 8vh;
     position: relative;
 }
@@ -112,17 +109,255 @@ header nav .nav-wrapper img {
     transition: 500ms ease-in-out;
 }
 
-/* main {
-    background: url(img/bg.png) no-repeat center center fixed;
-    background-size: 100% 100%;
+header .reduced-menu {
+    display: none;
+    justify-content: space-between;
+    padding: 0 25px;
+    align-items: center;
+}
+
+header .reduced-menu .trigger-wrapper {
     height: 100%;
-    overflow: hidden;
-    opacity: 100%;
-    padding-top: 16vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+header .reduced-menu #menu-trigger {
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    position: relative;
+    z-index: 2;
+}
+
+#menu-trigger::before {
+    content: "";
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    bottom: 8px;
+    transform-origin: 0;
+}
+
+#menu-trigger::after {
+    content: "";
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transform-origin: 0;
+}
+
+@keyframes menu-opening {
+    0% {
+        background-color: white;
+    }
+    100% {
+        background-color: transparent;
+    }
+}
+
+@keyframes menu-closing {
+    0% {
+        background-color: transparent;
+    }
+    100% {
+        background-color: white;
+    }
+}
+
+header .reduced-menu .nav-logo {
+    height: 7.5vh;
+}
+
+
+@media (width < 900px) {
+    header nav .nav-wrapper {
+        justify-content: space-around;
+    }
+
+    header nav .nav-wrapper img {
+        display: none;
+    }
+
+    header nav .nav-wrapper .link-wrapper {
+        gap: 50px;
+    }
+}
+
+@media (width < 630px) {
+    header {
+        height: 10vh;
+    }
+
+    header .title {
+        display: none;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    header .reduced-menu {
+        display: flex;
+        height: 10vh;
+    }
+}
+
+@media (height < 600px) {
+    header {
+        height: 96px;
+    }
+    header .title {
+        height: 48px;
+    }
+    header nav {
+        height: 48px;
+    }
+}
+
+@media (height < 600px) and (width < 630px) {
+    header {
+        height: 60px;
+    }
+    header .reduced-menu {
+        height: 60px;
+    }
+    header .reduced-menu .nav-logo {
+        height: 45px;
+    }
+}
+
+
+/* Side nav CSS */
+
+#side-nav {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    left: -500px;
+    background-color: #00192b;
+    flex-direction: column;
+    align-items: center;
+    /* background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); */
+}
+
+.side-nav-wrapper {
+    margin-top: 10vh;
+    font-size: 125%;
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.side-nav-wrapper a {
+    color: #CCC;
+}
+
+.side-nav-wrapper .separation {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(200, 200, 200, 0.3);
+}
+
+#side-nav-donation {
+    margin-top: 40px;
+    font-size: 130%;
+    /* color: #222; */
+    width: 60vw;
+    padding: 4vw 1.5vw;
+    background-color: lightcyan;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.btn-grad {
+    background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA  51%, #1FA2FF  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    /* text-transform: uppercase; */
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    /* box-shadow: 0 0 20px #eee; */
+    border-radius: 10px;
+    display: block;
+}
+
+.btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+ 
+
+@keyframes side-nav-appearance {
+    0% {
+        transform: translate(0)
+    }
+    100% {
+        transform: translate(500px);
+    }
+}
+
+@keyframes side-nav-disappear {
+    0% {
+        transform: translate(500px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+
+@media (height < 600px) {
+    .side-nav-wrapper {
+        margin-top: 60px;
+        height: 180px;
+    }
+}
+
+
+
+
+/* Main's CSS */
+
+main {
+    background: url(img/bg.png) no-repeat center center fixed;
+    background-size: cover;
+    height: 80vh;
+}
+
+@media (width < 800px) {
+    /* When finished, this feature will add a dynamic background in regard with the device's width. */
+    main {
+        background: url(img/round-bg.png) no-repeat center center fixed;
+        background-size: 100%;
+    }
 }
 
 .count-box {
     display: flex;
     justify-content: center;
     align-items: center;
-} */
+}
+
+
+
+
+/* Footer's CSS */
+
+footer {
+    background-color: #222222;
+    /* width: 100%; */
+    height: 20vh;
+}
