@@ -57,7 +57,13 @@
         
     </header>
 
+    <main>
+        <div class="main-wrapper"></div>
+    </main>
 
+    <footer>
+        <div class="footer-wrap"></div>
+    </footer>
 
 </body>
 </html>
