@@ -5,6 +5,8 @@ if($_SERVER["HTTPS"] != "on")
     exit();
 }
 ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,6 +20,7 @@ if($_SERVER["HTTPS"] != "on")
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800;900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="img/LRDE-logo.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="accueil-style.css">
     <script src="app.js" defer></script>
 </head>
 <body>
@@ -66,7 +69,10 @@ if($_SERVER["HTTPS"] != "on")
     
 
     <main>
-        <div class="count-box">
+        <div class="main-wrapper">
+
+            <div class="count-box"></div>
+        
         </div>
     </main>
 
