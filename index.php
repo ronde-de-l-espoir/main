@@ -1,9 +1,12 @@
 <?php
-if($_SERVER["HTTPS"] != "on")
-{
+
+if($_SERVER["HTTPS"] != "on") {
     header("Location: https://" . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]);
     exit();
 }
+
+include('./db_config.php');
+
 ?>
 
 
@@ -59,8 +62,6 @@ if($_SERVER["HTTPS"] != "on")
                 <div class="separation"></div>
             </div>
 
-            
-            
             <a href="./donation/" id="side-nav-donation" class="btn-grad">Faites un don!</a>
             
         </div>
@@ -71,7 +72,10 @@ if($_SERVER["HTTPS"] != "on")
     <main>
         <div class="main-wrapper">
 
-            <div class="count-box"></div>
+            <div class="count-box">
+                <span class="totalDisplay"><?php echo $totalDonations; ?> €</span>
+                <p>Récolté cette année.</p>
+            </div>
         
         </div>
     </main>
