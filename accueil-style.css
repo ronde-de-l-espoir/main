@@ -1,0 +1,19 @@
+.main-wrapper {
+    width: 70vw;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 10vh 0;
+}
+
+.count-box {
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 66%;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: white 2px solid;
+}
