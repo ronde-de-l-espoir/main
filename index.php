@@ -67,12 +67,6 @@ if($_SERVER["HTTPS"] != "on")
 
     <main>
         <div class="count-box">
-            <?php
-                include_once "./db.php";
-                // $sql = 'SELECT SUM(amount_donated) AS value_sum FROM donations';
-                
-
-            ?>
         </div>
     </main>
 
