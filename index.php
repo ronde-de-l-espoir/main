@@ -58,7 +58,7 @@ if($_SERVER["HTTPS"] != "on")
 
             
             
-            <a href="./donation/" id="side-nav-donation">Faites un don!</a>
+            <a href="./donation/" id="side-nav-donation" class="btn-grad">Faites un don!</a>
             
         </div>
         

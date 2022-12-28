@@ -270,12 +270,37 @@ header .reduced-menu .nav-logo {
 }
 
 #side-nav-donation {
-    margin-top: 75px;
-    font-size: 8vw;
-    color: #ddd;
+    margin-top: 40px;
+    font-size: 130%;
+    /* color: #222; */
     width: 60vw;
+    padding: 4vw 1.5vw;
+    background-color: lightcyan;
     text-align: center;
+    border-radius: 10px;
 }
+
+         
+.btn-grad {
+    background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA  51%, #1FA2FF  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    /* text-transform: uppercase; */
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    /* box-shadow: 0 0 20px #eee; */
+    border-radius: 10px;
+    display: block;
+  }
+
+  .btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+ 
 
 @keyframes side-nav-appearance {
     0% {
