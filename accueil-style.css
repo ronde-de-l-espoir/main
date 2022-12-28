@@ -14,7 +14,7 @@
     justify-content: center;
     align-items: center;
     width: 80%;
-    height: 50%;
+    height: 55%;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     background-color: rgba(33, 120, 163, 0.174);
@@ -48,7 +48,7 @@
 
 @media (width < 700px) {
     .totalDisplay {
-        font-size: 200%;
+        font-size: 300%;
     }
     .count-box {
         width: 93vw;
@@ -62,5 +62,8 @@
 @media (width < 425px) {
     .count-box {
         height: 25%;
+    }
+    .totalDisplay {
+        font-size: 200%;
     }
 }
