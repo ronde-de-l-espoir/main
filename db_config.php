@@ -23,4 +23,9 @@
         }
     }
 
+    $sql = 'SELECT COUNT(id) as count_participants FROM donations';
+    $results = mysqli_fetch_all(mysqli_query($conn, $sql));
+
+    $totalParticipants = $results[0][0];
+
 ?>
