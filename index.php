@@ -74,7 +74,7 @@ include('./db_config.php');
 
             <div class="count-box">
                 <span class="totalDisplay"><?php echo $totalDonations; ?> €</span>
-                <p>Récolté cette année.</p>
+                <p>Ont été donnés par <span id="peopleTotal"><?php echo $totalParticipants ?></span> personnes.</p>
             </div>
         
         </div>
