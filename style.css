@@ -261,7 +261,6 @@ header .reduced-menu .nav-logo {
     }
     100% {
         transform: translate(0);
-        display: none;
     }
 }
 
