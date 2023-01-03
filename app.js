@@ -12,8 +12,6 @@ links.forEach(link => {
 });
 
 
-const trigger = document.getElementById('menu-trigger');
-const triggerStatus = trigger.getAttribute('data-isOpen');
 
 function openSideNav() {
     trigger.setAttribute('data-isOpen', 'true');
@@ -50,6 +48,8 @@ function closeSideNav() {
 };
 
 function triggerSideMenu() {
+    const trigger = document.getElementById('menu-trigger');
+    const triggerStatus = trigger.getAttribute('data-isOpen');
     if (triggerStatus == 'false') {
         openSideNav();
     } else {
