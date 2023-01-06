@@ -1,5 +1,4 @@
 <?php
-
     if($_SERVER["HTTPS"] != "on") {
         header("Location: https://" . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]);
         exit();
@@ -10,7 +9,6 @@
     };
     $db_config_location = "./db_config.php";
     go_get_config($db_config_location);
-
 ?>
 
 
@@ -29,6 +27,7 @@
     <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="accueil-style.css">
     <link rel="stylesheet" href="count-box.css">
+    <script src="./swiped-events.min.js"></script>
     <script src="app.js" defer></script>
 </head>
 <body>
