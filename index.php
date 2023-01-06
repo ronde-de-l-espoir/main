@@ -1,9 +1,9 @@
 <?php
-if($_SERVER["HTTPS"] != "on")
-{
-    header("Location: https://" . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]);
-    exit();
-}
+    if($_SERVER["HTTPS"] != "on")
+    {
+        header("Location: https://" . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]);
+        exit();
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,6 +18,7 @@ if($_SERVER["HTTPS"] != "on")
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800;900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="img/LRDE-logo.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <script src="./swiped-events.min.js"></script>
     <script src="app.js" defer></script>
 </head>
 <body>
