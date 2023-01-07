@@ -1,10 +1,17 @@
 <?php
-    if($_SERVER["HTTPS"] != "on")
-    {
+    if($_SERVER["HTTPS"] != "on") {
         header("Location: https://" . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]);
         exit();
     }
+
+    function go_get_config($db_config_location){
+        include('./get-total.php');
+    };
+    $db_config_location = "./db_config.php";
+    go_get_config($db_config_location);
 ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +24,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800;900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="img/LRDE-logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="accueil-style.css">
+    <link rel="stylesheet" href="count-box.css">
     <script src="./swiped-events.min.js"></script>
     <script src="app.js" defer></script>
 </head>
@@ -57,8 +66,6 @@
                 <div class="separation"></div>
             </div>
 
-            
-            
             <a href="./donation/" id="side-nav-donation" class="btn-grad">Faites un don!</a>
             
         </div>
@@ -67,14 +74,13 @@
     
 
     <main>
-        <div class="count-box">
-            <?php
-                // include_once "./db.php";
-                // $sql = 'SELECT SUM(amount_donated) AS value_sum FROM donations';
-                // $stm = $pdo->query($sql);
-                // $result = $stm->fetch();
-                // echo $result[0];
-            ?>
+        <div class="main-wrapper">
+
+            <div class="count-box">
+                <span class="totalDisplay"><?php echo $totalDonations; ?> €</span>
+                <p>Ont été donnés par <span id="peopleTotal"><?php echo $totalParticipants ?></span> personnes.</p>
+            </div>
+        
         </div>
     </main>
 
