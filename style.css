@@ -260,7 +260,7 @@ header .reduced-menu .nav-logo {
 }
 
 
-@media (width < 900px) {
+@media (width < 900px), (device-width < 900px) {
     header nav .nav-wrapper {
         -ms-flex-pack: distribute;
             justify-content: space-around;
@@ -275,7 +275,7 @@ header .reduced-menu .nav-logo {
     }
 }
 
-@media (width < 630px) {
+@media (width < 630px), (device-width < 630px) {
     header {
         height: 10vh;
     }
@@ -296,7 +296,7 @@ header .reduced-menu .nav-logo {
     }
 }
 
-@media (height < 600px) {
+@media (height < 600px), (device-height < 600px) {
     header {
         height: 96px;
     }
@@ -308,7 +308,7 @@ header .reduced-menu .nav-logo {
     }
 }
 
-@media (height < 600px) and (width < 630px) {
+@media (height < 600px) and (width < 630px), (device-width < 630px) and (device-height < 600px) {
     header {
         height: 60px;
     }
