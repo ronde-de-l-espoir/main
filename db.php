@@ -1,8 +1,0 @@
-<?php
-    $username = "ctzs1179";
-    $password = "o2switch2022";
-    $dsn = "mysql:host=ronde-de-l-espoir.fr;dbname=ctzs1179_donations";
-    $user = "ctzs1179";
-    $passwd = "o2switch2022";
-    $pdo = new PDO($dsn, $user, $passwd);
-?>

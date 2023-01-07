@@ -1,0 +1,27 @@
+.main-wrapper {
+    width: 70vw;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 10vh 0;
+}
+
+
+.totalDisplay {
+    font-weight: 600;
+    font-size: 550%;
+}
+
+
+@media (width < 700px) {
+    .totalDisplay {
+        font-size: 300%;
+    }
+}
+
+@media (width < 425px) {
+    .totalDisplay {
+        font-size: 200%;
+    }
+}
