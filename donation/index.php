@@ -97,7 +97,7 @@
                     <li>
                         <p>En envoyant un chèque à l'adresse suivante :</p>
                         <br>
-                        <p class="indented-paragraph">Unité Informatique<br>Ronde de l'Espoir<br>Av. de la Petite Motte<br>34280 La Grande Motte</p>
+                        <p class="indented-paragraph">Unité Informatique<br>Ronde de l'Espoir<br>Lycée La Merci Littoral<br>Av. de la Petite Motte<br>34280 La Grande Motte</p>
                     </li>
                     <br>
                 </ul>
