@@ -44,7 +44,7 @@
                     <a href="#" class="underline-anim" data-isFocus="true">Accueil</a>
                     <a href="./infos/" class="underline-anim" data-isFocus="false">Infos</a>
                     <a href="./galerie/" class="underline-anim" data-isFocus="false">Galerie</a>
-                    <a href="./donation/" id="donate-btn" data-isFocus="false">Faites un don</a>  <!-- C'est plus pratique de rajouter un "./" devant les liens. -->
+                    <a href="./donation/" id="donate-btn" data-isFocus="false">Faire un don</a>  <!-- C'est plus pratique de rajouter un "./" devant les liens. -->
                 </div>
             </div>
         </nav>
