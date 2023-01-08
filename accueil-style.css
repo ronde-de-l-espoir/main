@@ -17,6 +17,7 @@ main {
     flex-direction: column;
     align-items: center;
     margin: 50px 0;
+    text-align: center;
 }
 
 #learn-more {
@@ -31,20 +32,8 @@ main {
     transition: 300ms ease-in-out;
 }
 
-.totalDisplay {
-    font-weight: 600;
-    font-size: 550%;
-}
-
-
-@media (width < 700px) {
-    .totalDisplay {
-        font-size: 300%;
-    }
-}
-
-@media (width < 425px) {
-    .totalDisplay {
-        font-size: 200%;
+@media (width < 425px), (device-width < 425px) {
+    #slogan {
+        margin: 50px 0 35px 0;
     }
 }
