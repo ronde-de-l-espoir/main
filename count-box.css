@@ -25,6 +25,14 @@
     -webkit-text-fill-color: transparent;
 }
 
+#more-infos {
+
+}
+
+.totalDisplay {
+    font-weight: 600;
+    font-size: 550%;
+}
 
 @media (width < 900px) {
     .count-box {
@@ -38,13 +46,19 @@
         width: 93vw;
     }
     .count-box p {
-        font-size: 85%;
+        font-size: 95%;
         text-align: center;
+    }
+    .totalDisplay {
+        font-size: 300%;
     }
 }
 
 @media (width < 425px) {
     .count-box {
         height: 25%;
+    }
+    .totalDisplay {
+        font-size: 250%;
     }
 }

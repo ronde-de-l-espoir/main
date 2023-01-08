@@ -83,6 +83,7 @@
 
             <div class="count-box">
                 <span class="totalDisplay"><?php echo $totalDonations; ?> €</span>
+                <p id="more-infos">ont été récoltés pour la Ronde de l'Espoir!</p>
             </div>
 
             <p>Ont été donnés par <span id="peopleTotal"><?php echo $totalParticipants ?></span> personnes.</p>
