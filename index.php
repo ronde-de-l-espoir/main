@@ -76,11 +76,17 @@
     <main>
         <div class="main-wrapper">
 
+            <div id="slogan">
+                <p>Mobilisons nous pour les enfants à l'hôpital !</p>
+                <a id="learn-more" href="./infos">En apprendre plus</a>
+            </div>
+
             <div class="count-box">
                 <span class="totalDisplay"><?php echo $totalDonations; ?> €</span>
-                <p>Ont été donnés par <span id="peopleTotal"><?php echo $totalParticipants ?></span> personnes.</p>
             </div>
-        
+
+            <p>Ont été donnés par <span id="peopleTotal"><?php echo $totalParticipants ?></span> personnes.</p>
+            
         </div>
     </main>
 
