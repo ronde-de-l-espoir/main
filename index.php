@@ -1,33 +1,14 @@
 <?php
-
     if($_SERVER["HTTPS"] != "on") {
         header("Location: https://" . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]);
         exit();
     }
 
-    include('./db_config.php');
-
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    }
-
-    $sql = 'SELECT SUM(amount_donated) AS value_sum FROM donations';
-    $results = mysqli_fetch_all(mysqli_query($conn, $sql));
-    $totalDonations = round($results[0][0], 2);
-    
-    $totalDonations = sprintf("%.2f", $totalDonations);
-
-    for ($i = 0; $i < strlen($totalDonations); $i++ ) {
-        if ($totalDonations[$i] == ".") {
-            $totalDonations[$i] = ",";
-        }
-    }
-
-    $sql = 'SELECT COUNT(id) as count_participants FROM donations';
-    $results = mysqli_fetch_all(mysqli_query($conn, $sql));
-
-    $totalParticipants = $results[0][0];
-
+    function go_get_config($db_config_location){
+        include('./get-total.php');
+    };
+    $db_config_location = "./db_config.php";
+    go_get_config($db_config_location);
 ?>
 
 
@@ -43,8 +24,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800;900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="img/LRDE-logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="accueil-style.css">
+    <link rel="stylesheet" href="count-box.css">
+    <script src="./swiped-events.min.js"></script>
     <script src="app.js" defer></script>
 </head>
 <body>
