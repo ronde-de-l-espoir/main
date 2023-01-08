@@ -1,0 +1,50 @@
+.count-box {
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 55%;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    background-color: rgba(33, 120, 163, 0.174);
+    border: var(--soft-white) 2px solid;
+    z-index: 0;
+}
+
+.count-box p {
+    font-size: 130%;
+}
+
+#peopleTotal {
+    font-size: 160%;
+    background: rgb(63,94,251);
+    background: linear-gradient(355deg, rgb(38, 65, 201) 19%, rgb(189, 52, 80) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+@media (width < 900px) {
+    .count-box {
+        height: 40%;
+        width: 85vw;
+    }
+}
+
+@media (width < 700px) {
+    .count-box {
+        width: 93vw;
+    }
+    .count-box p {
+        font-size: 85%;
+        text-align: center;
+    }
+}
+
+@media (width < 425px) {
+    .count-box {
+        height: 25%;
+    }
+}
