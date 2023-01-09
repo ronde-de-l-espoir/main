@@ -85,8 +85,7 @@
     </main>
 
     <footer>
-        <div class="footer-wrapper">
-        </div>
+        <?php include('./footer.php')  ?>
     </footer>
 
 </body> 
