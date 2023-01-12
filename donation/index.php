@@ -66,12 +66,6 @@
 
     <main>
         <div class="main-wrapper">
-            <div style="display: flex; justify-content: space-around; margin-top: 1cm;">
-                <div class="count-box">
-                    <span class="totalDisplay"><?php echo $totalDonations; ?> €</span>
-                    <p>Ont déjà été donnés par <span id="peopleTotal"><?php echo $totalParticipants ?></span> personnes.</p>
-                </div>
-            </div>
             <div id="options-presentation">
                 <p id="je-fais-un-don">Je contribue !</p>
                 <p style="font-size: 125%; font-weight: 250;">Comment ?</p>
