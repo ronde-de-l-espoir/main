@@ -1,9 +1,5 @@
 <?php
-    function go_get_config($db_config_location){
-        include('../get-total.php');
-    };
-    $db_config_location = "../db_config.php";
-    go_get_config($db_config_location);
+    include('../get-total.php');
 ?>
 
 <!DOCTYPE html>
