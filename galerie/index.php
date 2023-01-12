@@ -10,14 +10,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800;900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../img/LRDE-logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../common.css">
     <script src="../app.js" defer></script>
 </head>
 <body>
 
     <header>
         <div class="title">
-            <h1><a href="">La Ronde de l'Espoir</a></h1>
+            <h1><a href="../">La Ronde de l'Espoir</a></h1>
         </div> <!-- Ne pas changer le lien au-dessus, il fonctionne comme il   -->
 
         <nav>

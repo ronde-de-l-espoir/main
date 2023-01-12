@@ -1,27 +1,39 @@
+main {
+    height: 80vh;
+}
+
 .main-wrapper {
     width: 70vw;
     height: 100%;
     margin: auto;
     display: flex;
-    justify-content: center;
-    padding: 10vh 0;
+    flex-direction: column;
+    align-items: center;
 }
 
-
-.totalDisplay {
-    font-weight: 600;
-    font-size: 550%;
+#slogan {
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+    text-align: center;
 }
 
-
-@media (width < 700px) {
-    .totalDisplay {
-        font-size: 300%;
-    }
+#learn-more {
+    padding-top: 7.5px;
+    font-size: 90%;
+    color: #F28482;
+    transition: 300ms ease-in-out;
 }
 
-@media (width < 425px) {
-    .totalDisplay {
-        font-size: 200%;
+#learn-more:hover {
+    color: #EE6055;
+    transition: 300ms ease-in-out;
+}
+
+@media (width < 425px), (device-width < 425px) {
+    #slogan {
+        margin: 50px 0 35px 0;
     }
 }
