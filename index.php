@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="accueil-style.css">
     <link rel="stylesheet" href="count-box.css">
     <script src="./swiped-events.min.js"></script>
-    <script src="app.js" defer></script>
+    <script src="./app.js" defer></script>
 </head>
 <body>
 
@@ -79,8 +79,8 @@
 
             <div class="count-box">
                 <span class="totalDisplay"><?php echo $totalDonations; ?> €</span>
-                <p id="more-infos">(TEST VALUE)</p>
                 <p id="more-infos">ont été récoltés pour la Ronde de l'Espoir!</p>
+                <p id="more-infos">(TEST VALUE)</p>
             </div>
 
             <p>Ont été donnés par <span id="peopleTotal"><?php echo $totalParticipants ?></span> personnes.</p>
