@@ -4,11 +4,7 @@
         exit();
     }
 
-    function go_get_config($db_config_location){
-        include('./get-total.php');
-    };
-    $db_config_location = "./db_config.php";
-    go_get_config($db_config_location);
+    include('./get-total.php');
 ?>
 
 
@@ -83,6 +79,7 @@
 
             <div class="count-box">
                 <span class="totalDisplay"><?php echo $totalDonations; ?> €</span>
+                <p id="more-infos">(TEST VALUE)</p>
                 <p id="more-infos">ont été récoltés pour la Ronde de l'Espoir!</p>
             </div>
 
