@@ -4,18 +4,14 @@
         exit();
     }
 
-    function go_get_config($db_config_location){
-        include('./get-total.php');
-    };
-    $db_config_location = "./db_config.php";
-    go_get_config($db_config_location);
+    include "./get_total.php";
 ?>
 
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>La Ronde de l'Espoir</title>
+    <title>La Ronde de l'Espoir (WIP)</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,7 +24,7 @@
     <link rel="stylesheet" href="accueil-style.css">
     <link rel="stylesheet" href="count-box.css">
     <script src="./swiped-events.min.js"></script>
-    <script src="app.js" defer></script>
+    <script src="./app.js" defer></script>
 </head>
 <body>
 
@@ -44,7 +40,7 @@
                     <a href="#" class="underline-anim" data-isFocus="true">Accueil</a>
                     <a href="./infos/" class="underline-anim" data-isFocus="false">Infos</a>
                     <a href="./galerie/" class="underline-anim" data-isFocus="false">Galerie</a>
-                    <a href="./donation/" id="donate-btn" data-isFocus="false">Faites un don</a>  <!-- C'est plus pratique de rajouter un "./" devant les liens. -->
+                    <a href="./donation/" id="donate-btn" data-isFocus="false">Faire un don</a>  <!-- C'est plus pratique de rajouter un "./" devant les liens. -->
                 </div>
             </div>
         </nav>
@@ -76,11 +72,19 @@
     <main>
         <div class="main-wrapper">
 
+            <div id="slogan">
+                <p>Mobilisons nous pour les enfants à l'hôpital !</p>
+                <a id="learn-more" href="./infos">En apprendre plus</a>
+            </div>
+
             <div class="count-box">
                 <span class="totalDisplay"><?php echo $totalDonations; ?> €</span>
-                <p>Ont été donnés par <span id="peopleTotal"><?php echo $totalParticipants ?></span> personnes.</p>
+                <p id="more-infos">ont été récoltés pour la Ronde de l'Espoir!</p>
+                <p id="more-infos">(TEST VALUE)</p>
             </div>
-        
+
+            <p>Ont été donnés par <span id="peopleTotal"><?php echo $totalParticipants ?></span> personnes.</p>
+            
         </div>
     </main>
 

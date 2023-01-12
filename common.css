@@ -339,8 +339,9 @@ header .reduced-menu .nav-logo {
 
 main {
     background: url(img/bg.png) no-repeat center center fixed;
-    background-size: cover;
-    height: 80vh;
+    /* background-size: cover; */
+    background-size: 80%;
+    min-height: 80vh;
 }
 
 @media (width < 800px) {
