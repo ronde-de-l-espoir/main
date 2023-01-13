@@ -53,6 +53,7 @@ main {
     background-color: var(--soft-white);
     padding: 12px 20px 20px;
     border-radius: 0 0 5px 5px;
+    text-align: center;
 }
 
 #contribute-button {
@@ -72,8 +73,23 @@ main {
     transition: 300ms ease-in;
 }
 
-@media (width < 425px), (device-width < 425px) {
+@media (width < 700px), (device-width < 700px) {
+    .peopleInfos {
+        font-size: 100%;
+        padding: 10px 14px;
+    }
+}
+
+@media (width < 426px), (device-width < 426px) {
     #slogan {
         margin: 50px 0 35px 0;
+    }
+    .peopleInfos {
+        font-size: small;
+        padding: 8px 10px 10px;
+        width: 80vw;
+    }
+    #contribute-button {
+        font-size: 150%;
     }
 }
