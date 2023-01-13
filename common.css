@@ -346,6 +346,7 @@ main {
     /* background-size: cover; */
     background-size: 80%;
     min-height: 80vh;
+    padding-bottom: 50px;
 }
 
 @media (width < 800px) {
