@@ -57,6 +57,10 @@ header nav .nav-wrapper {
     align-items: center;
 }
 
+header nav .nav-wrapper img:hover {
+    cursor: pointer;
+}
+
 header nav .link-wrapper {
     display: flex;
     gap: 35px;
