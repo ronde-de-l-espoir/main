@@ -17,18 +17,6 @@
     font-size: 130%;
 }
 
-#peopleTotal {
-    font-size: 160%;
-    background: rgb(63,94,251);
-    background: linear-gradient(355deg, rgb(38, 65, 201) 19%, rgb(189, 52, 80) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-#more-infos {
-
-}
-
 .totalDisplay {
     font-weight: 600;
     font-size: 550%;

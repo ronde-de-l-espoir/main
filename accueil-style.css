@@ -32,6 +32,14 @@ main {
     transition: 300ms ease-in-out;
 }
 
+#peopleTotal {
+    font-size: 160%;
+    background: rgb(63,94,251);
+    background: linear-gradient(355deg, rgb(38, 65, 201) 19%, rgb(189, 52, 80) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 @media (width < 425px), (device-width < 425px) {
     #slogan {
         margin: 50px 0 35px 0;
