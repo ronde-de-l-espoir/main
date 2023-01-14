@@ -77,14 +77,16 @@
                 <a id="learn-more" href="./infos">En apprendre plus</a>
             </div>
 
-            <div class="count-box">
-                <span class="totalDisplay"><?php echo $totalDonations; ?> €</span>
-                <p id="more-infos">ont été récoltés pour la Ronde de l'Espoir!</p>
-                <p id="more-infos">(TEST VALUE)</p>
+            <div id="counter">
+                <div class="count-box">
+                    <span class="totalDisplay"><?php echo $totalDonations; ?> €</span>
+                    <p id="more-infos">ont été récoltés pour la Ronde de l'Espoir!</p>
+                </div>
+                
+                <p class="peopleInfos">Déjà <span id="peopleTotal"><?php echo $totalParticipants ?></span> participants ! Qu'attendez-vous ?</p>
+                <a href="./donation/" id="contribute-button">Contribuer</a>
             </div>
 
-            <p>Ont été donnés par <span id="peopleTotal"><?php echo $totalParticipants ?></span> personnes.</p>
-            
         </div>
     </main>
 
