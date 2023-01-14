@@ -57,6 +57,10 @@ header nav .nav-wrapper {
     align-items: center;
 }
 
+header nav .nav-wrapper img:hover {
+    cursor: pointer;
+}
+
 header nav .link-wrapper {
     display: flex;
     gap: 35px;
@@ -342,6 +346,7 @@ main {
     /* background-size: cover; */
     background-size: 80%;
     min-height: 80vh;
+    padding-bottom: 50px;
 }
 
 @media (width < 800px) {
