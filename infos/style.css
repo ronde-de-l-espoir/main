@@ -11,7 +11,7 @@
     border: var(--soft-white) 2px solid;
     z-index: 0;
     position: center;
-    text-align: justify;
+    text-align: center;
     font-size: 120%;
     padding: 35px;
 }
