@@ -1,32 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./common.css">
-</head>
-<body>
-    <div class="footer-wrapper">
-        <link rel="stylesheet" href="./common.css">
-        <div style="float: left;">
-            <p>Les onglets</p>
-            <a>Bla</a>
-            <a>Bla</a>
-            <a>Bla</a>
-            <a>Bla</a>
-            <a>Bla</a>
-            <a>Bla</a>
+<html>
+    <body>
+        <div class="footer-wrapper">
+            <div class="footer-main-line">
+                <div class="flex-item">
+                    <img src="./img/logo2-small-resized.png" class="footer-img" onclick="window.location='https://ronde-de-l-espoir.fr'">
+                    <div class="footer-border right"></div>
+                </div>
+                <div class="flex-item">
+                    <div class="footer-border left"></div>
+                    <span class="footer-content">
+                        <p>Les onglets</p>
+                        <br>
+                        <ul>
+                            <li><a>Acceuil</a></li>
+                            <li>Infos</li>
+                            <li>Galerie</li>
+                            <li>Faire un don</li>
+                        </ul>
+                    </span>
+                    <div class="footer-border right"></div>
+                </div>
+                <div class="flex-item">
+                    <div class="footer-border left"></div>
+                    <span class="footer-content">
+                        <p>Autres pages</p>
+                        <br>
+                        <ul>
+                            <li><a href="./faq">FAQ</a></li>
+                            <li><a href="mailto:contact@ronde-de-l-espoir.fr">Contact</a></li>
+                            <li><a href="https://github.com/ronde-de-l-espoir">GitHub</a></li>
+                        </ul>
+                    </span>
+                    <div class="footer-border right"></div>
+                </div>
+                <div class="flex-item">
+                    <div class="footer-border left"></div>
+                    <span class="footer-content">
+                        <p>Formalités légales</p>
+                        <br>
+                        <ul>
+                            <li><a href="./mentions">Mentions légales</a></li>
+                            <li><a href="./cookies">Politique cookies</a></li>
+                            <li><a href="https://stripe.com/en-gb-fr/legal/end-users">Mentions de Stripe</a></li>
+                        </ul>
+                    </span>
+                    <div class="footer-border right"></div>
+                </div>
+                <div class="flex-item">
+                    <div class="footer-border left"></div>
+                    <img src="./img/clean_logo_littoral.png" class="footer-img" onclick="window.location='https://lamerci.com/littoral/accueil'">
+                </div>
+            </div>
+            <div id="social-bar">
+                <p>Rejoignez-nous : </p>
+                <div id="social-icons">
+                    <img src="./img/facebook.svg" onclick="window.location='https://facebook.com/ronde-de-l-espoir'">
+                    <img src="./img/instagram.svg" onclick="window.location='https://instagram.com/@ronde-de-l-espoir'">
+                </div>
+            </div>
         </div>
-        <div>
-            <p>Les onglets</p>
-            <a>Bla</a>
-            <a>Bla</a>
-        </div>
-        <div>
-            <img src="./img/clean_logo_littoral.png" id="footer-img">
-        </div>
-    </div>
-</body>
+    </body>
 </html>
