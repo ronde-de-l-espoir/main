@@ -8,6 +8,11 @@ body {
     background-color: #DEDEDE;
 }
 
+.scrollLock {
+    /* touch-action: none; */
+    position: fixed;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -342,6 +347,8 @@ main {
     background-size: cover;
     height: 80vh;
 }
+
+
 
 @media (width < 800px) {
     /* When finished, this feature will add a dynamic background in regard with the device's width. */
