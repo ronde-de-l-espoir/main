@@ -37,7 +37,7 @@
         }
         setTimeout(function(){
             odometer.innerHTML = <?php echo json_encode($totalDonations)?>;
-        }, 1000);
+        }, 1);
     </script>
 </head>
 <body>
@@ -93,7 +93,7 @@
 
             <div id="counter">
                 <div class="count-box">
-                    <span class="totalDisplay odometer" id="odometer">0000</span>
+                    <span class="totalDisplay odometer" id="odometer">0</span>
                     <p id="more-infos">ont été récoltés pour la Ronde de l'Espoir!</p>
                 </div>
                 
