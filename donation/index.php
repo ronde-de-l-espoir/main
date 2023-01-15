@@ -1,9 +1,8 @@
 <?php
-    function go_get_config($db_config_location){
-        include('../get-total.php');
-    };
-    $db_config_location = "../db_config.php";
-    go_get_config($db_config_location);
+    if($_SERVER["HTTPS"] != "on") {
+        header("Location: https://" . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]);
+        exit();
+    }
 ?>
 
 <!DOCTYPE html>
@@ -26,7 +25,7 @@
 
     <header>
         <div class="title">
-            <h1><a href="">La Ronde de l'Espoir</a></h1>
+            <h1><a href="../">La Ronde de l'Espoir</a></h1>
         </div> <!-- Ne pas changer le lien au-dessus, il fonctionne comme il   -->
 
         <nav>
@@ -36,7 +35,7 @@
                     <a href="../" class="underline-anim" data-isFocus="true">Accueil</a>
                     <a href="../infos/" class="underline-anim" data-isFocus="false">Infos</a>
                     <a href="../galerie/" class="underline-anim" data-isFocus="false">Galerie</a>
-                    <a href="#" id="donate-btn" data-isFocus="false">Faites un don</a>  <!-- C'est plus pratique de rajouter un "./" devant les liens. -->
+                    <a href="#" id="donate-btn" data-isFocus="false">Faire un don</a>  <!-- C'est plus pratique de rajouter un "./" devant les liens. -->
                 </div>
             </div>
         </nav>
@@ -67,12 +66,6 @@
 
     <main>
         <div class="main-wrapper">
-            <div style="display: flex; justify-content: space-around; margin-top: 1cm;">
-                <div class="count-box">
-                    <span class="totalDisplay"><?php echo $totalDonations; ?> €</span>
-                    <p>Ont déjà été donnés par <span id="peopleTotal"><?php echo $totalParticipants ?></span> personnes.</p>
-                </div>
-            </div>
             <div id="options-presentation">
                 <p id="je-fais-un-don">Je contribue !</p>
                 <p style="font-size: 125%; font-weight: 250;">Comment ?</p>
