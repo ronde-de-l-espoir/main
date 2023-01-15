@@ -85,7 +85,10 @@
     </main>
 
     <footer>
-        <?php include('./footer.php')  ?>
+        <?php 
+            $currentPage = "accueil";
+            include('./footer.php')  
+        ?>
     </footer>
 
 </body> 

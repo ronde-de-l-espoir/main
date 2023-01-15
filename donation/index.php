@@ -107,8 +107,10 @@
     </main>
 
     <footer>
-        <div class="footer-wrapper">
-        </div>
+        <?php 
+            $currentPage = "donation";
+            include('../footer.php')  
+        ?>
     </footer>
 
 </body> 
