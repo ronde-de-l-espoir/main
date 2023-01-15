@@ -23,8 +23,22 @@
     <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="accueil-style.css">
     <link rel="stylesheet" href="count-box.css">
+    <link rel="stylesheet" href="odometer-theme-default.css">
     <script src="./swiped-events.min.js"></script>
     <script src="./app.js" defer></script>
+    <script src="odometer.min.js"></script>
+    <script>
+        window.odometerOptions = {
+            auto: true,
+            // selector: '.totalDisplay',
+            // duration: '3000',
+            // animation: 'count'
+            format: '( ddd),dd'
+        }
+        setTimeout(function(){
+            odometer.innerHTML = <?php echo json_encode($totalDonations)?>;
+        }, 1000);
+    </script>
 </head>
 <body>
 
@@ -79,7 +93,7 @@
 
             <div id="counter">
                 <div class="count-box">
-                    <span class="totalDisplay"><?php echo $totalDonations; ?> €</span>
+                    <span class="totalDisplay odometer" id="odometer">0000</span>
                     <p id="more-infos">ont été récoltés pour la Ronde de l'Espoir!</p>
                 </div>
                 
