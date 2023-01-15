@@ -372,9 +372,12 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    list-style: none;
 }
 
-
+footer * {
+    list-style: none;
+}
 
 .footer-wrapper {
     display: flex;
