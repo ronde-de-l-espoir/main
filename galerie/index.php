@@ -62,7 +62,10 @@
     </main>
 
     <footer>
-        <div class="footer-wrap"></div>
+        <?php
+            $currentPage = "galerie";
+            include('../footer.php') 
+        ?> 
     </footer>
 
 </body>

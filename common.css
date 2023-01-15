@@ -8,6 +8,11 @@ body {
     background-color: #DEDEDE;
 }
 
+.scrollLock {
+    /* touch-action: none; */
+    position: fixed;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -349,6 +354,8 @@ main {
     padding-bottom: 50px;
 }
 
+
+
 @media (width < 800px) {
     /* When finished, this feature will add a dynamic background in regard with the device's width. */
     main {
@@ -363,7 +370,140 @@ main {
 /* Footer's CSS */
 
 footer {
+    
     background-color: #222222;
     /* width: 100%; */
-    height: 20vh;
+    min-height: 40vh;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+footer * {
+    list-style: none;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+}
+
+.footer-main-line {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* column-gap: 1mm; */
+    flex-wrap: nowrap;
+    padding: 2mm;
+}
+
+#social-bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+#social-bar img {
+    width: 7vw;
+    height: auto;
+}
+
+#social-bar img:hover {
+    cursor: pointer;
+}
+
+#social-bar p {
+    color: white;
+}
+
+.flex-item {
+    flex: 1 1 25%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* border-left: 1px solid white;
+    border-right: 1px solid white; */
+}
+
+.footer-border {
+    position: relative;
+    top: 20%;
+    bottom: 20%;
+}
+
+.left {
+    border-left: 1px solid white;
+}
+
+.right {
+    border-right: 1px solid white;
+}
+
+.footer-content {
+    color: white;
+    padding: 3mm;
+    width: 100%;
+    text-decoration: none;
+}
+
+.footer-content p {
+    text-decoration: underline;
+}
+
+.footer-content ul li a, .footer-content ul li img {
+    text-decoration: none;
+    color: inherit;
+    transition: all .2s ease-in-out;
+}
+
+.footer-content ul li a:hover, .footer-content ul li img:hover {
+    font-size: 107%;
+    transform: scale(1.07);
+    color: #12D8FA;
+}
+
+/* .flex-item::before {
+    content: "";
+    border: 1mm solid #d3d3d3;
+    align-self: stretch;
+}
+
+.flex-item--start {
+    order: -1;
+} */
+
+
+
+.footer-img {
+    width: 60%;
+    margin: auto;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+@media (width < 550px) {
+    .footer-main-line {
+        flex-wrap: wrap;
+    }
+    .flex-item {
+        flex: 1 1 100%;
+        height: 20vh;
+    }
+    .footer-border {
+        display: none;
+    }
+    #social-bar {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    #social-icons img {
+        width: 20vw;
+    }
 }
