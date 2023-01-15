@@ -93,7 +93,7 @@
 
             <div id="counter">
                 <div class="count-box">
-                    <span class="totalDisplay odometer" id="odometer">0</span>
+                    <span class="totalDisplay odometer odometer-default" id="odometer">0</span>
                     <p id="more-infos">ont été récoltés pour la Ronde de l'Espoir!</p>
                 </div>
                 
