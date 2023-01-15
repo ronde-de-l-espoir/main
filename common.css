@@ -380,7 +380,7 @@ footer {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    flex-direction: row;
+    /* flex-direction: column; */
 }
 
 .footer-main-line {
@@ -448,14 +448,15 @@ footer {
     text-decoration: underline;
 }
 
-.footer-content ul li a {
+.footer-content ul li a, .footer-content ul li img {
     text-decoration: none;
     color: inherit;
     transition: all .2s ease-in-out;
 }
 
-.footer-content ul li a:hover {
-    font-size: 110%;
+.footer-content ul li a:hover, .footer-content ul li img:hover {
+    font-size: 107%;
+    transform: scale(1.07);
     color: #12D8FA;
 }
 
