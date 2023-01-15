@@ -91,8 +91,10 @@
     </main>
 
     <footer>
-        <div class="footer-wrapper">
-        </div>
+        <?php 
+            $currentPage = "accueil";
+            include('./footer.php');
+        ?>
     </footer>
 
 </body> 
