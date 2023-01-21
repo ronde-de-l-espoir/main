@@ -13,7 +13,7 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@4.3.3
       with:
         server: ronde-de-l-espoir.fr
-        username: ***REMOVED***
+        username: ctzs1179
         password: ${{ secrets.password }}
         server-dir: /ronde-de-l-espoir.fr/main/
     - name: 🚚 Get latest code of counter
@@ -24,6 +24,6 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@4.3.2
       with:
          server: ronde-de-l-espoir.fr
-         username: ***REMOVED***
+         username: ctzs1179
          password: ${{ secrets.password }}
          server-dir: ronde-de-l-espoir.fr/box/
