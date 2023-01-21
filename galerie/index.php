@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800;900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../img/LRDE-logo.png" type="image/x-icon">
     <link rel="stylesheet" href="../common.css">
+    <link rel="stylesheet" href="./gallery.css">
     <script src="../app.js" defer></script>
 </head>
 <body>
@@ -58,7 +59,9 @@
     </header>
 
     <main>
-        <div class="main-wrapper"></div>
+        <div class="main-wrapper">
+
+        </div>
     </main>
 
     <footer>
