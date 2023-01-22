@@ -21,6 +21,7 @@ class photoGallery {
 	}
 
 	get_images(img_cnt) {
+		var imgData = [];
 		for(let i = img_cnt; i > 0; i--) {
 			while(true) {
 				var random_image = images[Math.floor(Math.random()*images.length)] // selects random image from the images list
@@ -51,11 +52,11 @@ window.onload = () => {
 
 //show Loading dots and fetch images on scroll
 window.addEventListener("scroll", () => {
-	const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
-	if (clientHeight + scrollTop >= scrollHeight) { // checks if new photos should be displayed
+	const { scrollTop, scrollHeight, clientHeight } = document.documentElement; // checks if new photos should be displayed
+	if (clientHeight + scrollTop >= scrollHeight - 20 ) { 
 		loadingDots.classList.remove("hide");
 		init_gallery
 			.get_images(10)
-			.catch((err) => alert("OOPS! Please Try Again Later"));
+			// .catch((err) => alert("OOPS! Please Try Again Later"));
 	}
 });
