@@ -53,7 +53,7 @@ window.onload = () => {
 //show Loading dots and fetch images on scroll
 window.addEventListener("scroll", () => {
 	const { scrollTop, scrollHeight, clientHeight } = document.documentElement; // checks if new photos should be displayed
-	if (clientHeight + scrollTop >= scrollHeight - 20 ) { 
+	if (clientHeight + scrollTop >= scrollHeight - 10 ) { 
 		loadingDots.classList.remove("hide");
 		init_gallery
 			.get_images(10)
