@@ -2,9 +2,10 @@
 // It has been modified, but the base is the same...
 
 var images = [];
-for (let img_n = 0; img_n < 11; img_n++) {
-	var path = `../../gallery-photos/image (${img_n}).jpg`
-	images.push(path)
+already_seen = [];
+for (let img_n = 0; img_n < 344; img_n++) {
+	var path = `./gallery-photos/photo (${img_n}).jpg`;
+	images.push(path); // save all photos paths in the images list
 }
 
 class photoGallery {
@@ -13,22 +14,23 @@ class photoGallery {
 	add_imgs_to_DOM(img_data) {
 		// Adds new images to DOM
 		let divs = "";
-
 		img_data.forEach(
 			(img) => (divs += `<img src="${img}" alt="">`)
 		);
 		this.divimages.innerHTML += divs;
 	}
 
-	async get_images(img_cnt) {
-		// API call from Unsplash
-		// const response = await fetch(
-		// 	`https://api.unsplash.com/photos/random?client_id=ffPJdmU2s-KeYWsCgOIxmAPW35eXJxWGKUzLodKlY3w&count=${img_cnt}`
-		// );
-
-		// const imgData = await response.json();
-		// this.add_imgs_to_DOM(imgData);
-		this.add_imgs_to_DOM(images[Math.floor(Math.random()*images.length)])
+	get_images(img_cnt) {
+		for(let i = img_cnt; i > 0; i--) {
+			while(true) {
+				var random_image = images[Math.floor(Math.random()*images.length)] // selects random image from the images list
+				if (!(already_seen.includes(random_image))){
+					break; // only allows the photo to be used once
+				}
+			}
+			imgData.push(random_image)
+		}
+		this.add_imgs_to_DOM(imgData);
 	}
 }
 
@@ -41,9 +43,6 @@ const init_gallery = new photoGallery();
 window.onload = () => {
 	init_gallery
 		.get_images(10)
-		.then(() => {
-			loader.classList.add("hidden");
-		})
 		.catch((err) => {
 			alert("OOPS! Try Again Later");
 			console.log(err);
@@ -53,11 +52,10 @@ window.onload = () => {
 //show Loading dots and fetch images on scroll
 window.addEventListener("scroll", () => {
 	const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
-	if (clientHeight + scrollTop >= scrollHeight) {
+	if (clientHeight + scrollTop >= scrollHeight) { // checks if new photos should be displayed
 		loadingDots.classList.remove("hide");
 		init_gallery
 			.get_images(10)
-			.then()
 			.catch((err) => alert("OOPS! Please Try Again Later"));
 	}
 });

@@ -63,7 +63,9 @@
     <main>
         <div class="main-wrapper">
             <section class="gallery-box">
-                <div class="images"></div>
+                <div class="images">
+                    <!-- Here ./gallery.js will inject random photos of the ./gallery-photos -->
+                </div>
             </section>
             <div class="loading-dots hide">
                 <div></div>
