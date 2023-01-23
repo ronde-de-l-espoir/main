@@ -1,5 +1,5 @@
 // Thanks to Gopi3k (https://github.com/Gopi3k) for this JS script !
-// It has been modified, but the base is the same...
+// It has been "modified", but the base is the same...
 
 var images = [];
 already_seen = [];
