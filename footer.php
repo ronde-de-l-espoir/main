@@ -1,5 +1,5 @@
 <?php
-    if ($currentPage != "acceuil"){
+    if ($currentPage != "accueil"){
         $prefix = "../";
     } else {
         $prefix = "./";
