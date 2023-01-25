@@ -63,7 +63,8 @@
         <img src="<?php echo $prefix . "img/instagram.svg" ?>" onclick="window.location='https://instagram.com/@ronde-de-l-espoir'">
 
     </div>
-    <div class="copyright">
-        <img src="<?php echo $prefix . "img/copyright-badge.svg" ?>" style="padding: 2mm; cursor:pointer;" onclick="window.location='https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode'">
-    </div>
+</div>
+
+<div class="copyright">
+    <img class="copyright-img" src="<?php echo $prefix . "img/copyright-badge.svg" ?>" onclick="window.location='https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode'">
 </div>
