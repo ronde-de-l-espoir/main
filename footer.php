@@ -1,5 +1,5 @@
 <?php
-    if ($currentPage != "acceuil"){
+    if ($currentPage != "accueil"){
         $prefix = "../";
     } else {
         $prefix = "./";
@@ -48,7 +48,6 @@
                     <li><a href="<?php echo $prefix . "mentions" ?>">Mentions légales</a></li>
                     <li><a href="<?php echo $prefix . "cookies" ?>">Politique cookies</a></li>
                     <li><a href="https://stripe.com/en-gb-fr/legal/end-users">Mentions de Stripe</a></li>
-                    <li><img src="<?php echo $prefix . "img/copyright-badge.svg" ?>" style="padding: 2mm; cursor:pointer;" onclick="window.location='https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode'"></li>
                 </ul>
             </span>
             <div class="footer-border right"></div>
@@ -60,9 +59,12 @@
     </div>
     <div id="social-bar">
         <p>Rejoignez-nous : </p>
-        <div id="social-icons">
-            <img src="<?php echo $prefix . "img/facebook.svg" ?>" onclick="window.location='https://facebook.com/ronde-de-l-espoir'">
-            <img src="<?php echo $prefix . "img/instagram.svg" ?>" onclick="window.location='https://instagram.com/@ronde-de-l-espoir'">
-        </div>
+        <img src="<?php echo $prefix . "img/facebook.svg" ?>" onclick="window.location='https://facebook.com/ronde-de-l-espoir'">
+        <img src="<?php echo $prefix . "img/instagram.svg" ?>" onclick="window.location='https://instagram.com/@ronde-de-l-espoir'">
+
     </div>
+</div>
+
+<div class="copyright">
+    <img class="copyright-img" src="<?php echo $prefix . "img/copyright-badge.svg" ?>" onclick="window.location='https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode'">
 </div>
