@@ -82,7 +82,7 @@
                     <span class="totalDisplay"><?php echo $totalDonations; ?> €</span>
                     <p id="more-infos">ont été récoltés pour la Ronde de l'Espoir!</p>
                 </div>
-                
+                <div style="visibility: hidden; padding: 5px;"></div>
                 <p class="peopleInfos">Déjà <span id="peopleTotal"><?php echo $totalParticipants ?></span> participants ! Qu'attendez-vous ?</p>
                 <a href="./donation/" id="contribute-button">Contribuer</a>
             </div>
