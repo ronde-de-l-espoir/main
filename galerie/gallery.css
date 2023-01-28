@@ -1,7 +1,7 @@
 .gallery-box {
     width: 80vw;
-    margin-left: 10vw;
-    margin-right: 10vw;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 10vh;
     border-radius: 5mm;
     border: #333 solid 5px;
@@ -9,8 +9,8 @@
 }
 
 .gallery-box div {
-    columns: 3;
-    column-gap: 15px;
+    columns: 4;
+    column-gap: 20px;
 }
 
 .gallery-box img {
@@ -126,7 +126,18 @@
     }
 }
 
+@media only screen and (max-width: 900px) {
+    .gallery-box div {
+        columns: 3;
+    }
+}
+
 @media only screen and (max-width: 768px) {
+    .gallery-box {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90vw;
+    }
     .gallery-box div {
         columns: 2;
     }
