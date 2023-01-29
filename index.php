@@ -79,10 +79,15 @@
 
             <div id="counter">
                 <div class="count-box">
-                    <span class="totalDisplay"><?php echo $totalDonations; ?> €</span>
-                    <p id="more-infos">ont été récoltés pour la Ronde de l'Espoir!</p>
+                    <div class="totalDisplay">
+                        <div style="display: inline;">
+                            <?php echo $totalDonations; ?> 
+                        </div>
+                        <div style="font-size: 70%; position: relative; padding-left: -10px; display: inline; top: -20px">€</div>
+                    </div>
+                    <p id="more-infos">ont été récoltés pour la Ronde de l'Espoir !</p>
                 </div>
-                
+                <div style="visibility: hidden; padding: 5px;"></div>
                 <p class="peopleInfos">Déjà <span id="peopleTotal"><?php echo $totalParticipants ?></span> participants ! Qu'attendez-vous ?</p>
                 <a href="./donation/" id="contribute-button">Contribuer</a>
             </div>
