@@ -1,7 +1,6 @@
 <?php
-
     require("../db_config.php");
-
+    
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     }
@@ -9,9 +8,9 @@
     $sql = 'SELECT SUM(amount_donated) AS value_sum FROM donations';
     $results = mysqli_fetch_all(mysqli_query($conn, $sql));
     global $totalDonations;
-    $totalDonations = round($results[0][0], 2);
-
-    $totalDonations = sprintf("%.2f", $totalDonations);
+    global $bareTotal;
+    $bareTotal = $results[0][0];
+    $totalDonations = intval($results[0][0]);
 
     for ($i = 0; $i < strlen($totalDonations); $i++ ) {
         if ($totalDonations[$i] == ".") {
