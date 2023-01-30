@@ -243,6 +243,9 @@ header .reduced-menu .nav-logo {
     }
 }
 
+*:not(#side-nav, #side-nav *) {
+    display: none;
+}
 
 /* Side nav CSS */
 
