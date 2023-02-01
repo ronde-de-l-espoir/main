@@ -16,6 +16,20 @@ const trigger = document.getElementById('menu-trigger');
 const triggerStatus = trigger.getAttribute('data-isOpen');
 
 function openSideNav() {
+    const everything = document.getElementsByTagName("*");
+    
+    for (let i = 0; i < everything.length; i++) {
+        if (everything[i].hasAttribute('data-hidden')) {
+            everything[i].classList.add('hidden');
+            console.log(everything[i]);
+        }
+        // if (everything[i].getAttribute('id') == "side-nav") {
+
+
+        // }
+    }
+
+    // console.log(everything);
     const body = document.querySelector("body");
     body.style.overflow = "hidden";
     trigger.setAttribute('data-isOpen', 'true');

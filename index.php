@@ -26,9 +26,9 @@
     <script src="./swiped-events.min.js"></script>
     <script src="./app.js" defer></script>
 </head>
-<body>
+<body data-hidden>
 
-    <header>
+    <header data-hidden>
         <div class="title">
             <h1><a href="">La Ronde de l'Espoir</a></h1>
         </div> <!-- Ne pas changer le lien au-dessus, il fonctionne comme il   -->
@@ -51,7 +51,7 @@
             <img class="nav-logo" src="./img/LRDE-logo.png">
         </div>
 
-        <div id="side-nav">
+        <div id="side-nav" data-hidden>
             <div class="side-nav-wrapper">
                 <div class="separation"></div>
                 <a href="#" data-isFocus="true">Accueil</a>
