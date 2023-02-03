@@ -17,20 +17,34 @@ main {
     column-gap: 20px;
 }
 
-.gallery-box img {
-    width: 100%;
+.img-block {
+    width: fit-content;
     height: auto;
     margin-bottom: 1rem;
     border-radius: 1%;
-    object-fit: cover;
-    object-position: 50% 50%;
     transition: 0.5s ease-in-out;
     animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    display: flex;
+    flex: 1;
+    z-index: 1;
 }
 
-.gallery-box img:hover {
-    filter: brightness(70%);
+.img-block img {
+    width: 100%;
 }
+
+.img-block .legende {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
+    left: -100%;
+    top: -100%;
+    min-height: 100%;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,0.927608543417367) 0%, rgba(255,255,255,0.3309698879551821) 76%);
+}
+
 
 
 

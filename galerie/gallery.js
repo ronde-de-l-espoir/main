@@ -18,9 +18,19 @@ class photoGallery {
 	add_imgs_to_DOM(img_data) {
 		// Adds new images to DOM
 		let divs = "";
-		img_data.forEach(
-			(img) => (divs += `<img src="${img}" alt="">`)
-		);
+		
+		img_data.forEach((img) => {
+			var html = `
+			<div class="img-block">
+				<img src="${img}" alt="">
+				<div class="legende hidden">
+					<p>hello</p>
+				</div>
+			</div>
+			\n
+			`;
+			divs += html
+		});
 		this.divimages.innerHTML += divs;
 	}
 
@@ -69,7 +79,7 @@ window.addEventListener("scroll", () => {
 		if (clientHeight + scrollTop >= scrollHeight - 10 ) { 
 			loadingDots.classList.remove("hide");
 			init_gallery
-				.get_images(10)
+				.get_images(15)
 				// .catch((err) => alert("OOPS! Please Try Again Later"));
 		}
 	} else {
