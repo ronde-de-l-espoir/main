@@ -81,6 +81,22 @@ window.addEventListener("scroll", () => {
 			init_gallery
 				.get_images(15)
 				// .catch((err) => alert("OOPS! Please Try Again Later"));
+			var timeoutId = null
+			const img_elements = document.querySelectorAll(".img-block")
+			img_elements.forEach(img_block => {
+				img_block.addEventListener('mouseenter',function() {
+					console.log("yes")
+					timeoutId = window.setTimeout(function() {
+						legende = img_block.querySelector(".legende")
+						legende.classList.remove("hidden")
+					}, 1000);
+				});
+				img_block.addEventListener('mouseleave',function() {
+					window.clearTimeout(timeoutId)
+					legende = img_block.querySelector(".legende")
+					legende.classList.add("hidden")
+				})
+			} );
 		}
 	} else {
 		loadingDots.classList.add("hide");

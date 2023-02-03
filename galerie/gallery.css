@@ -2,6 +2,11 @@ main {
     background: #dedede;
 }
 
+.hidden {
+    visibility: hidden;
+    transition:visibility 0.3s linear;
+}
+
 .gallery-box {
     width: 80vw;
     margin-left: auto;
