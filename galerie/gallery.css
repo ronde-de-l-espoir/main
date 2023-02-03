@@ -23,6 +23,7 @@ main {
 }
 
 .img-block {
+    width: -moz-fit-content;
     width: fit-content;
     height: auto;
     margin-bottom: 1rem;
@@ -35,9 +36,11 @@ main {
 }
 
 .img-block img {
-    width: 100%;
+    width: auto;
+    max-width: 100%;
+    height: auto;
 }
-
+/* 
 .img-block .legende {
     position: relative;
     bottom: 0;
@@ -48,6 +51,19 @@ main {
     min-height: 100%;
     background: rgb(255,255,255);
     background: linear-gradient(0deg, rgba(255,255,255,0.927608543417367) 0%, rgba(255,255,255,0.3309698879551821) 76%);
+} */
+
+.img-block .legende {
+    position: relative;
+    background-color: white;
+    /* z-index: 10; */
+    left: calc(-100% - 20px);
+    width: 200px;
+}
+
+.img-block .legende p {
+    position: absolute;
+    width: 100%;
 }
 
 

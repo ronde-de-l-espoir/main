@@ -8,7 +8,7 @@ times = 0
 nonewimages = false
 
 for (let img_n = 0; img_n < totalimages; img_n++) {
-	var path = `./gallery-photos/photo (${img_n}).jpg`;
+	var path = `./img/2010_Debrecen/photo (${img_n}).jpg`;
 	images.push(path); // save all photos paths in the images list
 }
 
@@ -24,7 +24,7 @@ class photoGallery {
 			<div class="img-block">
 				<img src="${img}" alt="">
 				<div class="legende hidden">
-					<p>hello</p>
+					<p>hello there</p>
 				</div>
 			</div>
 			\n
