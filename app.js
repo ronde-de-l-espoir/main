@@ -20,7 +20,6 @@ function openSideNav() {
     for (let i = 0; i < everything.length; i++) {
         if (!(everything[i].hasAttribute('data-hidden'))) {
             everything[i].classList.add('hidden');
-            console.log(everything[i]);
         }
     }
 
@@ -47,7 +46,6 @@ function closeSideNav() {
     for (let i = 0; i < everything.length; i++) {
         if (!(everything[i].hasAttribute('data-hidden'))) {
             everything[i].classList.remove('hidden');
-            console.log(everything[i]);
         }
     }
     const body = document.querySelector("body");
