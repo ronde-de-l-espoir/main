@@ -17,16 +17,11 @@ const triggerStatus = trigger.getAttribute('data-isOpen');
 
 function openSideNav() {
     const everything = document.getElementsByTagName("*");
-    
     for (let i = 0; i < everything.length; i++) {
-        if (everything[i].hasAttribute('data-hidden')) {
+        if (!(everything[i].hasAttribute('data-hidden'))) {
             everything[i].classList.add('hidden');
             console.log(everything[i]);
         }
-        // if (everything[i].getAttribute('id') == "side-nav") {
-
-
-        // }
     }
 
     // console.log(everything);
@@ -48,6 +43,13 @@ function openSideNav() {
 };
 
 function closeSideNav() {
+    const everything = document.getElementsByTagName("*");
+    for (let i = 0; i < everything.length; i++) {
+        if (!(everything[i].hasAttribute('data-hidden'))) {
+            everything[i].classList.remove('hidden');
+            console.log(everything[i]);
+        }
+    }
     const body = document.querySelector("body");
     body.style.overflow = "auto";
     trigger.setAttribute('data-isOpen', 'false');

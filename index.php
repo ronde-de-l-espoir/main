@@ -1,15 +1,15 @@
 <?php
-    if($_SERVER["HTTPS"] != "on") {
-        header("Location: https://" . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]);
-        exit();
-    }
+    // if($_SERVER["HTTPS"] != "on") {
+    //     header("Location: https://" . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]);
+    //     exit();
+    // }
 
-    include "./get_total.php";
+    // include "./get_total.php";
 ?>
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-hidden>
 <head>
     <title>La Ronde de l'Espoir (WIP)</title>
     <meta charset="UTF-8">
@@ -45,21 +45,21 @@
             </div>
         </nav>
         <div class="reduced-menu">
-            <div class="trigger-wrapper" onclick="triggerSideMenu()">
-                <div id="menu-trigger" data-isOpen='false'></div>
+            <div class="trigger-wrapper" onclick="triggerSideMenu()" data-hidden>
+                <div id="menu-trigger" data-isOpen='false' data-hidden></div>
             </div>
-            <img class="nav-logo" src="./img/LRDE-logo.png">
+            <img class="nav-logo" src="./img/LRDE-logo.png" data-hidden>
         </div>
 
         <div id="side-nav" data-hidden>
-            <div class="side-nav-wrapper">
-                <div class="separation"></div>
-                <a href="#" data-isFocus="true">Accueil</a>
-                <div class="separation"></div>
-                <a href="./infos/" data-isFocus="false">Infos</a>
-                <div class="separation"></div>
-                <a href="./galerie/" data-isFocus="false">Galerie</a>
-                <div class="separation"></div>
+            <div class="side-nav-wrapper" data-hidden>
+                <div class="separation" data-hidden></div>
+                <a href="#" data-isFocus="true" data-hidden>Accueil</a>
+                <div class="separation" data-hidden></div>
+                <a href="./infos/" data-isFocus="false" data-hidden>Infos</a>
+                <div class="separation" data-hidden></div>
+                <a href="./galerie/" data-isFocus="false" data-hidden>Galerie</a>
+                <div class="separation" data-hidden></div>
             </div>
 
             <a href="./donation/" id="side-nav-donation" class="btn-grad">Faites un don!</a>
