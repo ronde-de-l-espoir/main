@@ -9,7 +9,7 @@ nonewimages = false
 var strDelimiter = ","
 
 var rawFile = new XMLHttpRequest();
-rawFile.open("GET", '../testing.csv', false);
+rawFile.open("GET", './captions.csv', false);
 rawFile.onreadystatechange = function (){
 	if(rawFile.readyState === 4)
 	{
@@ -86,13 +86,14 @@ class photoGallery {
 		let divs = "";
 		
 		img_data.forEach((img) => {
+			var caption = arrData.find(e => e[0] === img)[1]
 			var html = `
 			<div class="img-block">
 				<div class="sub-img-block">
-					<img src="${img}" alt="">
+					<img src="${img}" alt="${caption}">
 				</div>
 				<div class="legende hidden">
-					<p>hello there how are you doing i am happy to see you</p>
+					<p>${caption}</p>
 				</div>
 			</div>
 			\n
