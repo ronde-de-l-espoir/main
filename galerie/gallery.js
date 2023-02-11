@@ -6,6 +6,53 @@ already_seen = [];
 var totalimages = 100;
 times = 0
 nonewimages = false
+var strDelimiter = ","
+
+var rawFile = new XMLHttpRequest();
+rawFile.open("GET", '../testing.csv', false);
+rawFile.onreadystatechange = function (){
+	if(rawFile.readyState === 4)
+	{
+		if(rawFile.status === 200 || rawFile.status == 0)
+		{
+			globalThis.strData = rawFile.responseText;
+			strDelimiter = (strDelimiter || ",");
+			var objPattern = new RegExp(
+				(
+					"(\\" + strDelimiter + "|\\r?\\n|\\r|^)" +
+
+					"(?:\"([^\"]*(?:\"\"[^\"]*)*)\"|" +
+
+					"([^\"\\" + strDelimiter + "\\r\\n]*))"
+				),
+				"gi"
+			);
+			globalThis.arrData = [[]];
+			var arrMatches = null;
+			while (arrMatches = objPattern.exec(strData)) {
+				var strMatchedDelimiter = arrMatches[1];
+				if (
+					strMatchedDelimiter.length &&
+					strMatchedDelimiter !== strDelimiter
+				) {
+					arrData.push([]);
+				}
+				var strMatchedValue;
+				if (arrMatches[2]) {
+					strMatchedValue = arrMatches[2].replace(
+						new RegExp("\"\"", "g"),
+						"\""
+					);
+				} else {
+					strMatchedValue = arrMatches[3];
+				}
+				arrData[arrData.length - 1].push(strMatchedValue);
+			}
+			return (arrData);
+		}
+	}
+}
+rawFile.send(null);
 
 for (let img_n = 0; img_n < totalimages; img_n++) {
 	var path = `./gallery-photos/photo (${img_n}).jpg`;
