@@ -51,60 +51,6 @@ main {
 }
 
 
-/* .img-block {
-    width: -moz-fit-content;
-    width: fit-content;
-    height: auto;
-    margin-bottom: 1rem;
-    border-radius: 1%;
-    transition: 0.5s ease-in-out;
-    animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-    display: flex;
-    flex: 1;
-    z-index: 1;
-}
-
-.sub-img-block {
-    width: fit-content;
-    display: flex;
-    flex: 1;
-}
-
-.sub-img-block img {
-    width: auto;
-    max-width: 100%;
-    height: auto;
-} */
-/* 
-.img-block .legende {
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    z-index: 10;
-    left: -100%;
-    top: -100%;
-    min-height: 100%;
-    background: rgb(255,255,255);
-    background: linear-gradient(0deg, rgba(255,255,255,0.927608543417367) 0%, rgba(255,255,255,0.3309698879551821) 76%);
-} */
-
-/* .img-block .legende {
-    position: relative;
-    background-color: white;
-    z-index: 10; */
-    /* left: calc(-100% - 20px);
-    width: 1000px;
-}
-
-.img-block .legende p {
-    position: relative;
-    width: 100%;
-} */
-
-
-
-
-
 /* LOADING DOTS CSS */
 
 @-webkit-keyframes fade-in {
