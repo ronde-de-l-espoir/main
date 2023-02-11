@@ -12,6 +12,25 @@ for (let img_n = 0; img_n < totalimages; img_n++) {
 	images.push(path); // save all photos paths in the images list
 }
 
+function checkForCursor() {
+	var timeoutId = null
+	const img_elements = document.querySelectorAll(".img-block")
+	img_elements.forEach(img_block => {
+		img_block.addEventListener('mouseenter',function() {
+			console.log("yes")
+			timeoutId = window.setTimeout(function() {
+				legende = img_block.querySelector(".legende")
+				legende.classList.remove("hidden")
+			}, 1000);
+		});
+		img_block.addEventListener('mouseleave',function() {
+			window.clearTimeout(timeoutId)
+			legende = img_block.querySelector(".legende")
+			legende.classList.add("hidden")
+		})
+	} );
+}
+
 class photoGallery {
 	divimages = document.querySelector(".images");
 
@@ -26,7 +45,7 @@ class photoGallery {
 					<img src="${img}" alt="">
 				</div>
 				<div class="legende hidden">
-					<p>hello there</p>
+					<p>hello there how are you doing i am happy to see you</p>
 				</div>
 			</div>
 			\n
@@ -58,6 +77,7 @@ class photoGallery {
 		return nonewimages;
 	}
 }
+			
 
 //Loading handlers
 const loader = document.querySelector(".loader");
@@ -68,10 +88,11 @@ const init_gallery = new photoGallery();
 window.onload = () => {
 	init_gallery
 		.get_images(10)
-		.catch((err) => {
-			alert("OOPS! Try Again Later");
-			console.log(err);
-		});
+		// .catch((err) => {
+		// 	alert("OOPS! Try Again Later");
+		// 	console.log(err);
+		// });
+	checkForCursor()
 };
 
 //show Loading dots and fetch images on scroll
@@ -83,22 +104,8 @@ window.addEventListener("scroll", () => {
 			init_gallery
 				.get_images(15)
 				// .catch((err) => alert("OOPS! Please Try Again Later"));
-			var timeoutId = null
-			const img_elements = document.querySelectorAll(".img-block")
-			img_elements.forEach(img_block => {
-				img_block.addEventListener('mouseenter',function() {
-					console.log("yes")
-					timeoutId = window.setTimeout(function() {
-						legende = img_block.querySelector(".legende")
-						legende.classList.remove("hidden")
-					}, 1000);
-				});
-				img_block.addEventListener('mouseleave',function() {
-					window.clearTimeout(timeoutId)
-					legende = img_block.querySelector(".legende")
-					legende.classList.add("hidden")
-				})
-			} );
+			checkForCursor()
+			
 		}
 	} else {
 		loadingDots.classList.add("hide");
