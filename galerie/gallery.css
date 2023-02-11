@@ -17,7 +17,7 @@ main {
     padding: 5mm;
 }
 
-.gallery-box div {
+.gallery-box .images {
     columns: 4;
     column-gap: 20px;
 }
@@ -25,20 +25,28 @@ main {
 .img-block {
     width: 100%;
     height: auto;
+    position: relative;
+    margin-bottom: 1rem;
 }
 
 .sub-img-block {
-    width: -moz-fit-content;
     width: 100%;
     height: auto;
-    display: flex;
-    flex: 1;
     z-index: 1;
 }
 
 .sub-img-block img {
     width: 100%;
     height: auto;
+}
+
+.legende {
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,0.927608543417367) 0%, rgba(255,255,255,0.3309698879551821) 76%);
+    height: 50%;
 }
 
 
