@@ -43,11 +43,10 @@ main {
 
 .legende {
     position: absolute;
-    bottom: 0;
+    bottom: 4px;
     z-index: 2;
-    background: rgb(255,255,255);
-    background: linear-gradient(0deg, rgba(255,255,255,0.927608543417367) 0%, rgba(255,255,255,0.3309698879551821) 76%);
-    height: 50%;
+    background: rgba(255,255,255,0.75);
+    /* background: linear-gradient(0deg, rgba(255,255,255,0.927608543417367) 0%, rgba(255, 255, 255, 0.781) 76%); */
 }
 
 
