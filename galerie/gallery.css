@@ -147,7 +147,7 @@ main {
 }
 
 @media only screen and (max-width: 900px) {
-    .gallery-box div {
+    .gallery-box .images{
         columns: 3;
     }
 }
@@ -158,13 +158,13 @@ main {
         margin-right: auto;
         width: 90vw;
     }
-    .gallery-box div {
+    .gallery-box .images{
         columns: 2;
     }
 }
 
 @media only screen and (max-width: 400px) {
-    .gallery-box div {
+    .gallery-box .images{
         columns: 1;
     }
 }
