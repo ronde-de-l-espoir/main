@@ -38,6 +38,7 @@ main {
 .sub-img-block img {
     width: 100%;
     height: auto;
+    border-radius: 1%;
 }
 
 .legende {
