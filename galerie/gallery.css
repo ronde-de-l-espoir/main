@@ -2,11 +2,6 @@ main {
     background: #dedede;
 }
 
-.hidden {
-    visibility: hidden;
-    transition:visibility 0.3s linear;
-}
-
 .gallery-box {
     width: 80vw;
     margin-left: auto;
@@ -48,8 +43,25 @@ main {
     z-index: 2;
     background: rgba(255,255,255,0.75);
     /* background: linear-gradient(0deg, rgba(255,255,255,0.927608543417367) 0%, rgba(255, 255, 255, 0.781) 76%); */
+    max-height: 100%;
+    transition: max-height 1s;
 }
 
+.hidden {
+    max-height: 0;
+    transition: max-height 1s cubic-bezier(0, -1.15, 0.85, 1.89);
+    animation: color-change 5s ease-in-out;
+    overflow: hidden;
+}
+
+@keyframes color-change {
+    0% {
+        color: rgba(0,0,0,0);
+    }
+    100% {
+        color: black
+    }
+}
 
 /* LOADING DOTS CSS */
 
