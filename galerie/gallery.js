@@ -6,7 +6,7 @@ already_seen = [];
 var totalimages = 100;
 times = 0
 nonewimages = false
-var strDelimiter = ","
+var strDelimiter = "|"
 
 var rawFile = new XMLHttpRequest();
 rawFile.open("GET", './captions.csv', false);
