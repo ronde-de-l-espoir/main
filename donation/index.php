@@ -19,7 +19,7 @@
     <link rel="shortcut icon" href="img/LRDE-logo.png" type="image/x-icon">
     <link rel="stylesheet" href="../common.css">
     <link rel="stylesheet" href="./donation-style.css">
-
+    <script src="../app.js"></script>
 </head>
 <body>
 
