@@ -494,7 +494,10 @@ footer {
     cursor: pointer;
 }
 
-@media (width < 550px) {
+@media (width < 830px) {
+    .footer-img {
+        width: 275px !important;
+    }
     .footer-main-line {
         flex-wrap: wrap;
     }
@@ -508,9 +511,10 @@ footer {
     #social-bar {
         flex-wrap: wrap;
         flex-direction: column;
+        width: 250px;
     }
     #social-bar img {
-        width: 20vw;
+        width: 114px;
     }
 }
 .copyright {
