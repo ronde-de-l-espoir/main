@@ -25,3 +25,15 @@ main {
     width: 70vw;
     margin: auto;
 }
+
+.darna {
+    transition: 0.70s;
+    height: 1px;
+    width: 1px;
+    object-position: right top;
+  }
+  
+.darna:hover {
+    transition: 0.70s;
+    transform: rotate(1440deg);
+  } 
