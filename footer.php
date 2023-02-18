@@ -9,7 +9,7 @@
 <div class="footer-wrapper">
     <div class="footer-main-line">
         <div class="flex-item">
-            <img src="<?php echo $prefix . "img/logo2-small-resized.png" ?>" class="footer-img" onclick="window.location='https://ronde-de-l-espoir.fr'">
+            <img src="<?php echo $prefix . "img/lrde_white_border.png" ?>" class="footer-img" onclick="window.location='https://ronde-de-l-espoir.fr'">
             <div class="footer-border right"></div>
         </div>
         <div class="flex-item">

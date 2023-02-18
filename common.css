@@ -357,7 +357,7 @@ main {
     background: url(img/bg.png) no-repeat center center fixed;
     /* background-size: cover; */
     background-size: 80%;
-    min-height: 80vh;
+    min-height: 750px;
     padding-bottom: 50px;
 }
 
@@ -481,7 +481,7 @@ footer {
 .footer-content ul li a:hover {
     font-size: 107%;
     transform: scale(1.07);
-    color: #12D8FA;
+    color: var(--LM-color);
 }
 
 
