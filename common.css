@@ -357,7 +357,8 @@ main {
     background: url(img/bg.png) no-repeat center center fixed;
     /* background-size: cover; */
     background-size: 80%;
-    min-height: 80vh;
+    min-height: 500px;
+    height: fit-content;
     padding-bottom: 50px;
 }
 
@@ -368,16 +369,16 @@ main {
     main {
         background: url(img/round-bg.png) no-repeat center center fixed;
         background-size: 100%;
+        min-height: 300px;
+        height: fit-content;
     }
 }
-
 
 
 
 /* Footer's CSS */
 
 footer {
-    
     background-color: #222222;
     /* width: 100%; */
     height: fit-content;
@@ -481,7 +482,7 @@ footer {
 .footer-content ul li a:hover {
     font-size: 107%;
     transform: scale(1.07);
-    color: #12D8FA;
+    color: var(--LM-color);
 }
 
 
@@ -494,7 +495,10 @@ footer {
     cursor: pointer;
 }
 
-@media (width < 550px) {
+@media (width < 830px) {
+    .footer-img {
+        width: 275px !important;
+    }
     .footer-main-line {
         flex-wrap: wrap;
     }
@@ -508,9 +512,10 @@ footer {
     #social-bar {
         flex-wrap: wrap;
         flex-direction: column;
+        width: 250px;
     }
     #social-bar img {
-        width: 20vw;
+        width: 114px;
     }
 }
 .copyright {
