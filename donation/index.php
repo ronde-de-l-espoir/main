@@ -77,7 +77,7 @@
                         <p>En se rendant sur notre plateforme de don en ligne : </p>
                         <!-- <div style="visibility: hidden; height: 5mm"></div> -->
                         <div id="paiement-redirect">
-                            <button type="button" id="paiement-redirect-btn" onclick="location.href='https://paiement.ronde-de-l-espoir.fr/?token=<?php echo $token = bin2hex(random_bytes(4)); ?>'">Je donne en ligne !</button>
+                            <button type="button" id="paiement-redirect-btn" onclick="location.href='https://paiement.ronde-de-l-espoir.fr/choosing/'">Je donne en ligne !</button>
                         </div>
                         <!-- <div style="visibility: hidden; height: 15mm"></div> -->
                     </li>
