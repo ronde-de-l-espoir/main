@@ -1,18 +1,3 @@
-.principal {
-    padding-top: 20vh;
-    width: 70vw;
-    height: 100%;
-    margin: auto;
-}
-
-.principal-wrapper {
-    width: 100%;
-    height: 300px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-}
-
 .darna {
     transition: 0.70s;
     height: 1px;
@@ -25,9 +10,39 @@
     transform: rotate(1440deg);
   } 
   
-  .content {
-    width: 183px;
-    height: 276px;
-    border: 1px solid red;
-
-}
+  .principal {
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 50px;
+  }
+  
+  .article {
+    width: 30%;
+    margin-bottom: 20px;
+  }
+  
+  .article img {
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  .article-content {
+    display: none;
+    background-color: #f2f2f2;
+    padding: 10px;
+    opacity: 0;
+    transition: height 0.5s ease-out, opacity 0.5s ease-out;
+	  height: 0;
+	  overflow: hidden;
+  }
+  
+  .article-content.show {
+    display: block;
+    opacity: 1;
+    height: auto;
+    transition: height 0.5s ease-in, opacity 0.5s ease-in;
+  }
+  

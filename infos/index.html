@@ -64,19 +64,38 @@
 
     <main>
         <div class="principal">
-            <div class="principal-wrapper">
-                    <div class="content">
-                        <img src="../img/darna2.jpeg">
-                    </div>
-                    <div class="content">
-                        <img src="../img/darna2.jpeg">
-                     </div>
-                    <div class="content">
-                        <img src="../img/darna2.jpeg">
-                    </div>
+
+            <div class="article">
+                <img src="../img/darna2.jpeg" alt="Article 1" onclick="toggleArticle(this);">
+                <div class="article-content">
+                    <h2>Titre de l'article 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum luctus ante vel nunc aliquam faucibus. Praesent auctor, ipsum a eleifend hendrerit, arcu odio dignissim velit, non varius justo elit non lorem.</p>
+                </div>
             </div>
+    
+            <div class="article">
+                <img src="../img/darna2.jpeg" alt="Article 1" onclick="toggleArticle(this);">
+                <div class="article-content">
+                    <h2>Titre de l'article 2</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum luctus ante vel nunc aliquam faucibus. Praesent auctor, ipsum a eleifend hendrerit, arcu odio dignissim velit, non varius justo elit non lorem.</p>
+                </div>
+            </div>
+    
+            <div class="article">
+                <img src="../img/darna2.jpeg" alt="Article 1" onclick="toggleArticle(this);">
+                <div class="article-content">
+                    <h2>Titre de l'article 3</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum luctus ante vel nunc aliquam faucibus. Praesent auctor, ipsum a eleifend hendrerit, arcu odio dignissim velit, non varius justo elit non lorem.</p>
+                </div>
+            </div>
+    
         </div>
-    </main>
+    
+        <script>
+            function toggleArticle(img) {
+                img.nextElementSibling.classList.toggle("show");
+            }
+        </script>
 
     <footer>
         <!-- <?php 
