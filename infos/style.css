@@ -1,29 +1,16 @@
-.content {
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    backdrop-filter: blur(5px);
-    width: 100%;
-    -webkit-backdrop-filter: blur(5px);
-    background-color: rgba(33, 120, 163, 0.174);
-    border: var(--soft-white) 2px solid;
-    z-index: 0;
-    position: center;
-    text-align: center;
-    font-size: 120%;
-    padding: 35px;
-    padding-top: 50px;
-}
-
-main {
-    padding-top: 15vh;
-}
-
-.main-wrapper {
+.principal {
+    padding-top: 20vh;
     width: 70vw;
+    height: 100%;
     margin: auto;
+}
+
+.principal-wrapper {
+    width: 100%;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
 }
 
 .darna {
@@ -37,3 +24,10 @@ main {
     transition: 0.70s;
     transform: rotate(1440deg);
   } 
+  
+  .content {
+    width: 183px;
+    height: 276px;
+    border: 1px solid red;
+
+}
