@@ -27,22 +27,17 @@
   .article img {
     width: 100%;
     cursor: pointer;
+    border-radius: 5%;
   }
   
   .article-content {
     display: none;
     background-color: #f2f2f2;
     padding: 10px;
-    opacity: 0;
-    transition: height 0.5s ease-out, opacity 0.5s ease-out;
-	  height: 0;
-	  overflow: hidden;
+    border-radius: 5%;
   }
   
   .article-content.show {
     display: block;
-    opacity: 1;
-    height: auto;
-    transition: height 0.5s ease-in, opacity 0.5s ease-in;
   }
   
