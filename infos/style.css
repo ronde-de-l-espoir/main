@@ -25,12 +25,16 @@
   }
   
 .images-container img {
-    width: 33.33%;
+    width: auto;
     height: auto;
     cursor: pointer;
     border-radius: 30px;
     padding: 20px;
   }
+
+.images-container p {
+  display: none;
+}
   
 .text-container {
     width: 100%;
@@ -47,3 +51,4 @@
 .article  {
   display: none;
 }
+
