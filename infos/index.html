@@ -68,10 +68,19 @@
     <main>
         <div class="principal">
 
-            <div class="images-container">              
-                <img src="../img/darna2.jpeg" alt="Image 1" data-text="1 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque dolore ea quos laboriosam odit tempora ullam facere numquam alias inventore nostrum, soluta possimus explicabo magnam corrupti repudiandae quibusdam pariatur aliquam.">
-                <img src="../img/darna2.jpeg" alt="Image 2" data-text="2 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque dolore ea quos laboriosam odit tempora ullam facere numquam alias inventore nostrum, soluta possimus explicabo magnam corrupti repudiandae quibusdam pariatur aliquam.">
-                <img src="../img/darna2.jpeg" alt="Image 3" data-text="3 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque dolore ea quos laboriosam odit tempora ullam facere numquam alias inventore nostrum, soluta possimus explicabo magnam corrupti repudiandae quibusdam pariatur aliquam.">
+            <div class="images-container">
+                <div class="article1">         
+                    <img src="../img/darna2.jpeg" alt="Image 1">
+                    <p id="text1">Test 1</p>
+                </div>
+                <div class="article2">
+                    <img src="../img/darna2.jpeg" alt="Image 2">
+                    <p id="text2">Test 2</p>
+                </div>
+                <div class="article3">
+                    <img src="../img/darna2.jpeg" alt="Image 3">
+                    <p id="text3">Test 3</p>
+                </div>
             </div>
 
             <div class="text-container" id="text-container">
@@ -82,14 +91,46 @@
         </div>
 
         <script>
-            const images = document.querySelectorAll(".images-container img");
+            const image1 = document.querySelectorAll(".article1 img");
             const textContainer = document.getElementById("text-container");
             const imageText = document.getElementById("image-text");
             let currentImage;
 
-            images.forEach(image => {
+            image1.forEach(image => {
                 image.addEventListener("click", () => {
-                    const text = image.getAttribute("data-text");
+                    const text = document.getElementById("text1").innerHTML;
+                    if (image === currentImage) {
+                        textContainer.style.display = "none";
+                        currentImage = null;
+                    } else {
+                        imageText.textContent = text;
+                        textContainer.style.display = "block";
+                        currentImage = image;
+                    }
+                });
+            });
+
+            const image2 = document.querySelectorAll(".article2 img");
+
+            image2.forEach(image => {
+                image.addEventListener("click", () => {
+                    const text = document.getElementById("text2").innerHTML;
+                    if (image === currentImage) {
+                        textContainer.style.display = "none";
+                        currentImage = null;
+                    } else {
+                        imageText.textContent = text;
+                        textContainer.style.display = "block";
+                        currentImage = image;
+                    }
+                });
+            });
+
+            const image3 = document.querySelectorAll(".article3 img");
+
+            image3.forEach(image => {
+                image.addEventListener("click", () => {
+                    const text = document.getElementById("text3").innerHTML;
                     if (image === currentImage) {
                         textContainer.style.display = "none";
                         currentImage = null;
