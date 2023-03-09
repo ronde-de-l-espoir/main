@@ -65,36 +65,39 @@
     <main>
         <div class="principal">
 
-            <div class="article">
-                <img src="../img/darna2.jpeg" alt="Article 1" onclick="toggleArticle(this);">
-                <div class="article-content">
-                    <h2>Titre de l'article 1</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum luctus ante vel nunc aliquam faucibus. Praesent auctor, ipsum a eleifend hendrerit, arcu odio dignissim velit, non varius justo elit non lorem.</p>
-                </div>
+            <div class="images-container">
+                <img src="../img/darna2.jpeg" alt="Image 1" data-text="1 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque dolore ea quos laboriosam odit tempora ullam facere numquam alias inventore nostrum, soluta possimus explicabo magnam corrupti repudiandae quibusdam pariatur aliquam.">
+                <img src="../img/darna2.jpeg" alt="Image 2" data-text="2 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque dolore ea quos laboriosam odit tempora ullam facere numquam alias inventore nostrum, soluta possimus explicabo magnam corrupti repudiandae quibusdam pariatur aliquam.">
+                <img src="../img/darna2.jpeg" alt="Image 3" data-text="3 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque dolore ea quos laboriosam odit tempora ullam facere numquam alias inventore nostrum, soluta possimus explicabo magnam corrupti repudiandae quibusdam pariatur aliquam.">
+              </div>
+              
+              <div class="text-container" id="text-container">
+                <p id="image-text"></p>
+              </div>
+              
             </div>
-    
-            <div class="article">
-                <img src="../img/darna2.jpeg" alt="Article 1" onclick="toggleArticle(this);">
-                <div class="article-content">
-                    <h2>Titre de l'article 2</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum luctus ante vel nunc aliquam faucibus. Praesent auctor, ipsum a eleifend hendrerit, arcu odio dignissim velit, non varius justo elit non lorem.</p>
-                </div>
-            </div>
-    
-            <div class="article">
-                <img src="../img/darna2.jpeg" alt="Article 1" onclick="toggleArticle(this);">
-                <div class="article-content">
-                    <h2>Titre de l'article 3</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum luctus ante vel nunc aliquam faucibus. Praesent auctor, ipsum a eleifend hendrerit, arcu odio dignissim velit, non varius justo elit non lorem.</p>
-                </div>
-            </div>
-    
         </div>
     
         <script>
-            function toggleArticle(img) {
-                img.nextElementSibling.classList.toggle("show");
-            }
+            const images = document.querySelectorAll(".images-container img");
+const textContainer = document.getElementById("text-container");
+const imageText = document.getElementById("image-text");
+let currentImage;
+
+images.forEach(image => {
+  image.addEventListener("click", () => {
+    const text = image.getAttribute("data-text");
+    if (image === currentImage) {
+      textContainer.style.display = "none";
+      currentImage = null;
+    } else {
+      imageText.textContent = text;
+      textContainer.style.display = "block";
+      currentImage = image;
+    }
+  });
+});
+
         </script>
     </main>
 
@@ -109,3 +112,4 @@
 
 
 <!-- Verification sync  -->
+
