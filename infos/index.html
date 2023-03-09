@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Informations - Ronde de l'Espoir</title>
     <meta charset="UTF-8">
@@ -14,6 +15,7 @@
     <link rel="stylesheet" href="./style.css">
     <script src="../app.js" defer></script>
 </head>
+
 <body>
 
     <header>
@@ -24,9 +26,10 @@
 
         <nav>
             <div class="nav-wrapper">
-    
-                <img src="../img/clean_logo_littoral.png" alt="Logo La Merci Littoral" onclick="javascript:window.location='https://lamerci.com/littoral/accueil';">
-    
+
+                <img src="../img/clean_logo_littoral.png" alt="Logo La Merci Littoral"
+                    onclick="javascript:window.location='https://lamerci.com/littoral/accueil';">
+
                 <div class="link-wrapper">
                     <a href="../" class="underline-anim" data-isFocus="false">Accueil</a>
                     <a href="#" class="underline-anim" data-isFocus="true">Infos</a>
@@ -53,50 +56,50 @@
                 <div class="separation"></div>
             </div>
 
-            
-            
+
+
             <a href="../donation/" id="side-nav-donation" class="btn-grad">Faites un don!</a>
-            
+
         </div>
-        
+
     </header>
-    
+
 
     <main>
         <div class="principal">
 
-            <div class="images-container">
+            <div class="images-container">              
                 <img src="../img/darna2.jpeg" alt="Image 1" data-text="1 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque dolore ea quos laboriosam odit tempora ullam facere numquam alias inventore nostrum, soluta possimus explicabo magnam corrupti repudiandae quibusdam pariatur aliquam.">
                 <img src="../img/darna2.jpeg" alt="Image 2" data-text="2 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque dolore ea quos laboriosam odit tempora ullam facere numquam alias inventore nostrum, soluta possimus explicabo magnam corrupti repudiandae quibusdam pariatur aliquam.">
                 <img src="../img/darna2.jpeg" alt="Image 3" data-text="3 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque dolore ea quos laboriosam odit tempora ullam facere numquam alias inventore nostrum, soluta possimus explicabo magnam corrupti repudiandae quibusdam pariatur aliquam.">
-              </div>
-              
-              <div class="text-container" id="text-container">
-                <p id="image-text"></p>
-              </div>
-              
             </div>
+
+            <div class="text-container" id="text-container">
+                <p id="image-text"></p>
+            </div>
+
         </div>
-    
+        </div>
+
         <script>
             const images = document.querySelectorAll(".images-container img");
-const textContainer = document.getElementById("text-container");
-const imageText = document.getElementById("image-text");
-let currentImage;
+            const textContainer = document.getElementById("text-container");
+            const imageText = document.getElementById("image-text");
+            let currentImage;
 
-images.forEach(image => {
-  image.addEventListener("click", () => {
-    const text = image.getAttribute("data-text");
-    if (image === currentImage) {
-      textContainer.style.display = "none";
-      currentImage = null;
-    } else {
-      imageText.textContent = text;
-      textContainer.style.display = "block";
-      currentImage = image;
-    }
-  });
-});
+            images.forEach(image => {
+                image.addEventListener("click", () => {
+                    const text = image.getAttribute("data-text");
+                    if (image === currentImage) {
+                        textContainer.style.display = "none";
+                        currentImage = null;
+                    } else {
+                        imageText.textContent = text;
+                        textContainer.style.display = "block";
+                        currentImage = image;
+                    }
+                });
+            });
 
         </script>
     </main>
@@ -107,9 +110,9 @@ images.forEach(image => {
             include('../footer.php'); 
         ?> -->
     </footer>
-</body> 
+</body>
+
 </html>
 
 <!--porg!-->
 <!-- Verification sync  -->
-

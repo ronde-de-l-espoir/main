@@ -21,8 +21,7 @@
   
 .images-container {
     display: flex;
-    margin-right: auto;
-    margin-left: auto;
+    margin: auto;
   }
   
 .images-container img {
@@ -45,3 +44,6 @@
     font-size: 75px;
   }
   
+.article  {
+  display: none;
+}
