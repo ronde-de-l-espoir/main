@@ -34,6 +34,7 @@
 
 .images-container p {
   display: none;
+  font-size: small;
 }
   
 .text-container {
@@ -45,10 +46,13 @@
   
 .text-container p {
     text-align: center;
-    font-size: 75px;
+    font-size: 15px;
   }
   
 .article  {
   display: none;
 }
 
+.article2 img{
+  height: 275px;
+}
