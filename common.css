@@ -186,7 +186,7 @@ header .reduced-menu .nav-logo {
 }
 
 
-@media (width < 900px) {
+@media (max-width: 900px) {
     header nav .nav-wrapper {
         justify-content: space-around;
     }
@@ -200,7 +200,7 @@ header .reduced-menu .nav-logo {
     }
 }
 
-@media (width < 630px), (device-width < 630px) {
+@media (max-width: 630px) {
     header {
         height: 10vh;
     }
@@ -219,7 +219,7 @@ header .reduced-menu .nav-logo {
     }
 }
 
-@media (height < 600px), (device-height < 600px) {
+@media (max-height: 600px) {
     header {
         height: 96px;
     }
@@ -231,7 +231,7 @@ header .reduced-menu .nav-logo {
     }
 }
 
-@media (height < 600px) and (width < 630px), (device-width < 630px) and (device-height < 600px) {
+@media (max-height: 600px) and (max-width: 630px) {
     header {
         height: 60px;
     }
@@ -341,7 +341,7 @@ header .reduced-menu .nav-logo {
     }
 }
 
-@media (height < 600px) {
+@media (max-height: 600px) {
     .side-nav-wrapper {
         margin-top: 60px;
         height: 180px;
@@ -364,7 +364,7 @@ main {
 
 
 
-@media (width < 800px) {
+@media (max-width: 800px) {
     /* When finished, this feature will add a dynamic background in regard with the device's width. */
     main {
         background: url(img/round-bg.png) no-repeat center center fixed;
@@ -495,7 +495,7 @@ footer {
     cursor: pointer;
 }
 
-@media (width < 830px) {
+@media (max-width: 830px) {
     .footer-img {
         width: 275px !important;
     }

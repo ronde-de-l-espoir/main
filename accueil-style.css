@@ -71,14 +71,14 @@
     transition: 300ms ease-in;
 }
 
-@media (width < 700px), (device-width < 700px) {
+@media (max-width: 700px) {
     .peopleInfos {
         font-size: 100%;
         padding: 10px 14px;
     }
 }
 
-@media (width < 350px), (device-width < 350px) {
+@media (max-width: 350px) {
     #slogan {
         margin: 50px 0 35px 0;
     }
