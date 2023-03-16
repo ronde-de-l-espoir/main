@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Galerie - Ronde de l'Espoir</title>
     <meta charset="UTF-8">
@@ -11,8 +12,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800;900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../img/LRDE-logo.png" type="image/x-icon">
     <link rel="stylesheet" href="../common.css">
+    <link rel="stylesheet" href="./gallery.css">
     <script src="../app.js" defer></script>
 </head>
+
 <body>
 
     <header>
@@ -27,7 +30,7 @@
                     <a href="../" class="underline-anim" data-isFocus="false">Accueil</a>
                     <a href="../infos/" class="underline-anim" data-isFocus="false">Infos</a>
                     <a href="#" class="underline-anim" data-isFocus="true">Galerie</a>
-                    <a href="../donation/" id="donate-btn" data-isFocus="false">Faire un don</a>  <!-- C'est plus pratique de rajouter un "./" devant les liens. -->
+                    <a href="../donation/" id="donate-btn" data-isFocus="false">Faire un don</a> <!-- C'est plus pratique de rajouter un "./" devant les liens. -->
                 </div>
             </div>
         </nav>
@@ -49,24 +52,38 @@
                 <div class="separation"></div>
             </div>
 
-            
-            
+
+
             <a href="../donation/" id="side-nav-donation" class="btn-grad">Faites un don!</a>
-            
+
         </div>
-        
+
     </header>
 
     <main>
-        <div class="main-wrapper"></div>
+        <div class="main-wrapper">
+            <div class="gallery-box">
+                <div class="images">
+                    <!-- Here ./gallery.js will inject random photos of the ./gallery-photos -->
+                </div>
+                <div class="loading-dots hide">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <script src="./gallery.js"></script>
+        </div>
     </main>
 
     <footer>
         <?php
-            $currentPage = "galerie";
-            include('../footer.php') 
-        ?> 
+        $currentPage = "galerie";
+        include('../footer.php')
+        ?>
     </footer>
 
 </body>
+
 </html>
