@@ -10,7 +10,7 @@ jobs:
     - name: 🚚 Get latest release
       uses: actions/checkout@v3
       with :
-        ref: ${{ Commit }}
+        ref: ${{ env.GITHUB_SHA }}
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.3
       with:
