@@ -7,7 +7,7 @@ var totalimages = 27;
 times = 0
 nonewimages = false
 
-for (let img_n = 0; img_n < totalimages; img_n++) {
+for (let img_n = 1; img_n < totalimages; img_n++) {
 	var path = `./gallery-photos/photo (${img_n}).jpg`;
 	images.push(path); // save all photos paths in the images list
 }
