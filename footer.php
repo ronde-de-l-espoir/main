@@ -18,7 +18,7 @@
                 <p>Les onglets</p>
                 <br>
                 <ul>
-                    <li><a href="<?php echo $prefix ?>">Acceuil</a></li>
+                    <li><a href="<?php echo $prefix ?>">Accueil</a></li>
                     <li><a href="<?php echo $prefix . "infos" ?>">Infos</a></li>
                     <li><a href="<?php echo $prefix . "galerie" ?>">Galerie</a></li>
                     <li><a href="<?php echo $prefix . "donation" ?>">Faire un don</a></li>
