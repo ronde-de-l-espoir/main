@@ -32,7 +32,7 @@ class photoGallery {
 				while(times < totalimages) {
 //					var random_image = images[Math.floor(Math.random()*images.length)] // selects random image from the images list
 					var image = images[times]
-					if (!(already_seen.includes(random_image))){
+					if (!(already_seen.includes(image))){
 						break infiniteTest; // only allows the photo to be used once
 					}
 					times++;
@@ -40,8 +40,8 @@ class photoGallery {
 				globalThis.nonewimages = true;
 				return nonewimages;
 			}
-			imgData.push(random_image)
-			already_seen.push(random_image)
+			imgData.push(image)
+			already_seen.push(image)
 		}
 		this.add_imgs_to_DOM(imgData);
 		return nonewimages;
