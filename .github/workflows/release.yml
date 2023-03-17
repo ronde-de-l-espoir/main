@@ -2,19 +2,19 @@ on:
   release:
     types: [published]
     name: 🔝 Upload Release
-    jobs:
-      release-latest-tag:
-        name: Release Latest Tag
-        runs-on: ubuntu-latest
-        steps:
-        - name: 🚚 Get latest release
-          uses: actions/checkout@v3
-          with :
-            ref: ${{ GITHUB_SHA }}
-        - name: 📂 Sync files
-          uses: SamKirkland/FTP-Deploy-Action@4.3.3
-          with:
-            server: ronde-de-l-espoir.fr
-            username: ${{ secrets.username }}
-            password: ${{ secrets.password }}
-            server-dir: /ronde-de-l-espoir.fr/main/
+jobs:
+  release-latest-tag:
+    name: Release Latest Tag
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Get latest release
+      uses: actions/checkout@v3
+      with :
+        ref: ${{ GITHUB_SHA }}
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@4.3.3
+      with:
+        server: ronde-de-l-espoir.fr
+        username: ${{ secrets.username }}
+        password: ${{ secrets.password }}
+        server-dir: /ronde-de-l-espoir.fr/main/
