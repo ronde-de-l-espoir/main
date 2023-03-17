@@ -30,7 +30,8 @@ class photoGallery {
 			infiniteTest :
 			while(true) {
 				while(times < totalimages) {
-					var random_image = images[Math.floor(Math.random()*images.length)] // selects random image from the images list
+//					var random_image = images[Math.floor(Math.random()*images.length)] // selects random image from the images list
+					var image = images[times]
 					if (!(already_seen.includes(random_image))){
 						break infiniteTest; // only allows the photo to be used once
 					}
