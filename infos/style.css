@@ -119,6 +119,7 @@
     overflow: hidden;
     max-height: 0;
     transition: 700ms ease-in-out;
+    margin-left: 75px;
   }
   
   .article-title {
@@ -143,4 +144,5 @@
 
 .wrapper{
 padding-top: 50px;
+padding-bottom: 50px;
 }
