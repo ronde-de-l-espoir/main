@@ -3,7 +3,7 @@
 
 var images = [];
 already_seen = [];
-var totalimages = 100;
+var totalimages = 27;
 times = 0
 nonewimages = false
 
