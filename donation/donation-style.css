@@ -35,22 +35,15 @@ main {
     padding-bottom: 20px;
 }
 
-
-#je-fais-un-don {
-    text-align: center;
-    font-size: 150%;
-    font-weight: 400;
+#title {
+    font-size: larger;
+    font-weight: 500;
 }
 
-.indented-paragraph {
-    margin-left: 1cm;
+.grid-item {
+    background-color: white;
 }
 
 
-#paiement-redirect {
-    display: flex;
-    justify-content: space-around;
-    padding: 1cm;
-} 
 
 
