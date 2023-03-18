@@ -44,20 +44,3 @@ main {
 } 
 
 
-
-#paiement-redirect-btn {
-    padding: 8px;
-    background: linear-gradient(125deg, rgba(48,127,180,1) 14%, rgba(82,160,203,1) 38%, rgba(123,201,230,1) 64%, rgba(181,223,237,1) 83%, rgba(181,223,237,1) 100%);
-    border-radius: 10px;
-    color: white;
-    border: none;
-    height: 15mm;
-    width: auto;
-}
-
-#paiement-redirect-btn:hover {
-    /* background-color: darkblue; */
-    background: linear-gradient(235deg, rgba(48,127,180,1) 14%, rgba(82,160,203,1) 38%, rgba(123,201,230,1) 64%, rgba(181,223,237,1) 83%, rgba(181,223,237,1) 100%);
-    color: white;
-    cursor: pointer;
-}
