@@ -22,8 +22,18 @@ main {
     padding-top: 8mm;
     border: black 3px;
     border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 3px;
 }
 
+#title, #line {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
 
 
 #je-fais-un-don {

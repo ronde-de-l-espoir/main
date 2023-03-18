@@ -67,7 +67,14 @@
     <main>
         <div class="main-wrapper">
             <div id="options-presentation">
-                
+                <div class="grid-item" id="title">Vous souhaitez contribuer ? Génial !</div>
+                <div class="grid-item" id="line">Deux options pour cela :</div>
+                <div class="grid-item" id="online">
+                    Passer par notre plateforme de don en ligne 100% sécurisée :
+                </div>
+                <div class="grid-item" id="cheque">
+                    Nous envoyer un chèque à l'adresse suivante :
+                </div>
             </div>
             <div style="visibility: hidden; height: 2cm"></div>
         </div>
