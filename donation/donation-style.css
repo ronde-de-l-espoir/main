@@ -57,25 +57,24 @@ main {
 
 .paiement-redirect-btn {
     appearance: button;
-    background-color: var(--LM-color);
+    background-color: #014575;
     border: solid transparent;
-    border-radius: 16px;
+    border-radius: 7px;
     border-width: 0 0 4px;
     box-sizing: border-box;
     color: #FFFFFF;
     cursor: pointer;
     display: inline-block;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 15px;
-    font-weight: 700;
+    font-weight: 500;
     letter-spacing: .8px;
     line-height: 20px;
     margin: 45px 15%;
     outline: none;
     overflow: visible;
-    padding: 13px 16px;
+    padding: 16px 16px;
     text-align: center;
-    text-transform: uppercase;
     touch-action: manipulation;
     transform: translateZ(0);
     transition: filter .2s;
@@ -84,33 +83,4 @@ main {
     vertical-align: middle;
     white-space: nowrap;
     width: 70%;
-}
-
-.paiement-redirect-btn:after {
-    background-clip: padding-box;
-    background-color: #1CB0F6;
-    border: solid transparent;
-    border-radius: 16px;
-    border-width: 0 0 4px;
-    bottom: -4px;
-    content: "";
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: -1;
-}
-
-.paiement-redirect-btn:main,
-.paiement-redirect-btn:focus {
-    user-select: auto;
-}
-
-.paiement-redirect-btn:hover:not(:disabled) {
-    filter: brightness(1.1);
-    -webkit-filter: brightness(1.1);
-}
-
-.paiement-redirect-btn:disabled {
-    cursor: auto;
 }
