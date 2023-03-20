@@ -12,6 +12,7 @@ body {
 main {
     background-image: url(../img/bg.png);
     min-height: 75vh;
+    margin-top: 10vh;
 }
 
 #options-presentation {
@@ -41,6 +42,11 @@ main {
 #title {
     font-size: larger;
     font-weight: 500;
+}
+
+#line {
+    font-size: large;
+    text-decoration: underline;
 }
 
 .grid-item {
