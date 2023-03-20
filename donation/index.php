@@ -71,7 +71,7 @@
                 <div class="grid-item" id="line">Deux options pour cela :</div>
                 <div class="grid-item" id="online">
                     <p>Passer par notre plateforme de don en ligne 100% sécurisée :</p>
-                    <div class="paiement-redirect-btn" onclick="window.location='https://paiement.ronde-de-l-espoir.fr'">Je fais un don en ligne !</div>
+                    <div class="paiement-redirect-btn" onclick="window.location='https://paiement.ronde-de-l-espoir.fr'">Accéder au portail</div>
                 </div>
                 <div class="grid-item" id="cheque">
                     <p>Nous envoyer un chèque à l'adresse suivante :</p>
