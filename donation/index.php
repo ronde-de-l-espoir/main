@@ -68,7 +68,7 @@
     <main>
         <div class="main-wrapper">
             <div id="options-presentation">
-                <div class="grid-item" id="title">Vous souhaitez contribuer ? Génial !</div>
+                <div class="grid-item" id="title">Vous souhaitez <span class="nowrap">contribuer ?</span> Génial !</div>
                 <div class="grid-item" id="subtitle">Deux options pour cela :</div>
 
                 <div class="grid-item payment-method" id="online">
