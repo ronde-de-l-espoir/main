@@ -103,6 +103,10 @@ main {
     align-items: center;
 }
 
+.nowrap {
+    white-space: nowrap;
+}
+
 #online .paiement-redirect-btn {
     width: max-content;
     font-size: 1.08rem;
