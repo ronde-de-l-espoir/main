@@ -15,4 +15,4 @@ jobs:
         server: ronde-de-l-espoir.fr
         username: ${{ secrets.username }}
         password: ${{ secrets.password }}
-        server-dir: /ronde-de-l-espoir.fr/development/
+        server-dir: /ronde-de-l-espoir.fr/dev/
