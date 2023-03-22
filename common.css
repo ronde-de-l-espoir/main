@@ -1,4 +1,3 @@
-
 :root {
     --soft-white: #E5E9EC;
     --LM-color: #0099D7;
@@ -186,7 +185,8 @@ header .reduced-menu .nav-logo {
 }
 
 
-@media only screen and (max-device-width: 900px) {
+@media only screen and (max-device-width: 900px),
+only screen and (max-width: 900px) {
     header nav .nav-wrapper {
         justify-content: space-around;
     }
@@ -200,7 +200,8 @@ header .reduced-menu .nav-logo {
     }
 }
 
-@media only screen and (max-device-width: 630px) {
+@media only screen and (max-device-width: 630px),
+only screen and (max-width: 630px) {
     header {
         height: 10vh;
     }
@@ -219,7 +220,8 @@ header .reduced-menu .nav-logo {
     }
 }
 
-@media only screen and (max-device-height: 600px) {
+@media only screen and (max-device-height: 600px),
+only screen and (max-height: 600px) {
     header {
         height: 96px;
     }
@@ -231,7 +233,8 @@ header .reduced-menu .nav-logo {
     }
 }
 
-@media only screen and (max-device-height: 600px) and (max-device-width: 630px) {
+@media only screen and (max-device-height: 600px) and (max-device-width: 630px),
+only screen and (max-height: 600px) and (max-width: 630px) {
     header {
         height: 60px;
     }
@@ -341,7 +344,8 @@ header .reduced-menu .nav-logo {
     }
 }
 
-@media only screen and (max-device-height: 600px) {
+@media only screen and (max-device-height: 600px),
+only screen and (max-width: 600px) {
     .side-nav-wrapper {
         margin-top: 60px;
         height: 180px;
@@ -364,7 +368,8 @@ main {
 
 
 
-@media only screen and (max-device-width: 800px) {
+@media only screen and (max-device-width: 800px),
+only screen and (max-width: 800px) {
     /* When finished, this feature will add a dynamic background in regard with the device's width. */
     main {
         background: url(img/round-bg.png) no-repeat center center fixed;
@@ -495,7 +500,8 @@ footer {
     cursor: pointer;
 }
 
-@media only screen and (max-device-width: 830px) {
+@media only screen and (max-device-width: 830px),
+only screen and (max-width: 830px) {
     .footer-img {
         width: 275px !important;
     }

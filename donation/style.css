@@ -1,0 +1,241 @@
+:root {
+    --soft-white: #E5E9EC;
+    --LM-color: #0099D7;
+}
+
+body {
+    background-color: var(--soft-white);
+}
+
+main {
+    padding: 0;
+    background-image: none;
+    width: 50vw;
+    min-width: 750px;
+    background-color: #EEE;
+    margin-inline: auto;
+    margin-block: 130px 200px;
+    min-height: 0;
+    border-radius: 13px;
+    border: rgba(0,0,0,0.05) solid 2px;
+}
+
+.main-wrapper {
+    padding: 40px;
+    padding-top: 30px;
+}
+
+#options-presentation {
+    display: grid;
+    height: 100%;
+
+    grid-template-columns:
+        [first] 45%
+        [first-separation] auto
+        [second-separation] 45%
+    [last];
+
+    grid-template-rows:
+        [first] 30px
+        [second] 5px
+        [third] 30px
+        [fourth] 35px
+        [fifth] auto 
+    [last];
+}
+
+#title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    grid-column-start: first;
+    grid-column-end: last;
+}
+
+#subtitle {
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-decoration: underline;
+    text-decoration-color: var(--LM-color);
+    text-decoration-thickness: 1.3px;
+    text-underline-offset: 3.5px;
+    grid-column-start: first;
+    grid-column-end: last;
+    grid-row-start: third;
+    grid-row-end: fourth;
+}
+
+#online {
+    grid-column-start: first;
+    grid-column-end: first-separation;
+    grid-row-start: fifth;
+    grid-row-end: last;
+}
+
+#cheque {
+    grid-column-start: second-separation;
+    grid-column-end: last;
+    grid-row-start: fifth;
+    grid-row-end: last;
+}
+
+.grid-item {
+    text-align: center;
+    align-self: center;
+}
+
+.payment-method {
+    width: 100%;
+    height: 100%;
+    background-color: #e8e8e8;
+    border: rgba(0,0,0,0.07) solid 2px;
+    border-radius: 7px;
+}
+
+.payment-method-wrapper {
+    padding: 30px;
+}
+
+#online .payment-method-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 15px;
+    align-items: center;
+}
+
+#online .paiement-redirect-btn {
+    width: max-content;
+    font-size: 1.08rem;
+    color: #FFF;
+    background-color: #014575;
+    padding: 15px 25px;
+    border-radius: 7px;
+    line-height: 100%;
+    border: #002844 solid;
+    border-width: 0 0 3px;
+}
+
+#online .paiement-redirect-btn:hover {
+    border-width: 3px 0 0;
+    cursor: pointer;
+}
+
+#cheque .indented-paragraph {
+    text-align: left;
+    margin-left: 50px;
+}
+
+.bigger-font {
+    font-size: 1.1rem;
+    word-spacing: 30%;
+}
+
+#cheque #small-line-break {
+    height: 0.5rem;
+}
+
+@media only screen and (max-width: 820px) {
+    main {
+        margin-block: 40px;
+        min-width: 250px;
+        width: 90vw;
+    }
+
+    #options-presentation {
+        display: grid;
+        height: 100%;
+    
+        grid-template-columns:
+            [first] auto
+        [last];
+    
+        grid-template-rows:
+            [first] 60px
+            [second] 5px
+            [third] 30px
+            [fourth] 35px
+            [fifth] auto 
+            [sixth] 20px 
+            [seventh] auto 
+        [last];
+    }
+
+    .bigger-font {
+        font-size: 1.02rem;
+    }
+
+    #cheque .indented-paragraph {
+        margin-left: 0;
+        text-align: center;
+        font-size: 0.95rem;
+    }
+
+    .grid-item {
+        min-width: 120px;
+    }
+
+    #title {
+        font-size: 1.3rem;
+        grid-column-start: first;
+        grid-column-end: last;
+    }
+    
+    #subtitle {
+        grid-column-start: first;
+        grid-column-end: last;
+        grid-row-start: third;
+        grid-row-end: fourth;
+    }
+    
+    #online {
+        grid-column-start: first;
+        grid-column-end: last;
+        grid-row-start: fifth;
+        grid-row-end: sixth;
+    }
+    
+    #cheque {
+        grid-column-start: first;
+        grid-column-end: last;
+        grid-row-start: seventh;
+        grid-row-end: last;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    main {
+        margin-block: 35px;
+    }
+
+    #options-presentation {
+        display: grid;
+        height: 100%;
+    
+        grid-template-columns:
+            [first] auto
+        [last];
+    
+        grid-template-rows:
+            [first] 90px
+            [second] 5px
+            [third] 60px
+            [fourth] 35px
+            [fifth] auto 
+            [sixth] 20px 
+            [seventh] auto 
+        [last];
+    }
+
+    #online .paiement-redirect-btn {
+        font-size: 0.95rem;
+        padding-inline: 13px;
+    }
+
+    .bigger-font {
+        font-size: 0.95rem;
+    }
+
+    #cheque .indented-paragraph {
+        font-size: 0.75rem;
+    }
+}

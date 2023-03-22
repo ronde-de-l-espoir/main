@@ -23,14 +23,14 @@
     color: #006d99;
 }
 
-@media (width < 900px) {
+@media only screen and (max-width: 900px) {
     .count-box {
         height: 260px;
         width: 85vw;
     }
 }
 
-@media (width < 700px) {
+@media only screen and (max-width: 700px) {
     .count-box {
         width: 93vw;
     }
@@ -43,7 +43,7 @@
     }
 }
 
-@media (width < 350px) {
+@media only screen and (max-width: 350px) {
     .count-box {
         height: 130px;
     }
