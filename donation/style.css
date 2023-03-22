@@ -1,0 +1,123 @@
+:root {
+    --soft-white: #E5E9EC;
+    --LM-color: #0099D7;
+}
+
+body {
+    background-color: var(--soft-white);
+}
+
+main {
+    padding: 0;
+    background-image: none;
+    width: 50vw;
+    min-width: 750px;
+    background-color: #EEE;
+    margin-inline: auto;
+    margin-block: 130px 200px;
+    min-height: 0;
+    border-radius: 13px;
+    border: rgba(0,0,0,0.05) solid 2px;
+}
+
+.main-wrapper {
+    padding: 40px;
+    padding-top: 30px;
+    /* height: 250px; */
+}
+
+#options-presentation {
+    display: grid;
+    height: 100%;
+
+    grid-template-columns:
+        [first] 45%
+        [first-separation] auto
+        [second-separation] 45%
+    [last];
+
+    grid-template-rows:
+        [first] 30px
+        [second] 5px
+        [third] 30px
+        [fourth] 35px
+        [fifth] auto 
+    [last];
+}
+
+#title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    grid-column-start: first;
+    grid-column-end: last;
+}
+
+#subtitle {
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-decoration: underline;
+    text-decoration-color: var(--LM-color);
+    text-decoration-thickness: 1.3px;
+    grid-column-start: first;
+    grid-column-end: last;
+    grid-row-start: third;
+    grid-row-end: fourth;
+}
+
+#online {
+    grid-column-start: first;
+    grid-column-end: first-separation;
+    grid-row-start: fifth;
+    grid-row-end: last;
+}
+
+#cheque {
+    grid-column-start: second-separation;
+    grid-column-end: last;
+    grid-row-start: fifth;
+    grid-row-end: last;
+}
+
+.grid-item {
+    text-align: center;
+    align-self: center;
+}
+
+.payment-method {
+    width: 100%;
+    height: 100%;
+    background-color: #DDD;
+    border: rgba(0,0,0,0.07) solid 2px;
+    border-radius: 7px;
+}
+
+.payment-method-wrapper {
+    padding: 30px;
+}
+
+#online .payment-method-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 15px;
+    align-items: center;
+}
+
+#online .paiement-redirect-btn {
+    width: max-content;
+    font-size: 1.08rem;
+}
+
+#cheque .indented-paragraph {
+    text-align: left;
+    margin-left: 50px;
+}
+
+.bigger-font {
+    font-size: 1.1rem;
+    word-spacing: 30%;
+}
+
+#cheque #small-line-break {
+    height: 0.5rem;
+}

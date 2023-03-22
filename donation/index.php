@@ -69,18 +69,24 @@
         <div class="main-wrapper">
             <div id="options-presentation">
                 <div class="grid-item" id="title">Vous souhaitez contribuer ? Génial !</div>
-                <div class="grid-item" id="line">Deux options pour cela :</div>
-                <div class="grid-item" id="online">
-                    <p>Passer par notre plateforme de don en ligne 100% sécurisée :</p>
-                    <div class="paiement-redirect-btn" onclick="window.location='https://paiement.ronde-de-l-espoir.fr'">Accéder au portail</div>
+                <div class="grid-item" id="subtitle">Deux options pour cela :</div>
+
+                <div class="grid-item payment-method" id="online">
+                    <div class="payment-method-wrapper bigger-font">
+                        <p>Passer par notre plateforme de don 100% en ligne :</p>
+                        <button class="paiement-redirect-btn" onclick="window.location='https://paiement.ronde-de-l-espoir.fr'">Accéder au portail</button>
+                    </div>
                 </div>
-                <div class="grid-item" id="cheque">
-                    <p>Nous envoyer un chèque à l'adresse suivante :</p>
-                    <br>
-                    <p class="indented-paragraph">Unité Informatique<br>Ronde de l'Espoir<br>Lycée La Merci Littoral<br>Av. de la Petite Motte<br>34280 La Grande Motte</p>
+
+                <div class="grid-item payment-method" id="cheque">
+                    <div class="payment-method-wrapper">
+                        <p class="bigger-font">Nous envoyer un chèque à l'adresse suivante :</p>
+                        <p id="small-line-break"></p>
+                        <p class="indented-paragraph">Unité Informatique<br>Ronde de l'Espoir<br>Lycée La Merci Littoral<br>Av. de la Petite Motte<br>34280 La Grande Motte</p>
+                    </div>
                 </div>
+
             </div>
-            <div style="visibility: hidden; height: 2cm"></div>
         </div>
     </main>
 
