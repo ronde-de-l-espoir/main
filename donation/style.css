@@ -58,6 +58,7 @@ main {
     text-decoration: underline;
     text-decoration-color: var(--LM-color);
     text-decoration-thickness: 1.3px;
+    text-underline-offset: 3.5px;
     grid-column-start: first;
     grid-column-end: last;
     grid-row-start: third;
@@ -86,7 +87,7 @@ main {
 .payment-method {
     width: 100%;
     height: 100%;
-    background-color: #DDD;
+    background-color: #e8e8e8;
     border: rgba(0,0,0,0.07) solid 2px;
     border-radius: 7px;
 }
@@ -106,6 +107,18 @@ main {
 #online .paiement-redirect-btn {
     width: max-content;
     font-size: 1.08rem;
+    color: #FFF;
+    background-color: #014575;
+    padding: 15px 25px;
+    border-radius: 7px;
+    line-height: 100%;
+    border: #002844 solid;
+    border-width: 0 0 3px;
+}
+
+#online .paiement-redirect-btn:hover {
+    border-width: 3px 0 0;
+    cursor: pointer;
 }
 
 #cheque .indented-paragraph {
