@@ -23,7 +23,6 @@ main {
 .main-wrapper {
     padding: 40px;
     padding-top: 30px;
-    /* height: 250px; */
 }
 
 #options-presentation {
@@ -133,4 +132,110 @@ main {
 
 #cheque #small-line-break {
     height: 0.5rem;
+}
+
+@media only screen and (max-width: 820px) {
+    main {
+        margin-block: 40px;
+        min-width: 250px;
+        width: 90vw;
+    }
+
+    #options-presentation {
+        display: grid;
+        height: 100%;
+    
+        grid-template-columns:
+            [first] auto
+        [last];
+    
+        grid-template-rows:
+            [first] 60px
+            [second] 5px
+            [third] 30px
+            [fourth] 35px
+            [fifth] auto 
+            [sixth] 20px 
+            [seventh] auto 
+        [last];
+    }
+
+    .bigger-font {
+        font-size: 1.02rem;
+    }
+
+    #cheque .indented-paragraph {
+        margin-left: 0;
+        text-align: center;
+        font-size: 0.95rem;
+    }
+
+    .grid-item {
+        min-width: 120px;
+    }
+
+    #title {
+        font-size: 1.3rem;
+        grid-column-start: first;
+        grid-column-end: last;
+    }
+    
+    #subtitle {
+        grid-column-start: first;
+        grid-column-end: last;
+        grid-row-start: third;
+        grid-row-end: fourth;
+    }
+    
+    #online {
+        grid-column-start: first;
+        grid-column-end: last;
+        grid-row-start: fifth;
+        grid-row-end: sixth;
+    }
+    
+    #cheque {
+        grid-column-start: first;
+        grid-column-end: last;
+        grid-row-start: seventh;
+        grid-row-end: last;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    main {
+        margin-block: 35px;
+    }
+
+    #options-presentation {
+        display: grid;
+        height: 100%;
+    
+        grid-template-columns:
+            [first] auto
+        [last];
+    
+        grid-template-rows:
+            [first] 90px
+            [second] 5px
+            [third] 60px
+            [fourth] 35px
+            [fifth] auto 
+            [sixth] 20px 
+            [seventh] auto 
+        [last];
+    }
+
+    #online .paiement-redirect-btn {
+        font-size: 0.95rem;
+        padding-inline: 13px;
+    }
+
+    .bigger-font {
+        font-size: 0.95rem;
+    }
+
+    #cheque .indented-paragraph {
+        font-size: 0.75rem;
+    }
 }
