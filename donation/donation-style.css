@@ -62,7 +62,6 @@ main {
 }
 
 .paiement-redirect-btn {
-    appearance: button;
     background-color: #014575;
     border: solid transparent;
     border-radius: 7px;
