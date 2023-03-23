@@ -50,15 +50,15 @@
         <div id="side-nav" data-hidden>
             <div class="side-nav-wrapper" data-hidden>
                 <div class="separation" data-hidden></div>
-                <a href="#" data-isFocus="false" data-hidden>Accueil</a>
+                <a href="../" data-isFocus="false" data-hidden>Accueil</a>
                 <div class="separation" data-hidden></div>
-                <a href="./infos/" data-isFocus="false" data-hidden>Infos</a>
+                <a href="../infos/" data-isFocus="false" data-hidden>Infos</a>
                 <div class="separation" data-hidden></div>
-                <a href="./galerie/" data-isFocus="false" data-hidden>Galerie</a>
+                <a href="../galerie/" data-isFocus="false" data-hidden>Galerie</a>
                 <div class="separation" data-hidden></div>
             </div>
 
-            <a href="./donation/" id="side-nav-donation" class="btn-grad" data-hidden>Faites un don!</a>
+            <a href="#" id="side-nav-donation" class="btn-grad" data-hidden>Faites un don!</a>
             
         </div>
         
