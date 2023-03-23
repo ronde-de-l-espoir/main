@@ -69,7 +69,7 @@
         <div class="main-wrapper">
             <div id="options-presentation">
                 <div class="grid-item" id="title">Vous souhaitez <span class="nowrap">contribuer ?</span> <span class="nowrap">Génial !</span></div>
-                <div class="grid-item" id="subtitle">Deux options pour cela :</div>
+                <div class="grid-item" id="subtitle">Deux options pour <span class="nowrap">cela :</span></div>
 
                 <div class="grid-item payment-method" id="online">
                     <div class="payment-method-wrapper bigger-font">
@@ -80,7 +80,7 @@
 
                 <div class="grid-item payment-method" id="cheque">
                     <div class="payment-method-wrapper">
-                        <p class="bigger-font">Nous envoyer un chèque à l'adresse suivante :</p>
+                        <p class="bigger-font">Nous envoyer un chèque à l'adresse <span class="nowrap">suivante</span> :</p>
                         <p id="small-line-break"></p>
                         <p class="indented-paragraph">Unité Informatique<br>Ronde de l'Espoir<br>Lycée La Merci Littoral<br>Av. de la Petite Motte<br>34280 La Grande Motte</p>
                     </div>
