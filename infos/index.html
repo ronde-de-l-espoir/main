@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-hidden>
 
 <head>
     <title>Informations - Ronde de l'Espoir</title>
@@ -16,9 +16,9 @@
     <script src="../app.js" defer></script>
 </head>
 
-<body>
+<body data-hidden>
 
-    <header>
+    <header data-hidden>
         <div class="title">
             <h1><a href="../">La Ronde de l'Espoir</a></h1>
             <img src="../img/darna2.jpeg" alt="Darna Le Tournoyant" class="darna">
@@ -38,22 +38,22 @@
                 </div>
             </div>
         </nav>
-        <div class="reduced-menu">
-            <div class="trigger-wrapper" onclick="triggerSideMenu()">
-                <div id="menu-trigger" data-isOpen='false'></div>
+        <div class="reduced-menu" data-hidden>
+            <div class="trigger-wrapper" onclick="triggerSideMenu()" data-hidden>
+                <div id="menu-trigger" data-isOpen='false' data-hidden></div>
             </div>
             <img class="nav-logo" src="../img/LRDE-logo.png" alt="Logo de la ronde de l'Espoir">
         </div>
 
-        <div id="side-nav">
-            <div class="side-nav-wrapper">
-                <div class="separation"></div>
-                <a href="../" data-isFocus="false">Accueil</a>
-                <div class="separation"></div>
-                <a href="#" data-isFocus="true">Infos</a>
-                <div class="separation"></div>
-                <a href="../galerie/" data-isFocus="false">Galerie</a>
-                <div class="separation"></div>
+        <div id="side-nav" data-hidden>
+            <div class="side-nav-wrapper" data-hidden>
+                <div class="separation" data-hidden></div>
+                <a href="../" data-isFocus="false" data-hidden>Accueil</a>
+                <div class="separation" data-hidden></div>
+                <a href="#" data-isFocus="true" data-hidden>Infos</a>
+                <div class="separation" data-hidden></div>
+                <a href="../galerie/" data-isFocus="false" data-hidden>Galerie</a>
+                <div class="separation" data-hidden></div>
             </div>
 
 

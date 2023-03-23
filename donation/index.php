@@ -6,7 +6,7 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-hidden>
 <head>
     <title>La Ronde de l'Espoir - Faire un don</title>
     <meta charset="UTF-8">
@@ -20,11 +20,11 @@
     <link rel="stylesheet" href="../common.css">
     <!-- <link rel="stylesheet" href="./donation-style.css"> -->
     <link rel="stylesheet" href="./style.css">
-    <script src="../app.js"></script>
+    <script src="../app.js" defer></script>
 </head>
-<body>
+<body data-hidden>
 
-    <header>
+    <header data-hidden>
         <div class="title">
             <h1><a href="../">La Ronde de l'Espoir</a></h1>
         </div> <!-- Ne pas changer le lien au-dessus, il fonctionne comme il   -->
@@ -41,24 +41,24 @@
             </div>
         </nav>
         <div class="reduced-menu">
-            <div class="trigger-wrapper" onclick="triggerSideMenu()">
-                <div id="menu-trigger" data-isOpen='false'></div>
+            <div class="trigger-wrapper" onclick="triggerSideMenu()" data-hidden>
+                <div id="menu-trigger" data-isOpen='false' data-hidden></div>
             </div>
-            <img class="nav-logo" src="../img/LRDE-logo.png">
+            <img class="nav-logo" src="../img/LRDE-logo.png" data-hidden>
         </div>
 
-        <div id="side-nav">
-            <div class="side-nav-wrapper">
-                <div class="separation"></div>
-                <a href="#" data-isFocus="true">Accueil</a>
-                <div class="separation"></div>
-                <a href="./infos/" data-isFocus="false">Infos</a>
-                <div class="separation"></div>
-                <a href="./galerie/" data-isFocus="false">Galerie</a>
-                <div class="separation"></div>
+        <div id="side-nav" data-hidden>
+            <div class="side-nav-wrapper" data-hidden>
+                <div class="separation" data-hidden></div>
+                <a href="../" data-isFocus="false" data-hidden>Accueil</a>
+                <div class="separation" data-hidden></div>
+                <a href="../infos/" data-isFocus="false" data-hidden>Infos</a>
+                <div class="separation" data-hidden></div>
+                <a href="../galerie/" data-isFocus="false" data-hidden>Galerie</a>
+                <div class="separation" data-hidden></div>
             </div>
 
-            <a href="./donation/" id="side-nav-donation" class="btn-grad">Faites un don!</a>
+            <a href="#" id="side-nav-donation" class="btn-grad" data-hidden>Faites un don!</a>
             
         </div>
         
@@ -69,7 +69,7 @@
         <div class="main-wrapper">
             <div id="options-presentation">
                 <div class="grid-item" id="title">Vous souhaitez <span class="nowrap">contribuer ?</span> <span class="nowrap">Génial !</span></div>
-                <div class="grid-item" id="subtitle">Deux options pour cela :</div>
+                <div class="grid-item" id="subtitle">Deux options pour <span class="nowrap">cela :</span></div>
 
                 <div class="grid-item payment-method" id="online">
                     <div class="payment-method-wrapper bigger-font">
@@ -80,7 +80,7 @@
 
                 <div class="grid-item payment-method" id="cheque">
                     <div class="payment-method-wrapper">
-                        <p class="bigger-font">Nous envoyer un chèque à l'adresse suivante :</p>
+                        <p class="bigger-font">Nous envoyer un chèque à l'adresse <span class="nowrap">suivante</span> :</p>
                         <p id="small-line-break"></p>
                         <p class="indented-paragraph">Unité Informatique<br>Ronde de l'Espoir<br>Lycée La Merci Littoral<br>Av. de la Petite Motte<br>34280 La Grande Motte</p>
                     </div>
