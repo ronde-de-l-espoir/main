@@ -345,7 +345,7 @@ only screen and (max-height: 600px) and (max-width: 630px) {
 }
 
 @media only screen and (max-device-height: 600px),
-only screen and (max-width: 600px) {
+only screen and (max-height: 600px) {
     .side-nav-wrapper {
         margin-top: 60px;
         height: 180px;
