@@ -15,7 +15,15 @@
     <link rel="stylesheet" href="./gallery.css">
     <script src="../app.js" defer></script>
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6XM6CLQWYR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-6XM6CLQWYR');
+</script>
 <body data-hidden>
 
     <header data-hidden>
