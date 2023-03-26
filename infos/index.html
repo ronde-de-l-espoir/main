@@ -2,278 +2,332 @@
 <html lang="en">
 
 <head>
-    <title>Informations - Ronde de l'Espoir</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800;900&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="../img/LRDE-logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="../common.css">
-    <link rel="stylesheet" href="./style.css">
-    <script src="../app.js" defer></script>
+	<title>Informations - Ronde de l'Espoir</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800;900&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="../img/LRDE-logo.png" type="image/x-icon">
+	<link rel="stylesheet" href="../common.css">
+	<link rel="stylesheet" href="./style.css">
+	<script src="../app.js" defer></script>
 </head>
 
 <body>
 
-    <header>
-        <div class="title">
-            <h1><a href="../">La Ronde de l'Espoir</a></h1>
-            <img src="../img/darna2.jpeg" alt="Darna Le Tournoyant" class="darna">
-        </div> <!-- Ne pas changer le lien au-dessus, il fonctionne comme il   -->
+	<header>
+		<div class="title">
+			<h1><a href="../">La Ronde de l'Espoir</a></h1>
+			<img src="../img/darna2.jpeg" alt="Darna Le Tournoyant" class="darna">
+		</div> <!-- Ne pas changer le lien au-dessus, il fonctionne comme il   -->
 
-        <nav>
-            <div class="nav-wrapper">
+		<nav>
+			<div class="nav-wrapper">
 
-                <img src="../img/clean_logo_littoral.png" alt="Logo La Merci Littoral"
-                    onclick="javascript:window.location='https://lamerci.com/littoral/accueil';">
+				<img src="../img/clean_logo_littoral.png" alt="Logo La Merci Littoral"
+					onclick="javascript:window.location='https://lamerci.com/littoral/accueil';">
 
-                <div class="link-wrapper">
-                    <a href="../" class="underline-anim" data-isFocus="false">Accueil</a>
-                    <a href="#" class="underline-anim" data-isFocus="true">Infos</a>
-                    <a href="../galerie/" class="underline-anim" data-isFocus="false">Galerie</a>
-                    <a href="../donation/" id="donate-btn" data-isFocus="false">Faire un don</a>
-                </div>
-            </div>
-        </nav>
-        <div class="reduced-menu">
-            <div class="trigger-wrapper" onclick="triggerSideMenu()">
-                <div id="menu-trigger" data-isOpen='false'></div>
-            </div>
-            <img class="nav-logo" src="../img/LRDE-logo.png" alt="Logo de la ronde de l'Espoir">
-        </div>
+				<div class="link-wrapper">
+					<a href="../" class="underline-anim" data-isFocus="false">Accueil</a>
+					<a href="#" class="underline-anim" data-isFocus="true">Infos</a>
+					<a href="../galerie/" class="underline-anim" data-isFocus="false">Galerie</a>
+					<a href="../donation/" id="donate-btn" data-isFocus="false">Faire un don</a>
+				</div>
+			</div>
+		</nav>
+		<div class="reduced-menu">
+			<div class="trigger-wrapper" onclick="triggerSideMenu()">
+				<div id="menu-trigger" data-isOpen='false'></div>
+			</div>
+			<img class="nav-logo" src="../img/LRDE-logo.png" alt="Logo de la ronde de l'Espoir">
+		</div>
 
-        <div id="side-nav">
-            <div class="side-nav-wrapper">
-                <div class="separation"></div>
-                <a href="../" data-isFocus="false">Accueil</a>
-                <div class="separation"></div>
-                <a href="#" data-isFocus="true">Infos</a>
-                <div class="separation"></div>
-                <a href="../galerie/" data-isFocus="false">Galerie</a>
-                <div class="separation"></div>
-            </div>
-
-
-
-            <a href="../donation/" id="side-nav-donation" class="btn-grad">Faites un don!</a>
-
-        </div>
-
-    </header>
+		<div id="side-nav">
+			<div class="side-nav-wrapper">
+				<div class="separation"></div>
+				<a href="../" data-isFocus="false">Accueil</a>
+				<div class="separation"></div>
+				<a href="#" data-isFocus="true">Infos</a>
+				<div class="separation"></div>
+				<a href="../galerie/" data-isFocus="false">Galerie</a>
+				<div class="separation"></div>
+			</div>
 
 
-    <main>
-        <div class="wrapper">
-    
-            <div class="article" id="article1">
-              <img src="../img/ptit-bg.png" alt="Picture1">
-              <div class="article-text">
-                <h4 class="card-title">La Ronde de l'Espoir</h4>
-                <p class="card-text">
-                  
-                </p>
-              </div>
-            </div>
-            
-            <div class="article" id="article2">
-              <img src="../img/art2.jpg" alt="Picture2">
-              <div class="article-text">
-                <h4 class="card-title">Cap ou cap ? S’initier à l’escalade avec une dyspraxie</h4>
-                <p class="card-text">
-                  Depuis notre premier projet en 2014 qui avait emmené une quarantaine de personnes dans les Calanques entre Marseille et Cassis pour découvrir la voile et l’escalade, ce sont près de 250 personnes, des parents, des enfants et adolescents malades et leurs fratries qui ont pu bénéficier de nos aventures Sport et Environnement.
-                </p>
-              </div>
-            </div>
-            
-            <div class="article" id="article3">
-              <img src="../img/art3.png" alt="Picture3">
-              <div class="article-text">
-                <h4 class="card-title">Cap St Lary 2018 : un week-end sportif magique pour des jeunes atteints de mucoviscidose.</h4>
-                <p class="card-text">
-                  C’est au début de l’été 2018, dans le décor naturel de St 
-                </p>
-              </div>
-            </div>
-        
-            
-          </div>
-          <div class="bottom-row">
-            <div class="article" id="article4">
-              <img src="../img/art3.png" alt="Picture4">
-              <div class="article-text">
-                <h4 class="card-title">Titre du test</h4>
-                <p class="card-text">
-                  C'est un test
-                </p>
-              </div>
-            </div>
 
-            <div class="article" id="article5">
-              <img src="../img/art3.png" alt="Picture5">
-              <div class="article-text">
-                <h4 class="card-title">Titre du test</h4>
-                <p class="card-text">
-                  C'est un test
-                </p>
-              </div>
-            </div>
+			<a href="../donation/" id="side-nav-donation" class="btn-grad">Faites un don!</a>
 
-            <div class="article" id="article6">
-              <img src="../img/art3.png" alt="Picture6">
-              <div class="article-text">
-                <h4 class="card-title">Titre du test</h4>
-                <p class="card-text">
-                  C'est un test
-                </p>
-              </div>
-            </div>
+		</div>
 
-            <div class="article" id="article7">
-              <img src="../img/art3.png" alt="Picture7">
-              <div class="article-text">
-                <h4 class="card-title">Titre du test</h4>
-                <p class="card-text">
-                  C'est un test
-                </p>
-              </div>
-            </div>
-          </div>
-          
-          <div class="entire-article">
-            <p id="version1" data-isOpen="false">
-              <span class="article-title">La Ronde de l'Espoir</span>
-              <br> <br> Greetings, fellow citizens of the Star Citizen universe. Today, we bring you exciting news about the latest addition to the Roberts Space Industries' (RSI) fleet - The RSI Galaxy. As an on-the-ground reporter, we had the privilege to get a closer look at this flagship vessel and its impressive features.
-              <br> <br> The RSI Galaxy is an enormous spacecraft that spans over 890 meters in length and has a cargo capacity of over 20,000 standard cargo units. Its size and cargo capacity make it an ideal choice for transporting goods, mining resources, and even serving as a mobile base for large organizations.
-              <br> <br> As we boarded the RSI Galaxy, we were impressed by its sleek design and luxurious interiors. The ship boasts an impressive array of amenities, including private cabins, recreational areas, and state-of-the-art medical facilities, making long-haul journeys more comfortable and enjoyable for its crew.
-              <br> <br> The ship's cockpit is equipped with the latest navigation and communication technology, enabling pilots to control the vessel with precision and ease. The RSI Galaxy is also equipped with advanced weaponry, including a variety of turrets and missile launchers, making it capable of defending itself in combat situations.
-              <br> <br> One of the most impressive features of the RSI Galaxy is its ability to carry smaller spacecraft, such as snub fighters and shuttles, in its hangar bay. This means that the vessel can transport smaller vessels to other locations, making it an ideal choice for organizations that require a mobile base of operations.
-              <br> <br> The RSI Galaxy is not only an impressive spacecraft in terms of its size and capabilities, but it is also a technological marvel. The ship is powered by a cutting-edge quantum drive that enables it to travel at incredible speeds, making it ideal for long-distance travel and exploration.
-              <br> <br> In conclusion, the RSI Galaxy is an impressive addition to the Roberts Space Industries' fleet, and it has set a new standard for spacecraft in the Star Citizen universe. Its enormous size, impressive cargo capacity, and advanced technology make it an ideal choice for a variety of roles, ranging from trading to exploration and even military operations.
-              <br> <br> As the Star Citizen universe continues to expand and evolve, we can expect to see more spacecraft like the RSI Galaxy that push the boundaries of what is possible in space exploration. It is an exciting time to be a part of the Star Citizen community, and we cannot wait to see what the future holds.
-              
-            </p>
-        
-            <p id="version2" data-isOpen="false">
-              <span class="article-title">Cap ou cap ? S’initier à l’escalade avec une dyspraxie</span>
-              <br> <br> AEGIS Dynamics, one of the leading manufacturers of spacecraft in the universe of Star Citizen, has recently announced the release of their latest addition to their fleet of ships – The Avenger Titan. This new model is expected to take the Star Citizen community by storm with its sleek design and unparalleled capabilities.
-              <br> <br> The Avenger Titan is the latest iteration of AEGIS' popular Avenger series, which has long been recognized as one of the most versatile and reliable spacecraft in the galaxy. The new model is built with a focus on speed, agility, and adaptability, making it perfect for a variety of roles, ranging from combat to exploration.
-              <br> <br> One of the most notable features of the Avenger Titan is its spacious cargo hold, which can accommodate up to 8 standard cargo units. This makes it an excellent choice for traders, smugglers, and explorers who need to transport goods across the vast expanse of space. The ship is also equipped with a powerful engine that allows it to travel at high speeds and maneuver with ease, making it ideal for fast-paced combat situations.
-              <br> <br> In addition to its cargo and combat capabilities, the Avenger Titan also comes with a range of other features that make it stand out from the rest of the ships in its class. For example, the ship is equipped with a state-of-the-art cockpit that provides excellent visibility and control, making it easy for pilots to navigate through even the most challenging of environments.
-              <br> <br> Furthermore, the Avenger Titan also comes with an advanced targeting system that enables pilots to track and engage enemy ships with pinpoint accuracy. The ship is also equipped with a powerful set of weapons, including a pair of gimballed size-three laser cannons, making it a formidable opponent in combat situations.
-              <br> <br> Overall, the Avenger Titan is an excellent addition to AEGIS' fleet of ships, and it is expected to become a fan favorite among Star Citizen players. Its versatile design, spacious cargo hold, and powerful weapons make it an excellent choice for a wide range of roles, ranging from exploration to combat.
-              <br> <br> With the release of the Avenger Titan, AEGIS Dynamics has once again demonstrated their commitment to innovation and excellence in spacecraft design. As the Star Citizen universe continues to grow and evolve, it is clear that AEGIS will continue to play a significant role in shaping its future.
-            </p>
-            
-            <p id="version3" data-isOpen="false">
-              <span class="article-title">Cap St Lary 2018 : un week-end sportif magique pour des jeunes atteints de mucoviscidose.</span>
-              <br> <br> Welcome to the future of space travel with Origin Jumpworks' 400i - a true masterpiece of engineering and design. With its sleek and elegant profile, this vessel represents the pinnacle of luxury spacecraft and will transport you in comfort and style, no matter your destination.
-              <br> <br> The Origin Jumpworks 400i is the latest addition to the popular 300 series, boasting enhanced maneuverability, speed, and luxury. This ship has been designed with the discerning traveler in mind, with an emphasis on both style and functionality.
-              <br> <br> One of the most notable features of the 400i is its spacious and comfortable interior, complete with luxurious furnishings and state-of-the-art technology. The ship's expansive cabin provides ample space for you and your guests to relax and enjoy the journey, while the advanced climate control system ensures a comfortable environment at all times.
-              <br> <br> But luxury is not the only feature of the 400i. This vessel is also equipped with advanced technology and weaponry, making it a capable combat vessel in addition to a luxurious transport. The 400i features an advanced targeting system and a variety of weapon hardpoints, allowing you to take on any threat that comes your way.
-              <br> <br> The ship's powerful engines and advanced thrusters provide exceptional speed and maneuverability, enabling you to outrun and outmaneuver any foe. With its superior combat capabilities, the 400i is the perfect choice for those who demand both luxury and security.
-              <br> <br> In addition to its impressive features, the 400i is also highly customizable, allowing you to tailor it to your specific needs and preferences. From custom paint schemes to specialized weapon loadouts, the 400i can be customized to suit your every need.
-              <br> <br> Experience the future of space travel today with Origin Jumpworks' 400i. Elevate your space travel experience with the ultimate in luxury and functionality. Whether you're looking to explore the galaxy in style or take on the toughest challenges the universe has to offer, the 400i has you covered.
-            </p>
-
-            <p id="version4" data-isOpen="false">
-              <span class="article-title">Cap St Lary 2018 : un week-end sportif magique pour des jeunes atteints de mucoviscidose.</span>
-              <br> <br> Welcome to the future of spta grandced thrusters provide exceptional speed and maneuverability, enabling you to outrun and outmaneuver any foe. With its superior combat capabilities, the 400i is the perfect choice for those who demand both luxury and security.
-              <br> <br> In addition to its impressive features, the 400i is also highly customizable, allowing you to tailor it to your specific needs and preferences. From custom paint schemes to specialized weapon loadouts, the 400i can be customized to suit your every need.
-              <br> <br> Experience the future of space travel today with Origin Jumpworks' 400i. Elevate your space travel experience with the ultimate in luxury and functionality. Whether you're looking to explore the galaxy in style or take on the toughest challenges the universe has to offer, the 400i has you covered.
-            </p>
-          
-
-            <p id="version4" data-isOpen="false">
-              <span class="article-title">Cap St Lary 2018 : un week-end sportif magique pour des jeunes atteints de mucoviscidose.</span>
-              <br> <br> Welcome to the future of spta grandced thrusters provide exceptional speed and maneuverability, enabling you to outrun and outmaneuver any foe. With its superior combat capabilities, the 400i is the perfect choice for those who demand both luxury and security.
-              <br> <br> In addition to its impressive features, the 400i is also highly customizable, allowing you to tailor it to your specific needs and preferences. From custom paint schemes to specialized weapon loadouts, the 400i can be customized to suit your every need.
-              <br> <br> Experience the future of space travel today with Origin Jumpworks' 400i. Elevate your space travel experience with the ultimate in luxury and functionality. Whether you're looking to explore the galaxy in style or take on the toughest challenges the universe has to offer, the 400i has you covered.
-            </p>
-          
-
-            <p id="version5" data-isOpen="false">
-              <span class="article-title">Cap St Lary 2018 : un week-end sportif magique pour des jeunes atteints de mucoviscidose.</span>
-              <br> <br> Welcome to the future of spta grandced thrusters provide exceptional speed and maneuverability, enabling you to outrun and outmaneuver any foe. With its superior combat capabilities, the 400i is the perfect choice for those who demand both luxury and security.
-              <br> <br> In addition to its impressive features, the 400i is also highly customizable, allowing you to tailor it to your specific needs and preferences. From custom paint schemes to specialized weapon loadouts, the 400i can be customized to suit your every need.
-              <br> <br> Experience the future of space travel today with Origin Jumpworks' 400i. Elevate your space travel experience with the ultimate in luxury and functionality. Whether you're looking to explore the galaxy in style or take on the toughest challenges the universe has to offer, the 400i has you covered.
-            </p>
-          
-
-            <p id="version6" data-isOpen="false">
-              <span class="article-title">Cap St Lary 2018 : un week-end sportif magique pour des jeunes atteints de mucoviscidose.</span>
-              <br> <br> Welcome to the future of spta grandced thrusters provide exceptional speed and maneuverability, enabling you to outrun and outmaneuver any foe. With its superior combat capabilities, the 400i is the perfect choice for those who demand both luxury and security.
-              <br> <br> In addition to its impressive features, the 400i is also highly customizable, allowing you to tailor it to your specific needs and preferences. From custom paint schemes to specialized weapon loadouts, the 400i can be customized to suit your every need.
-              <br> <br> Experience the future of space travel today with Origin Jumpworks' 400i. Elevate your space travel experience with the ultimate in luxury and functionality. Whether you're looking to explore the galaxy in style or take on the toughest challenges the universe has to offer, the 400i has you covered.
-            </p>
-          
-
-            <p id="version7" data-isOpen="false">
-              <span class="article-title">Cap St Lary 2018 : un week-end sportif magique pour des jeunes atteints de mucoviscidose.</span>
-              <br> <br> Welcome to the future of spta grandced thrusters provide exceptional speed and maneuverability, enabling you to outrun and outmaneuver any foe. With its superior combat capabilities, the 400i is the perfect choice for those who demand both luxury and security.
-              <br> <br> In addition to its impressive features, the 400i is also highly customizable, allowing you to tailor it to your specific needs and preferences. From custom paint schemes to specialized weapon loadouts, the 400i can be customized to suit your every need.
-              <br> <br> Experience the future of space travel today with Origin Jumpworks' 400i. Elevate your space travel experience with the ultimate in luxury and functionality. Whether you're looking to explore the galaxy in style or take on the toughest challenges the universe has to offer, the 400i has you covered.
-            </p>
-          </div>
-        
-        
-
-        <script>
-            console.log("Greetings your honor");
-
-const articles = document.querySelectorAll('.article');
-
-articles.forEach(article => {
-    article.addEventListener('click', () => {
-        
-        const articleID = '#' + article.getAttribute('id');
-        const query = articleID + ' p';
-        const cardText = document.querySelector(query);
-        
-        const index = articleID[articleID.length-1];
-        
-        const articleText = document.querySelectorAll('#version' + index)[0];
-        const articleWrapper = document.querySelectorAll('.entire-article')[0];
-        
-        if (articleText.getAttribute('data-isOpen') == "false") {
-            articleWrapper.style.display = "block";
-            articleText.setAttribute('data-isOpen', true);
-            articleText.style.display = "inline";
-            setTimeout(() => {
-                articleWrapper.style.maxHeight = "1000px"
-                articleWrapper.style.paddingBlock = "calc(var(--padding) / 1.735)";
-            }, 1);
-        } else {
-            articleText.setAttribute('data-isOpen', false);
-            articleWrapper.style.maxHeight = "0";
-            articleWrapper.style.paddingBlock = "0";
-            setTimeout(() => {
-                articleWrapper.style.display = "none";
-            }, 700);
-        }
-        
-        const textArticles = document.querySelectorAll('.entire-article p');
-        textArticles.forEach(text => {
-            if (text.getAttribute('id') != ('version' + index)) {
-                text.setAttribute('data-isOpen', false);
-                text.style.display = "none";
-            }
-        })
-    })
-});
+	</header>
 
 
-        </script>
-    </main>
+	<main>
+		<div class="wrapper">
 
-    <footer>
-        <!-- <?php 
-            $currentPage = "infos";
-            include('../footer.php'); 
-        ?> -->
-    </footer>
+			<div class="article" id="article1">
+				<img src="../img/ptit-bg.png" alt="Picture1">
+				<div class="article-text">
+					<h4 class="card-title">La Ronde de l'Espoir</h4>
+					<p class="card-text">
+
+					</p>
+				</div>
+			</div>
+
+			<div class="article" id="article2">
+				<img src="../img/art2.jpg" alt="Picture2">
+				<div class="article-text">
+					<h4 class="card-title">Cap ou cap ? S’initier à l’escalade avec une dyspraxie</h4>
+					<p class="card-text">
+						Depuis notre premier projet en 2014 qui avait emmené une quarantaine de personnes dans les
+						Calanques entre Marseille et Cassis pour découvrir la voile et l’escalade, ce sont près de 250
+						personnes, des parents, des enfants et adolescents malades et leurs fratries qui ont pu
+						bénéficier de nos aventures Sport et Environnement.
+					</p>
+				</div>
+			</div>
+
+			<div class="article" id="article3">
+				<img src="../img/art3.png" alt="Picture3">
+				<div class="article-text">
+					<h4 class="card-title">Cap St Lary 2018 : un week-end sportif magique pour des jeunes atteints de
+						mucoviscidose.</h4>
+					<p class="card-text">
+						C’est au début de l’été 2018, dans le décor naturel de St
+					</p>
+				</div>
+			</div>
+
+
+		</div>
+		<div class="bottom-row">
+			<div class="article" id="article4">
+				<img src="../img/art3.png" alt="Picture4">
+				<div class="article-text">
+					<h4 class="card-title">Titre du test</h4>
+					<p class="card-text">
+						C'est un test
+					</p>
+				</div>
+			</div>
+
+			<div class="article" id="article5">
+				<img src="../img/art3.png" alt="Picture5">
+				<div class="article-text">
+					<h4 class="card-title">Titre du test</h4>
+					<p class="card-text">
+						C'est un test
+					</p>
+				</div>
+			</div>
+
+			<div class="article" id="article6">
+				<img src="../img/art3.png" alt="Picture6">
+				<div class="article-text">
+					<h4 class="card-title">Titre du test</h4>
+					<p class="card-text">
+						C'est un test
+					</p>
+				</div>
+			</div>
+
+			<div class="article" id="article7">
+				<img src="../img/art3.png" alt="Picture7">
+				<div class="article-text">
+					<h4 class="card-title">Titre du test</h4>
+					<p class="card-text">
+						C'est un test
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="entire-article">
+			<p id="version1" data-isOpen="false">
+				<span class="article-title">La Ronde de l'Espoir</span>
+				<br> <br> Greetings, fellow citizens of the Star Citizen universe. Today, we bring you exciting news
+				about the latest addition to the Roberts Space Industries' (RSI) fleet - The RSI Galaxy. As an
+				on-the-ground reporter, we had the privilege to get a closer look at this flagship vessel and its
+				impressive features.
+				<br> <br> The RSI Galaxy is an enormous spacecraft that spans over 890 meters in length and has a cargo
+				capacity of over 20,000 standard cargo units. Its size and cargo capacity make it an ideal choice for
+				transporting goods, mining resources, and even serving as a mobile base for large organizations.
+				<br> <br> As we boarded the RSI Galaxy, we were impressed by its sleek design and luxurious interiors.
+				The ship boasts an impressive array of amenities, including private cabins, recreational areas, and
+				state-of-the-art medical facilities, making long-haul journeys more comfortable and enjoyable for its
+				crew.
+				<br> <br> The ship's cockpit is equipped with the latest navigation and communication technology,
+				enabling pilots to control the vessel with precision and ease. The RSI Galaxy is also equipped with
+				advanced weaponry, including a variety of turrets and missile launchers, making it capable of defending
+				itself in combat situations.
+				<br> <br> One of the most impressive features of the RSI Galaxy is its ability to carry smaller
+				spacecraft, such as snub fighters and shuttles, in its hangar bay. This means that the vessel can
+				transport smaller vessels to other locations, making it an ideal choice for organizations that require a
+				mobile base of operations.
+				<br> <br> The RSI Galaxy is not only an impressive spacecraft in terms of its size and capabilities, but
+				it is also a technological marvel. The ship is powered by a cutting-edge quantum drive that enables it
+				to travel at incredible speeds, making it ideal for long-distance travel and exploration.
+				<br> <br> In conclusion, the RSI Galaxy is an impressive addition to the Roberts Space Industries'
+				fleet, and it has set a new standard for spacecraft in the Star Citizen universe. Its enormous size,
+				impressive cargo capacity, and advanced technology make it an ideal choice for a variety of roles,
+				ranging from trading to exploration and even military operations.
+				<br> <br> As the Star Citizen universe continues to expand and evolve, we can expect to see more
+				spacecraft like the RSI Galaxy that push the boundaries of what is possible in space exploration. It is
+				an exciting time to be a part of the Star Citizen community, and we cannot wait to see what the future
+				holds.
+
+			</p>
+
+			<p id="version2" data-isOpen="false">
+				<span class="article-title">Cap ou cap ? S’initier à l’escalade avec une dyspraxie</span>
+				<br> <br> AEGIS Dynamics, one of the leading manufacturers of spacecraft in the universe of Star
+				Citizen, has recently announced the release of their latest addition to their fleet of ships – The
+				Avenger Titan. This new model is expected to take the Star Citizen community by storm with its sleek
+				design and unparalleled capabilities.
+				<br> <br> The Avenger Titan is the latest iteration of AEGIS' popular Avenger series, which has long
+				been recognized as one of the most versatile and reliable spacecraft in the galaxy. The new model is
+				built with a focus on speed, agility, and adaptability, making it perfect for a variety of roles,
+				ranging from combat to exploration.
+				<br> <br> One of the most notable features of the Avenger Titan is its spacious cargo hold, which can
+				accommodate up to 8 standard cargo units. This makes it an excellent choice for traders, smugglers, and
+				explorers who need to transport goods across the vast expanse of space. The ship is also equipped with a
+				powerful engine that allows it to travel at high speeds and maneuver with ease, making it ideal for
+				fast-paced combat situations.
+				<br> <br> In addition to its cargo and combat capabilities, the Avenger Titan also comes with a range of
+				other features that make it stand out from the rest of the ships in its class. For example, the ship is
+				equipped with a state-of-the-art cockpit that provides excellent visibility and control, making it easy
+				for pilots to navigate through even the most challenging of environments.
+				<br> <br> Furthermore, the Avenger Titan also comes with an advanced targeting system that enables
+				pilots to track and engage enemy ships with pinpoint accuracy. The ship is also equipped with a powerful
+				set of weapons, including a pair of gimballed size-three laser cannons, making it a formidable opponent
+				in combat situations.
+				<br> <br> Overall, the Avenger Titan is an excellent addition to AEGIS' fleet of ships, and it is
+				expected to become a fan favorite among Star Citizen players. Its versatile design, spacious cargo hold,
+				and powerful weapons make it an excellent choice for a wide range of roles, ranging from exploration to
+				combat.
+				<br> <br> With the release of the Avenger Titan, AEGIS Dynamics has once again demonstrated their
+				commitment to innovation and excellence in spacecraft design. As the Star Citizen universe continues to
+				grow and evolve, it is clear that AEGIS will continue to play a significant role in shaping its future.
+			</p>
+
+			<p id="version3" data-isOpen="false">
+				<span class="article-title">Cap St Lary 2018 : un week-end sportif magique pour des jeunes atteints de
+					mucoviscidose.</span>
+				<br> <br> Welcome to the future of space travel with Origin Jumpworks' 400i - a true masterpiece of
+				engineering and design. With its sleek and elegant profile, this vessel represents the pinnacle of
+				luxury spacecraft and will transport you in comfort and style, no matter your destination.
+				<br> <br> The Origin Jumpworks 400i is the latest addition to the popular 300 series, boasting enhanced
+				maneuverability, speed, and luxury. This ship has been designed with the discerning traveler in mind,
+				with an emphasis on both style and functionality.
+				<br> <br> One of the most notable features of the 400i is its spacious and comfortable interior,
+				complete with luxurious furnishings and state-of-the-art technology. The ship's expansive cabin provides
+				ample space for you and your guests to relax and enjoy the journey, while the advanced climate control
+				system ensures a comfortable environment at all times.
+				<br> <br> But luxury is not the only feature of the 400i. This vessel is also equipped with advanced
+				technology and weaponry, making it a capable combat vessel in addition to a luxurious transport. The
+				400i features an advanced targeting system and a variety of weapon hardpoints, allowing you to take on
+				any threat that comes your way.
+				<br> <br> The ship's powerful engines and advanced thrusters provide exceptional speed and
+				maneuverability, enabling you to outrun and outmaneuver any foe. With its superior combat capabilities,
+				the 400i is the perfect choice for those who demand both luxury and security.
+				<br> <br> In addition to its impressive features, the 400i is also highly customizable, allowing you to
+				tailor it to your specific needs and preferences. From custom paint schemes to specialized weapon
+				loadouts, the 400i can be customized to suit your every need.
+				<br> <br> Experience the future of space travel today with Origin Jumpworks' 400i. Elevate your space
+				travel experience with the ultimate in luxury and functionality. Whether you're looking to explore the
+				galaxy in style or take on the toughest challenges the universe has to offer, the 400i has you covered.
+			</p>
+
+			<p id="version4" data-isOpen="false">
+				<span class="article-title">Cap St Lary 2018 : un week-end sportif magique pour des jeunes atteints de
+					mucoviscidose.</span>
+				<br> <br> Welcome to the future of spta grandced thrusters provide exceptional speed and
+				maneuverability, enabling you to outrun and outmaneuver any foe. With its superior combat capabilities,
+				the 400i is the perfect choice for those who demand both luxury and security.
+				<br> <br> In addition to its impressive features, the 400i is also highly customizable, allowing you to
+				tailor it to your specific needs and preferences. From custom paint schemes to specialized weapon
+				loadouts, the 400i can be customized to suit your every need.
+				<br> <br> Experience the future of space travel today with Origin Jumpworks' 400i. Elevate your space
+				travel experience with the ultimate in luxury and functionality. Whether you're looking to explore the
+				galaxy in style or take on the toughest challenges the universe has to offer, the 400i has you covered.
+			</p>
+
+
+			<p id="version4" data-isOpen="false">
+				<span class="article-title">Cap St Lary 2018 : un week-end sportif magique pour des jeunes atteints de
+					mucoviscidose.</span>
+				<br> <br> Welcome to the future of spta grandced thrusters provide exceptional speed and
+				maneuverability, enabling you to outrun and outmaneuver any foe. With its superior combat capabilities,
+				the 400i is the perfect choice for those who demand both luxury and security.
+				<br> <br> In addition to its impressive features, the 400i is also highly customizable, allowing you to
+				tailor it to your specific needs and preferences. From custom paint schemes to specialized weapon
+				loadouts, the 400i can be customized to suit your every need.
+				<br> <br> Experience the future of space travel today with Origin Jumpworks' 400i. Elevate your space
+				travel experience with the ultimate in luxury and functionality. Whether you're looking to explore the
+				galaxy in style or take on the toughest challenges the universe has to offer, the 400i has you covered.
+			</p>
+
+
+			<p id="version5" data-isOpen="false">
+				<span class="article-title">Cap St Lary 2018 : un week-end sportif magique pour des jeunes atteints de
+					mucoviscidose.</span>
+				<br> <br> Welcome to the future of spta grandced thrusters provide exceptional speed and
+				maneuverability, enabling you to outrun and outmaneuver any foe. With its superior combat capabilities,
+				the 400i is the perfect choice for those who demand both luxury and security.
+				<br> <br> In addition to its impressive features, the 400i is also highly customizable, allowing you to
+				tailor it to your specific needs and preferences. From custom paint schemes to specialized weapon
+				loadouts, the 400i can be customized to suit your every need.
+				<br> <br> Experience the future of space travel today with Origin Jumpworks' 400i. Elevate your space
+				travel experience with the ultimate in luxury and functionality. Whether you're looking to explore the
+				galaxy in style or take on the toughest challenges the universe has to offer, the 400i has you covered.
+			</p>
+
+
+			<p id="version6" data-isOpen="false">
+				<span class="article-title">Cap St Lary 2018 : un week-end sportif magique pour des jeunes atteints de
+					mucoviscidose.</span>
+				<br> <br> Welcome to the future of spta grandced thrusters provide exceptional speed and
+				maneuverability, enabling you to outrun and outmaneuver any foe. With its superior combat capabilities,
+				the 400i is the perfect choice for those who demand both luxury and security.
+				<br> <br> In addition to its impressive features, the 400i is also highly customizable, allowing you to
+				tailor it to your specific needs and preferences. From custom paint schemes to specialized weapon
+				loadouts, the 400i can be customized to suit your every need.
+				<br> <br> Experience the future of space travel today with Origin Jumpworks' 400i. Elevate your space
+				travel experience with the ultimate in luxury and functionality. Whether you're looking to explore the
+				galaxy in style or take on the toughest challenges the universe has to offer, the 400i has you covered.
+			</p>
+
+
+			<p id="version7" data-isOpen="false">
+				<span class="article-title">Cap St Lary 2018 : un week-end sportif magique pour des jeunes atteints de
+					mucoviscidose.</span>
+				<br> <br> Welcome to the future of spta grandced thrusters provide exceptional speed and
+				maneuverability, enabling you to outrun and outmaneuver any foe. With its superior combat capabilities,
+				the 400i is the perfect choice for those who demand both luxury and security.
+				<br> <br> In addition to its impressive features, the 400i is also highly customizable, allowing you to
+				tailor it to your specific needs and preferences. From custom paint schemes to specialized weapon
+				loadouts, the 400i can be customized to suit your every need.
+				<br> <br> Experience the future of space travel today with Origin Jumpworks' 400i. Elevate your space
+				travel experience with the ultimate in luxury and functionality. Whether you're looking to explore the
+				galaxy in style or take on the toughest challenges the universe has to offer, the 400i has you covered.
+			</p>
+		</div>
+
+
+
+		<script src="./infos.js"></script>
+	</main>
+
+	<footer>
+		<!-- <?php 
+						$currentPage = "infos";
+						include('../footer.php'); 
+				?> -->
+	</footer>
 </body>
 
 </html>
