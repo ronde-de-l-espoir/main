@@ -51,7 +51,6 @@ main {
 }
 
 
-
 .img-div {
     box-sizing: border-box;
     overflow: hidden;
@@ -78,4 +77,12 @@ main {
 
 h3 {
     text-align: center;
+}
+
+#second-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    column-gap: var(--grid-gap);
+    padding: 40px 7vw 0;
+    box-sizing: border-box;
 }
