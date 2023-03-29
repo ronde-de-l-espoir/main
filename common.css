@@ -128,9 +128,11 @@ header .reduced-menu {
 
 header .reduced-menu .trigger-wrapper {
     height: 100%;
+    width: 25px;
     position: relative;
     display: flex;
     align-items: center;
+    z-index: 3;
 }
 
 header .reduced-menu #menu-trigger {
@@ -345,7 +347,7 @@ only screen and (max-height: 600px) and (max-width: 630px) {
 }
 
 @media only screen and (max-device-height: 600px),
-only screen and (max-width: 600px) {
+only screen and (max-height: 600px) {
     .side-nav-wrapper {
         margin-top: 60px;
         height: 180px;
