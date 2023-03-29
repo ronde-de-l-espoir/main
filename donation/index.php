@@ -8,7 +8,7 @@
 <!DOCTYPE html>
 <html lang="en" data-hidden>
 <head>
-    <title>La Ronde de l'Espoir - Faire un don</title>
+    <title>Faire un don - La Ronde de l'Espoir</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,10 +42,10 @@
             <div class="nav-wrapper">
                 <img src="../img/clean_logo_littoral.png" alt="Logo La Merci Littoral" onclick="javascript:window.location='https://lamerci.com/littoral/accueil';">
                 <div class="link-wrapper">
-                    <a href="../" class="underline-anim" data-isFocus="true">Accueil</a>
+                    <a href="../" class="underline-anim" data-isFocus="false">Accueil</a>
                     <a href="../infos/" class="underline-anim" data-isFocus="false">Infos</a>
                     <a href="../galerie/" class="underline-anim" data-isFocus="false">Galerie</a>
-                    <a href="#" id="donate-btn" data-isFocus="false">Faire un don</a>  <!-- C'est plus pratique de rajouter un "./" devant les liens. -->
+                    <a href="#" id="donate-btn">Faire un don</a>  <!-- C'est plus pratique de rajouter un "./" devant les liens. -->
                 </div>
             </div>
         </nav>
