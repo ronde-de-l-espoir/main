@@ -11,7 +11,17 @@ xhr.onreadystatechange = function (){
         }
     }
 }
-// xhr.responseType = 'json'
 xhr.send(null)
 
-console.log(articlesJSON)
+var currentPage = window.location.pathname.split('/').slice(-2, -1)[0]
+
+for (var i=0 ; i < articlesJSON.length ; i++){
+	if (articlesJSON[i].URL == currentPage){
+		var pageTitle = articlesJSON[i].Title
+		var pageContent = articlesJSON[i].Content
+	}
+}
+
+
+document.title = pageTitle
+document.getElementById('main').innerText = pageContent
