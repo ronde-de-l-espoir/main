@@ -21,10 +21,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800;900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="img/LRDE-logo.png" type="image/x-icon">
     <link rel="stylesheet" href="common.css">
-    <link rel="stylesheet" href="accueil-style.css">
-    <link rel="stylesheet" href="count-box.css">
-    <script src="./swiped-events.min.js"></script>
-    <script src="./app.js" defer></script>
+    <script src="../swiped-events.min.js"></script>
+    <script src="../app.js" defer></script>
+    <link rel="stylesheet" href="faq.css">
 </head>
 <body data-hidden>
 
@@ -71,8 +70,22 @@
 
     <main>
         <div class="main-wrapper">
-
-            
+            <div id="title">
+                <h2>les questions que vous vous posez </h2>
+            </div>
+            <p>il faudra remplir ici la faq mais je sais pas quoi mettre pour l'instant</p>
+            <div id="title">
+                <h2>une autre question que vous vous posez</h2>
+            </div>
+            <p>il faudra remplir ici la faq mais je sais pas quoi mettre pour l'instant</p>
+            <div id="title">
+                <h2>une autre question que vous vous posez</h2>
+            </div>
+            <p>il faudra remplir ici la faq mais je sais pas quoi mettre pour l'instant</p>
+            <div id="title">
+                <h2>une autre question que vous vous posez</h2>
+            </div>
+            <p>il faudra remplir ici la faq mais je sais pas quoi mettre pour l'instant</p>
 
         </div>
     </main>
