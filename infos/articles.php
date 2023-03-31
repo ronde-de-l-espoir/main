@@ -24,7 +24,17 @@
         </div>
     </header>
     <main id="main">
-        
+        <div id="article">
+            <div id="test">
+                <h2></h2>
+            </div>
+            <div id="article-text">
+
+            </div>
+        </div>
+        <div id="suggestions-column">
+
+        </div>
     </main>
 </body>
 <script src="../articles.js"></script>

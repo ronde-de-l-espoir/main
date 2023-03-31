@@ -103,4 +103,10 @@ main {
     display: grid;
     grid-template-columns: minmax(368px, 6fr) minmax(368px, 1fr);
     height: 90vh;
+    margin: 10vw;
+}
+
+
+h2 {
+    /* font-size: 2.5em; */
 }
