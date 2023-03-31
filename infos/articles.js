@@ -24,4 +24,4 @@ for (var i=0 ; i < articlesJSON.length ; i++){
 
 
 document.title = pageTitle
-document.getElementById('main').innerText = pageContent
+document.getElementById('main').innerHTML = pageContent

@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../articles-style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
     <header>
@@ -17,11 +19,13 @@
             </span>
             
             <span class="nav-image">
-                <img src="../img/" alt="">
+                <img src="../img/LRDE-logo.png" alt="">
             </span>
         </div>
     </header>
-    <p id="hello"></p>
+    <main id="main">
+        
+    </main>
 </body>
 <script src="../articles.js"></script>
 </html>
