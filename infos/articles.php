@@ -33,7 +33,38 @@
             </div>
         </div>
         <div id="suggestions-column">
-
+        <div class="article" id="art1" onclick="window.location.href = './qu-est-ce-la-ronde-de-l-espoir/'">
+					<div class="img-div">
+						<img src="../img/ptit-bg.png">
+					</div>
+					<div class="article-start">
+						<h3>Qu'est-ce que la Ronde de l'Espoir ?</h3>
+						<div class="text">
+							<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex quod cum consectetur labore consequuntur a, ad expedita iste unde autem laboriosam beatae eos eligendi officiis rem in itaque? Aspernatur, earum? Lorem Ipsum...</p>
+						</div>
+					</div>
+				</div>
+				<div class="article" id="art2" onclick="window.location.href = './cap-ou-pas-cap-dyspraxie/'">
+					<div class="img-div">
+						<img src="../img/art2.jpg">
+					</div>
+					<div class="article-start">
+						<h3>Cap ou cap ? S’initier à l’escalade avec une dyspraxie</h3>
+						<p>Depuis notre premier projet en 2014 qui avait emmené une quarantaine de personnes dans les
+							Calanques pour découvrir la voile et l’escalade, ce sont près de 250
+							personnes, des parents, des enfants et adolescents malades et...
+						</p>
+					</div>
+				</div>
+				<div class="article" id="art3" onclick="window.location.href = './cap-st-lary-2018/'">
+					<div class="img-div">
+						<img src="../img/art3.png">
+					</div>
+					<div class="article-start">
+						<h3>Cap St Lary 2018</h3>
+						<p>C’est au début de l’été 2018, dans le décor naturel de St Lary...</p>
+					</div>
+				</div>
         </div>
     </main>
 </body>
