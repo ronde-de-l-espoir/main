@@ -28,8 +28,7 @@
 		<nav>
 			<div class="nav-wrapper">
 
-				<img src="../img/clean_logo_littoral.png" alt="Logo La Merci Littoral"
-					onclick="javascript:window.location='https://lamerci.com/littoral/accueil';">
+				<img src="../img/clean_logo_littoral.png" alt="Logo La Merci Littoral" onclick="javascript:window.location='https://lamerci.com/littoral/accueil';">
 
 				<div class="link-wrapper">
 					<a href="../" class="underline-anim" data-isFocus="false">Accueil</a>
@@ -109,7 +108,7 @@
 					</div>
 					<div class="article-start">
 						<h3>La Ronde - Edition 2017</h3>
-						<p>Ce vendredi 31 mars 2017 a débuté la Ronde de l’Espoir de La Merci Littoral. A cette occasion le lycée  a organisé de nombreuses activités en vue de récolter des fonds pour les enfants hospitalisés. Si l’objectif était de récolter un maximum d’argent, ce fût aussi l’occasion de nombreux moments de divertissement.</p>
+						<p>Ce vendredi 31 mars 2017 a débuté la Ronde de l’Espoir de La Merci Littoral. A cette occasion le lycée a organisé de nombreuses activités en vue de récolter des fonds pour les enfants hospitalisés. Si l’objectif était de récolter un maximum d’argent, ce fût aussi l’occasion de nombreux moments de divertissement.</p>
 					</div>
 				</div>
 				<div class="article" id="art5">
@@ -146,10 +145,10 @@
 	</main>
 
 	<footer>
-		<!-- <?php 
-						$currentPage = "infos";
-						include('../footer.php'); 
-				?> -->
+		<?php
+			$currentPage = "infos";
+			include('../footer.php');
+		?>
 	</footer>
 </body>
 
