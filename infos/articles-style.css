@@ -135,7 +135,7 @@ main {
     padding-left: calc((10vw - 4px)/2);
 }
 
-.article {
+.recommended-article {
     box-sizing: border-box;
     display: grid;
     grid-template-rows: 1.5fr 2fr;
@@ -144,7 +144,7 @@ main {
     border-radius: 12px;
 }
 
-.article:hover {
+.recommended-article:hover {
     cursor: pointer;
     filter: brightness(0.9);
 }

@@ -36,7 +36,7 @@
 		</div>
 		<div id="suggestions-column">
 			<h3>Ces articles pourraient vous intéresser :</h3>
-			<div class="article" id="art1" onclick="window.location.href = './qu-est-ce-la-ronde-de-l-espoir/'">
+			<div class="recommended-article" id="art1" onclick="window.location.href = './qu-est-ce-la-ronde-de-l-espoir/'">
 				<div class="img-div">
 					<img src="../../img/ptit-bg.png">
 				</div>
@@ -47,7 +47,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="article" id="art2" onclick="window.location.href = './cap-ou-pas-cap-dyspraxie/'">
+			<div class="recommended-article" id="art2" onclick="window.location.href = './cap-ou-pas-cap-dyspraxie/'">
 				<div class="img-div">
 					<img src="../../img/art2.jpg">
 				</div>
@@ -59,7 +59,7 @@
 					</p>
 				</div>
 			</div>
-			<div class="article" id="art3" onclick="window.location.href = './cap-st-lary-2018/'">
+			<div class="recommended-article" id="art3" onclick="window.location.href = './cap-st-lary-2018/'">
 				<div class="img-div">
 					<img src="../../img/art3.png">
 				</div>
@@ -68,7 +68,7 @@
 					<p>C’est au début de l’été 2018, dans le décor naturel de St Lary...</p>
 				</div>
 			</div>
-			<div class="article" id="art3" onclick="window.location.href = './cap-st-lary-2018/'">
+			<div class="recommended-article" id="art3" onclick="window.location.href = './cap-st-lary-2018/'">
 				<div class="img-div">
 					<img src="../../img/art3.png">
 				</div>
@@ -77,7 +77,7 @@
 					<p>C’est au début de l’été 2018, dans le décor naturel de St Lary...</p>
 				</div>
 			</div>
-			<div class="article" id="art3" onclick="window.location.href = './cap-st-lary-2018/'">
+			<div class="recommended-article" id="art3" onclick="window.location.href = './cap-st-lary-2018/'">
 				<div class="img-div">
 					<img src="../../img/art3.png">
 				</div>
@@ -86,7 +86,7 @@
 					<p>C’est au début de l’été 2018, dans le décor naturel de St Lary...</p>
 				</div>
 			</div>
-			<div class="article" id="art3" onclick="window.location.href = './cap-st-lary-2018/'">
+			<div class="recommended-article" id="art3" onclick="window.location.href = './cap-st-lary-2018/'">
 				<div class="img-div">
 					<img src="../../img/art3.png">
 				</div>
@@ -95,7 +95,7 @@
 					<p>C’est au début de l’été 2018, dans le décor naturel de St Lary...</p>
 				</div>
 			</div>
-			<div class="article" id="art3" onclick="window.location.href = './cap-st-lary-2018/'">
+			<div class="recommended-article" id="art3" onclick="window.location.href = './cap-st-lary-2018/'">
 				<div class="img-div">
 					<img src="../../img/art3.png">
 				</div>
