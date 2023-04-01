@@ -13,6 +13,7 @@
 	<link rel="shortcut icon" href="../img/LRDE-logo.png" type="image/x-icon">
 	<link rel="stylesheet" href="../common.css">
 	<link rel="stylesheet" href="./style.css">
+	<title>LRDE -- Chargement</title>
 	<script src="../app.js" defer></script>
 	<script src="./fitty.min.js"></script>
 </head>
