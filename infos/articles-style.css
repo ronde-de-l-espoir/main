@@ -101,12 +101,27 @@ header {
 
 main {
     display: grid;
-    grid-template-columns: minmax(368px, 6fr) minmax(368px, 1fr);
-    height: 90vh;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+    /* height: 90vh; */
     margin: 10vw;
+    box-sizing: border-box;
+    width: 80vw;
+}
+
+
+#article {
+    grid-column: span 2;
 }
 
 
 h2 {
-    /* font-size: 2.5em; */
+    font-size: 28px;
+}
+
+p {
+    font-size: 17.6px;
+}
+
+#suggestions-column {
+    height: 500px;
 }
