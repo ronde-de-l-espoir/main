@@ -12,57 +12,32 @@ var articlesJSON = []
 // }
 // xhr.send(null)
 
+var currentPage = window.location.pathname.split('/').slice(-2, -1)[0]
+
 const URL = 'https://docs.google.com/spreadsheets/d/14wG0Ywy1BxvxptXbvi7smP4fv6kOcQyyt5Yh0TL3OXE/gviz/tq?tqx=out:json'
 
 fetch(URL)
-	.then(response => function(){
-		const responseText = response.text();
-		return responseText
-	}).then(function(responseText){
-		console.log(responseText)
-		let json_string = responseText.substring(47).slice(0, -2);
-		return json_string
-	}).then(function(){
-		let parsed = JSON.parse(json_string)
-		return parsed
-	}).catch(err => console.error(err));
+	.then(response => response.text().then(textData => {
+		const articlesJSON = JSON.parse(textData.substring(47).slice(0, -2)).table;
+		return articlesJSON
+	}).then(articlesJSON => {
+		for (var i = 1; i < articlesJSON.rows.length; i++) {
+			if (articlesJSON.rows[i].c[0].v == currentPage) {
+				var pageTitle = articlesJSON.rows[i].c[1].v
+				var tabTitle = articlesJSON.rows[i].c[2].v
+				var pageContent = articlesJSON.rows[i].c[3].v;
+			}
+		}
+		document.title = tabTitle
+		document.getElementsByTagName('h2')[0].innerText = pageTitle
+		document.getElementById('article-text').innerHTML = pageContent
+		return articlesJSON
+	})
+	)
+	.catch(error => {
+		console.error('Error fetching and parsing JSON:', error);
+	});
 
-	
-
-// async function getSheet (){
-// 	const captionsURL = 'https://docs.google.com/spreadsheets/d/1l6PfRKvyKB042l8pC-WhLzxSRt4YrqNbtwGudRe4Jjo/gviz/tq?tqx=out:json'
-// 	const fullResponse = await fetch(captionsURL)
-// 	const textResponse = await fullResponse.text()
-// 	let json_string = textResponse.substring(47).slice(0, -2);
-// 	let parsed = await JSON.parse(json_string);
-// 	return parsed;
-// }
-
-// async function sheetToArray(params) {
-// 	// var captions = [];
-// 	parsed = await getSheet();
-// 	parsed.table.rows.forEach((row) => {
-// 		let caption = []
-// 		caption.push(row.c[0].v)
-// 		caption.push(row.c[1].v)
-// 		captions.push(caption)
-// 	})
-// }
-
-
-var currentPage = window.location.pathname.split('/').slice(-2, -1)[0]
-
-for (var i = 0; i < articlesJSON.length; i++) {
-	if (articlesJSON[i].URL == currentPage) {
-		var pageTitle = articlesJSON[i].Title
-		var pageContent = articlesJSON[i].Content
-	}
-}
-
-
-document.title = pageTitle
-document.getElementsByTagName('h2')[0].innerText = pageTitle
-document.getElementById('article-text').innerHTML = pageContent
 
 
 // FOR FITTING THE TEXT
