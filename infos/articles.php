@@ -109,4 +109,11 @@
 </body>
 <script src="../articles.js"></script>
 
+<footer>
+	<?php
+		$currentPage = "infos";
+		include('../../footer.php');
+	?>
+</footer>
+
 </html>
