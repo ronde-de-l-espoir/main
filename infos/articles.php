@@ -36,72 +36,67 @@
 		</div>
 		<div id="suggestions-column">
 			<h3>Ces articles pourraient vous intéresser :</h3>
-			<div class="recommended-article hidden-article" id="art1" onclick="window.location.href = './qu-est-ce-la-ronde-de-l-espoir/'">
+			<div class="recommended-article hidden-article" id="qu-est-ce-donc" onclick="window.location.href = './qu-est-ce-donc'">
 				<div class="img-div">
 					<img src="../../img/ptit-bg.png">
 				</div>
 				<div class="article-start">
 					<h4>Qu'est-ce que la Ronde de l'Espoir ?</h4>
-					<div class="text">
-						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex quod cum consectetur labore consequuntur a, ad expedita iste unde autem laboriosam beatae eos eligendi officiis rem in itaque? Aspernatur, earum? Lorem Ipsum...</p>
-					</div>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex quod cum consectetur labore consequuntur a, ad expedita iste unde autem laboriosam beatae eos eligendi officiis rem in itaque? Aspernatur, earum? Lorem Ipsum...</p>
 				</div>
 			</div>
-			<div class="recommended-article hidden-article" id="art2" onclick="window.location.href = './cap-ou-pas-cap-dyspraxie/'">
+			<div class="recommended-article hidden-article" id="dmf-34" onclick="window.location.href = './dmf-34'">
 				<div class="img-div">
-					<img src="../../img/art2.jpg">
+					<img src="../photos/dmf.png">
 				</div>
 				<div class="article-start">
-					<h4>Cap ou cap ? S’initier à l’escalade avec une dyspraxie</h4>
-					<p>Depuis notre premier projet en 2014 qui avait emmené une quarantaine de personnes dans les
-						Calanques pour découvrir la voile et l’escalade, ce sont près de 250
-						personnes, des parents, des enfants et adolescents malades et...
-					</p>
+					<h4>Dyspraxique Mais Fantastique</h4>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex quod cum consectetur labore consequuntur a, ad expedita iste unde autem laboriosam beatae eos eligendi officiis rem in itaque? Aspernatur, earum? Lorem Ipsum...</p>
 				</div>
 			</div>
-			<div class="recommended-article hidden-article" id="art3" onclick="window.location.href = './cap-st-lary-2018/'">
+			<div class="recommended-article hidden-article" id="kite-surf" onclick="window.location.href = './kite-surf'">
 				<div class="img-div">
-					<img src="../../img/art3.png">
+					<img src="../photos/kitesurf.jpg">
 				</div>
 				<div class="article-start">
-					<h4>Cap St Lary 2018</h4>
-					<p>C’est au début de l’été 2018, dans le décor naturel de St Lary...</p>
+					<h4>Le Kite Surf</h4>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex quod cum consectetur labore consequuntur a, ad expedita iste unde autem laboriosam beatae eos eligendi officiis rem in itaque? Aspernatur, earum? Lorem Ipsum...</p>
 				</div>
 			</div>
-			<div class="recommended-article hidden-article" id="art4" onclick="window.location.href = './cap-st-lary-2018/'">
+			<div class="recommended-article hidden-article" id="record-du-monde-ergo-aviron" onclick="window.location.href = './record-du-monde-ergo-aviron'">
 				<div class="img-div">
-					<img src="../../img/art3.png">
+					<img src="../photos/aviron.png">
 				</div>
 				<div class="article-start">
-					<h4>Cap St Lary 2018</h4>
-					<p>C’est au début de l’été 2018, dans le décor naturel de St Lary...</p>
+					<h4>La Ronde de l'Espoir : le Record du Monde d'ergo-aviron</h4>
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem, iste cumque doloribus, architecto eum harum labore at esse, voluptate nesciunt adipisci sunt perferendis earum delectus! Corporis perspiciatis aliquam dolorum magni?</p>
 				</div>
 			</div>
-			<div class="recommended-article hidden-article" id="art5" onclick="window.location.href = './cap-st-lary-2018/'">
+			<div class="recommended-article hidden-article" id="le-lycee" onclick="window.location.href = './le-lycee'">
 				<div class="img-div">
-					<img src="../../img/art3.png">
+					<img src="../../img/logo_littoral_smaller.png">
 				</div>
 				<div class="article-start">
-					<h4>Cap St Lary 2018</h4>
-					<p>C’est au début de l’été 2018, dans le décor naturel de St Lary...</p>
+					<h4>Le Lycée La Merci Littoral</h4>
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt voluptatibus sunt consequuntur fugit. Facere nisi dolores expedita a. Pariatur dolores magni aliquid ab incidunt deleniti dolore id error doloremque architecto.</p>
 				</div>
 			</div>
-			<div class="recommended-article hidden-article" id="art6" onclick="window.location.href = './cap-st-lary-2018/'">
+			<div class="recommended-article hidden-article" id="cap-ou-cap" onclick="window.location.href = './cap-ou-cap'">
 				<div class="img-div">
-					<img src="../../img/art3.png">
+					<img src="../photos/escalade.jpg">
 				</div>
 				<div class="article-start">
-					<h4>Cap St Lary 2018</h4>
-					<p>C’est au début de l’été 2018, dans le décor naturel de St Lary...</p>
+					<h4>DMF : Cap ou Cap ?</h4>
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt voluptatibus sunt consequuntur fugit. Facere nisi dolores expedita a. Pariatur dolores magni aliquid ab incidunt deleniti dolore id error doloremque architecto.</p>
 				</div>
 			</div>
-			<div class="recommended-article hidden-article" id="art7" onclick="window.location.href = './cap-st-lary-2018/'">
+			<div class="recommended-article hidden-article" id="cap-st-lary" onclick="window.location.href = './cap-st-lary'">
 				<div class="img-div">
-					<img src="../../img/art3.png">
+					<img src="../photos/rando.png">
 				</div>
 				<div class="article-start">
-					<h4>Cap St Lary 2018</h4>
-					<p>C’est au début de l’été 2018, dans le décor naturel de St Lary...</p>
+					<h4>DMF : Cap St Lary</h4>
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt voluptatibus sunt consequuntur fugit. Facere nisi dolores expedita a. Pariatur dolores magni aliquid ab incidunt deleniti dolore id error doloremque architecto.</p>
 				</div>
 			</div>
 		</div>
@@ -111,8 +106,8 @@
 
 <footer>
 	<?php
-		$currentPage = "infos";
-		include('../../footer.php');
+	$currentPage = "infos";
+	include('../../footer.php');
 	?>
 </footer>
 
