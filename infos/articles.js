@@ -3,13 +3,9 @@ var recommenedArticlesID = ['art1', 'art2', 'art3', 'art4', 'art5', 'art6', 'art
 
 
 for (var i=0; i < 3; i++){
-	var place = Math.floor(Math.random() * recommenedArticlesID.length)
-	var articleToBeShow = recommenedArticlesID[place]
+	var articleToBeShow = recommenedArticlesID[Math.floor(Math.random() * recommenedArticlesID.length)]
 	recommenedArticlesID.splice(recommenedArticlesID.indexOf(articleToBeShow), 1)
-	console.log(recommenedArticlesID)
-	console.log(articleToBeShow)
 	document.getElementById(articleToBeShow).classList.remove('hidden-article')
-
 }
 
 
