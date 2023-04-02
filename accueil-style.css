@@ -1,6 +1,7 @@
-/* main {
-    height: 80vh;
-} */
+:root {
+    --soft-white: #E5E9EC;
+    --LM-color: #0099D7;
+}
 
 .main-wrapper {
     width: 70vw;
@@ -125,7 +126,7 @@
     justify-content: center;
     align-items: center;
     font-size: 3rem;
-    color: #555;
+    color: #3c4853;
 }
 
 .carousel .swipe * {
@@ -136,7 +137,7 @@
     --length: 60px;
     width: var(--length);
     height: var(--length);
-    border: 3px #555 solid;
+    border: 3px var(--LM-color) solid;
     border-radius: var(--length);
     display: flex;
     justify-content: center;
