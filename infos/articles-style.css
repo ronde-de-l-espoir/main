@@ -127,6 +127,11 @@ main {
     font-size: 16px;
 }
 
+#source {
+    text-align: right;
+    font-style: italic;
+}
+
 #suggestions-column {
     height: fit-content;
     display: grid;

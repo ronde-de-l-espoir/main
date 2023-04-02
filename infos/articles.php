@@ -27,12 +27,9 @@
 	</header>
 	<main id="main">
 		<div id="article">
-			<div id="test">
-				<h2></h2>
-			</div>
-			<div id="article-text">
-
-			</div>
+			<h2></h2>
+			<div id="article-text"></div>
+			<p id="source"></p>
 		</div>
 		<div id="suggestions-column">
 			<h3>Ces articles pourraient vous intéresser :</h3>

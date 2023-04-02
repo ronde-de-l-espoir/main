@@ -34,12 +34,14 @@ fetch(URL)
 			if (articlesJSON.rows[i].c[0].v == currentPage) {
 				var pageTitle = articlesJSON.rows[i].c[1].v
 				var tabTitle = articlesJSON.rows[i].c[2].v
-				var pageContent = articlesJSON.rows[i].c[3].v;
+				var pageContent = articlesJSON.rows[i].c[3].v
+				var source = articlesJSON.rows[i].c[4].v
 			}
 		}
 		document.title = tabTitle
 		document.getElementsByTagName('h2')[0].innerText = pageTitle
 		document.getElementById('article-text').innerHTML = pageContent
+		document.getElementById('source').innerText = source
 		return articlesJSON
 	})
 	)
