@@ -110,7 +110,15 @@
             <div class="swipe" id="left">
                 <div class="swipe-arrow"><span class="material-symbols-outlined">arrow_back</span></div>
             </div>
-            <div class="carousel-image"></div>
+
+            <div class="carousel-image">
+                <div class="img-wrapper">
+                    <img src="./img/carousel/picture1.jpeg" alt="picture1" id="hidden-picture-left">
+                    <img src="./img/carousel/picture2.jpeg" alt="picture2" id="picture-displayed">
+                    <img src="./img/carousel/picture3.jpeg" alt="picture3" id="hidden-picture-right">
+                </div>
+            </div>
+
             <div class="swipe" id="right">
                 <div class="swipe-arrow"><span class="material-symbols-outlined">arrow_forward</span></div>
             </div>
