@@ -154,6 +154,13 @@ main {
     }
 }
 
+@media only screen and (max-width: 440px) {
+    .recommended-article {
+        width: 100%;
+        margin: 0;
+    }
+}
+
 .hidden-article {
     display: none;
 }
