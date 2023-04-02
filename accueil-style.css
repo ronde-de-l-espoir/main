@@ -101,11 +101,11 @@
     height: 500px;
     display: grid;
     grid-template-columns:
-        [first] 18vw
+        [first] 16vw
         [image-margin-left] 150px
         [image-start] auto
         [image-margin-right] 150px
-        [image-end] 18vw
+        [image-end] 16vw
     [last];
     grid-template-rows: [first] auto [last];
 }
@@ -171,6 +171,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: 700ms ease-out;
 }
 
 #hidden-picture-left {

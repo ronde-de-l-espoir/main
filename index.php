@@ -113,14 +113,14 @@
 
             <div class="carousel-image">
                 <div class="img-wrapper">
-                    <img src="./img/carousel/picture1.jpeg" alt="picture1" id="hidden-picture-left">
-                    <img src="./img/carousel/picture2.jpeg" alt="picture2" id="picture-displayed">
-                    <img src="./img/carousel/picture3.jpeg" alt="picture3" id="hidden-picture-right">
+                    <img src="" id="hidden-picture-left">
+                    <img src="" data-indexCurrent="1" alt="displayed picture" id="picture-displayed">
+                    <img src="" id="hidden-picture-right">
                 </div>
             </div>
 
             <div class="swipe" id="right">
-                <div class="swipe-arrow"><span class="material-symbols-outlined">arrow_forward</span></div>
+                <div class="swipe-arrow" onclick="carouselSwipeRight(pictures)"><span class="material-symbols-outlined">arrow_forward</span></div>
             </div>
         </div>
 
