@@ -91,7 +91,7 @@
 
 <br><br><b>Hébergeur :</b> <a href="https://www.o2switch.fr/notre-histoire/">o2switch</a> 
 
-<br><br>Le site utilise la plateforme de paiement en ligne Stripe pour collecter les paiements par carte de crédit et de débit. Les données de paiement sont transmises directement à Stripe et ne sont pas stockées sur nos serveurs.
+<br><br>Le site utilise la plateforme de paiement en ligne <a href="https://stripe.com/en-gb-fr">Stripe</a> pour collecter les paiements par carte de crédit et de débit. Les données de paiement sont transmises directement à Stripe et ne sont pas stockées sur nos serveurs.
 
 <br><br>Le site est soumis à la licence Creative Commons Attribution - Pas d'Utilisation Commerciale - Pas de Modification 4.0 International (CC BY-NC-ND 4.0). Cette licence permet de partager et de copier le contenu du site à condition de mentionner la source et de ne pas en faire un usage commercial ni de le modifier.
 <br><br>Les informations recueillies sur le site font l'objet d'un traitement informatique destiné à répondre aux demandes des utilisateurs. Conformément à la loi "Informatique et Libertés" du 6 janvier 1978 modifiée, vous disposez d'un droit d'accès, de rectification et de suppression des données vous concernant. Vous pouvez exercer ce droit en nous contactant à l'adresse <a href="mailto:contact@ronde-de-l-espoir.fr">contact@ronde-de-l-espoir.fr</a>.
