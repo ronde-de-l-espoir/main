@@ -173,11 +173,14 @@
     object-fit: cover;
 }
 
-#picture2,
-#picture3,
-#picture4,
-#picture5 {
+#hidden-picture-left {
     position: absolute;
-    left: -100%;
     top: 0;
+    left: -101%;
+}
+
+#hidden-picture-right {
+    position: absolute;
+    top: 0;
+    right: -101%;
 }
