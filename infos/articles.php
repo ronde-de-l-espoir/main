@@ -36,7 +36,7 @@
 		</div>
 		<div id="suggestions-column">
 			<h3>Ces articles pourraient vous intéresser :</h3>
-			<div class="recommended-article hidden-article" id="qu-est-ce-donc" onclick="window.location.href = './qu-est-ce-donc'">
+			<div class="recommended-article hidden-article" id="qu-est-ce-donc" onclick="window.location.href = '../qu-est-ce-donc'">
 				<div class="img-div">
 					<img src="../../img/ptit-bg.png">
 				</div>
@@ -45,7 +45,7 @@
 					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex quod cum consectetur labore consequuntur a, ad expedita iste unde autem laboriosam beatae eos eligendi officiis rem in itaque? Aspernatur, earum? Lorem Ipsum...</p>
 				</div>
 			</div>
-			<div class="recommended-article hidden-article" id="dmf-34" onclick="window.location.href = './dmf-34'">
+			<div class="recommended-article hidden-article" id="dmf-34" onclick="window.location.href = '../dmf-34'">
 				<div class="img-div">
 					<img src="../photos/dmf.png">
 				</div>
@@ -54,7 +54,7 @@
 					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex quod cum consectetur labore consequuntur a, ad expedita iste unde autem laboriosam beatae eos eligendi officiis rem in itaque? Aspernatur, earum? Lorem Ipsum...</p>
 				</div>
 			</div>
-			<div class="recommended-article hidden-article" id="kite-surf" onclick="window.location.href = './kite-surf'">
+			<div class="recommended-article hidden-article" id="kite-surf" onclick="window.location.href = '../kite-surf'">
 				<div class="img-div">
 					<img src="../photos/kitesurf.jpg">
 				</div>
@@ -63,7 +63,7 @@
 					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex quod cum consectetur labore consequuntur a, ad expedita iste unde autem laboriosam beatae eos eligendi officiis rem in itaque? Aspernatur, earum? Lorem Ipsum...</p>
 				</div>
 			</div>
-			<div class="recommended-article hidden-article" id="record-du-monde-ergo-aviron" onclick="window.location.href = './record-du-monde-ergo-aviron'">
+			<div class="recommended-article hidden-article" id="record-du-monde-ergo-aviron" onclick="window.location.href = '../record-du-monde-ergo-aviron'">
 				<div class="img-div">
 					<img src="../photos/aviron.png">
 				</div>
@@ -72,7 +72,7 @@
 					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem, iste cumque doloribus, architecto eum harum labore at esse, voluptate nesciunt adipisci sunt perferendis earum delectus! Corporis perspiciatis aliquam dolorum magni?</p>
 				</div>
 			</div>
-			<div class="recommended-article hidden-article" id="le-lycee" onclick="window.location.href = './le-lycee'">
+			<div class="recommended-article hidden-article" id="le-lycee" onclick="window.location.href = '../le-lycee'">
 				<div class="img-div">
 					<img src="../../img/logo_littoral_smaller.png">
 				</div>
@@ -81,7 +81,7 @@
 					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt voluptatibus sunt consequuntur fugit. Facere nisi dolores expedita a. Pariatur dolores magni aliquid ab incidunt deleniti dolore id error doloremque architecto.</p>
 				</div>
 			</div>
-			<div class="recommended-article hidden-article" id="cap-ou-cap" onclick="window.location.href = './cap-ou-cap'">
+			<div class="recommended-article hidden-article" id="cap-ou-cap" onclick="window.location.href = '../cap-ou-cap'">
 				<div class="img-div">
 					<img src="../photos/escalade.jpg">
 				</div>
@@ -90,7 +90,7 @@
 					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt voluptatibus sunt consequuntur fugit. Facere nisi dolores expedita a. Pariatur dolores magni aliquid ab incidunt deleniti dolore id error doloremque architecto.</p>
 				</div>
 			</div>
-			<div class="recommended-article hidden-article" id="cap-st-lary" onclick="window.location.href = './cap-st-lary'">
+			<div class="recommended-article hidden-article" id="cap-st-lary" onclick="window.location.href = '../cap-st-lary'">
 				<div class="img-div">
 					<img src="../photos/rando.png">
 				</div>
@@ -106,8 +106,8 @@
 
 <footer>
 	<?php
-	$currentPage = "infos";
-	include('../../footer.php');
+	// $currentPage = "infos";
+	// include('../../footer.php');
 	?>
 </footer>
 
