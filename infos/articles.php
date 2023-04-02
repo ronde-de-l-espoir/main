@@ -21,7 +21,7 @@
 			</span>
 
 			<span class="nav-image">
-				<img src="../img/LRDE-logo.png" alt="">
+				<img src="../../img/LRDE-logo.png" alt="">
 			</span>
 		</div>
 	</header>
