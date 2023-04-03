@@ -20,7 +20,8 @@
     <link rel="stylesheet" href="../common.css">
     <!-- <link rel="stylesheet" href="./donation-style.css"> -->
     <link rel="stylesheet" href="./style.css">
-    <script src="../app.js" defer></script>
+    <script src="../app.js" defer></script><!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-6XM6CLQWYR"></script>
@@ -92,6 +93,13 @@
                         <p class="bigger-font">Nous envoyer un chèque à l'adresse <span class="nowrap">suivante</span> :</p>
                         <p id="small-line-break"></p>
                         <p class="indented-paragraph">Unité Informatique<br>Ronde de l'Espoir<br>Lycée La Merci Littoral<br>Av. de la Petite Motte<br>34280 La Grande Motte</p>
+                    </div>
+                </div>
+
+                <div class="grid-item payment-method" id="QRshare">
+                    <div class="QRshare-wrapper">
+                        <p>Vous pouvez aussi partager notre site grâce au QR code suivant : </p>
+                        <div class="share-button-wrapper"><a href="../img/darna.jpeg" download="darna.png" class="share-button"><i class="fa fa-download"></i> Télécharger</a></div>
                     </div>
                 </div>
 
