@@ -1,6 +1,7 @@
 :root {
     --soft-white: #E5E9EC;
     --LM-color: #0099D7;
+    --delay: 1200ms;
 }
 
 .main-wrapper {
@@ -96,6 +97,10 @@
 
 /** CAROUSEL STYLE **/
 
+
+
+
+/* 
 .carousel {
     width: 100%;
     height: 500px;
@@ -184,4 +189,4 @@
     position: absolute;
     top: 0;
     right: -101%;
-}
+} */

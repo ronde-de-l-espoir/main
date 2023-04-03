@@ -106,22 +106,14 @@
 
         </div>
 
-        <div class="carousel">
-            <div class="swipe" id="left">
-                <div class="swipe-arrow"><span class="material-symbols-outlined">arrow_back</span></div>
+        <div class="carousel-wrapper">
+            <div id="swipe-left"></div>
+            <div class="carousel">
+                <img src="" alt="" id="left" data-value="none">
+                <img src="" alt="" id="front" data-value="none">
+                <img src="" alt="" id="right" data-value="none">
             </div>
-
-            <div class="carousel-image">
-                <div class="img-wrapper">
-                    <img src="" id="hidden-picture-left">
-                    <img src="" data-indexCurrent="1" alt="displayed picture" id="picture-displayed">
-                    <img src="" id="hidden-picture-right">
-                </div>
-            </div>
-
-            <div class="swipe" id="right">
-                <div class="swipe-arrow" onclick="carouselSwipeRight(pictures)"><span class="material-symbols-outlined">arrow_forward</span></div>
-            </div>
+            <div id="swipe-right"></div>
         </div>
 
     </main>
