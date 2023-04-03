@@ -110,18 +110,24 @@
         
     </main>
 
-    <div class="carousel-wrapper">
-        <div id="swipe-left"></div>
-        <div class="carousel">
-            <img class="carousel-img" src="" alt="" id="left" data-value="none">
-            <img class="carousel-img" src="" alt="" id="front" data-value="none">
-            <img class="carousel-img" src="" alt="" id="right" data-value="none">
+    <section class="carousel-section">
+
+        <div class="carousel-title"><h1>Here is a carousel!</h1></div>
+        <div class="carousel-wrapper">
+            <div id="swipe-left"></div>
+            <div class="carousel">
+                <img class="carousel-img" src="" alt="" id="left" data-value="none">
+                <img class="carousel-img" src="" alt="" id="front" data-value="none">
+                <img class="carousel-img" src="" alt="" id="right" data-value="none">
+            </div>
+            <div id="swipe-right"></div>
         </div>
-        <div id="swipe-right"></div>
-    </div>
-    
-    <br>
-    <br>
+        <div class="carousel-legend">
+            <h3 style="font-weight: 400;">Here is some stuff about the pictures:</h3>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quibusdam ea reiciendis minus quod? Similique necessitatibus, nisi nihil accusamus odit, vero ullam possimus ipsam quae, laborum maxime recusandae dolorem blanditiis!
+        </div>
+
+    </section>
 
     <footer>
         <?php 
