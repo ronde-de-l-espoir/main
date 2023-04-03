@@ -80,28 +80,44 @@
         <div class="main-wrapper">
             <div id="title">
                 <h1>Mentions légales</h1>
-                <p>Dernière mise à jour : 02 avril 2023</p>
+                <p>En vigueur au 02/04/2023</p>
             </div>
             <p>
-                Le site <a href="https://ronde-de-l-espoir.fr">ronde-de-l-espoir.fr</a> est édité par l'association de fait "La Ronde de l'espoir", localisé au <a href="https://www.google.com/maps/place/School+La+Merci+Littoral/@43.5672193,4.0714531,17z/data=!3m1!4b1!4m6!3m5!1s0x12b69801f2364679:0xfffb6abab2e5c531!8m2!3d43.5672193!4d4.0736418!16s%2Fg%2F1vtkr3_l">Lycée La Merci Littoral, Av. de la Petite Motte, 34280 La Grande-Motte.</a> 
+            Conformément aux dispositions des Articles 6 et 19 de la Loi n°2004-575 du 21 juin 2004 pour la Confiance dans l’économie numérique, dite L.C.E.N., il est porté à la connaissance des utilisateurs et visiteurs, ci-après l' "Utilisateur", du site https://ronde-de-l-espoir.fr/, ci-après le "Site", les présentes mentions légales.
+<br>La connexion et la navigation sur le Site par l’Utilisateur implique l’acceptation intégrale et sans réserve des présentes mentions légales. Ces dernières sont accessibles sur le Site à la rubrique « Mentions légales ». 
 
-<br><br><b>Directeur de la publication :</b>  Jean-Christophe Darnatigues
-
-<br><br><b>Contact :</b> <a href="mailto:contact@ronde-de-l-espoir.fr">contact@ronde-de-l-espoir.fr</a>
-
-<br><br><b>Hébergeur :</b> <a href="https://www.o2switch.fr/notre-histoire/">o2switch</a> 
-
-<br><br>Le site utilise la plateforme de paiement en ligne <a href="https://stripe.com/en-gb-fr">Stripe</a> pour collecter les paiements par carte de crédit et de débit. Les données de paiement sont transmises directement à Stripe et ne sont pas stockées sur nos serveurs.
-
-<br><br>Le site est soumis à la licence Creative Commons Attribution - Pas d'Utilisation Commerciale - Pas de Modification 4.0 International (CC BY-NC-ND 4.0). Cette licence permet de partager et de copier le contenu du site à condition de mentionner la source et de ne pas en faire un usage commercial ni de le modifier.
-<br><br>Les informations recueillies sur le site font l'objet d'un traitement informatique destiné à répondre aux demandes des utilisateurs. Conformément à la loi "Informatique et Libertés" du 6 janvier 1978 modifiée, vous disposez d'un droit d'accès, de rectification et de suppression des données vous concernant. Vous pouvez exercer ce droit en nous contactant à l'adresse <a href="mailto:contact@ronde-de-l-espoir.fr">contact@ronde-de-l-espoir.fr</a>.
-
-<br><br>Le site peut contenir des liens vers d'autres sites internet. Nous ne sommes pas responsables du contenu de ces sites ni des pratiques de confidentialité qu'ils mettent en place.
-
-<br><br>Les présentes mentions légales sont régies par le droit français. Tout litige relatif à leur interprétation et/ou à leur exécution sera soumis aux tribunaux français compétents.
-           <br>
-           <br>
-           <br> 
+<br><br><b>ARTICLE 1 - L'EDITEUR</b>
+<ul>
+<br><li>L’édition et la direction de la publication du Site est assurée par Jean-Christophe Darnatigues, ci-après l' "Editeur".</li>
+</ul>
+<br><br><b>ARTICLE 2 - L'HEBERGEUR</b>
+<ul>
+<br><li>L'hébergeur du Site est la société o2switch, accessible au lien suivant : https://www.o2switch.fr</li>
+</ul>
+<br><br><b>ARTICLE 3 - ACCES AU SITE</b>
+<ul> 
+<br><li>Le Site est accessible en tout endroit, 7j/7, 24h/24 sauf cas de force majeure, interruption programmée ou non et pouvant découlant d’une nécessité de maintenance. En cas de modification, interruption ou suspension du Site, l'Editeur ne saurait être tenu responsable. </li>
+</ul>
+<br><br><b>ARTICLE 4 - COLLECTE DES DONNEES</b>
+<ul>
+<br><li>Ce Site s'engage à ne pas collecter, ni sauvegarder les données entrées sur ledit Site dans un autre but que de les communiquer aux associations citées en vue d'une déduction fiscale ou dans le but d'améliorer l'expérience de l'Utilisateur.</li>
+<br><li>La phrase susmentionné n’est valable que dans le cas où l'option de formulaire "Anonyme" n'aurait pas été sélectionnée.</li>
+<br><li>La législation référant à la collecte de données présente dans cet article n'inclue pas les données récoltées sous nom de "cookies" dont la politique sur le Site est disponible dans la rubrique Cookies.</li>
+</ul>
+<br><br><b>ARTICLE 5 - PROPRIETE INTELLECTUELLE</b> 
+<ul>
+<br><li>Le Site et son contenu sont protégés par le droit d'auteur et les droits de propriété intellectuelle en vigueur. Le Site peut contenir des liens hypertextes vers d'autres sites internet. L'Utilisateur est informé que lors de ses visites sur ces autres sites, les présentes mentions légales ne s'appliquent pas. L'Editeur ne peut être tenu pour responsable du contenu de ces sites. </li>
+</ul>
+<br><br><b>ARTICLE 6 - UTILISATION DE STRIPE</b> 
+<ul>
+<br><li>Le Site utilise Stripe, une plateforme de paiement en ligne, pour le traitement des paiements. L'Utilisateur reconnaît et accepte que ses informations de paiement soient traitées par Stripe conformément à leur politique de confidentialité disponible à l'adresse https://stripe.com/fr/privacy. </li>
+</ul>
+<br><br><b>ARTICLE 7 - LICENCE CREATIVE COMMONS</b> 
+<ul>
+<br><li>Le contenu du Site est mis à disposition selon les termes de la licence Creative Commons Attribution - Pas d'Utilisation Commerciale - Pas de Modification 4.0 International. L'Utilisateur est autorisé à partager, copier, distribuer et communiquer le contenu du site à condition de mentionner la source et de ne pas en faire un usage commercial ni de le modifier.</li>
+</ul>
+<br><br>
+</ul>
     </p>
         </div>
     </main>
