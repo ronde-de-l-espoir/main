@@ -2,7 +2,7 @@
     background-color: white;
     margin-left: 20%;
     margin-right: 20%;
-    margin-top: 1cm;
+    margin-top: 0px;
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 8mm;
@@ -32,5 +32,6 @@ main{
 }
 
 body{
-    background-color: #EEE;
+    background-color: #ededed;
 }
+
