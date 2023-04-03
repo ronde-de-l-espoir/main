@@ -45,7 +45,7 @@
                 <p>Formalités légales</p>
                 <br>
                 <ul>
-                    <li><a href="<?php echo $prefix . "mentions" ?>">Mentions légales</a></li>
+                    <li><a href="<?php echo $prefix . "mentions-legales" ?>">Mentions légales</a></li>
                     <li><a href="<?php echo $prefix . "cookies" ?>">Politique cookies</a></li>
                     <li><a href="https://stripe.com/en-gb-fr/legal/end-users">Mentions de Stripe</a></li>
                 </ul>
