@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="count-box.css">
     <script src="./swiped-events.min.js"></script>
     <script src="./app.js" defer></script>
+    <script src="./carousel.js" defer></script>
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-6XM6CLQWYR"></script>
@@ -106,18 +107,19 @@
 
         </div>
 
-        <div class="carousel-wrapper">
-            <div id="swipe-left"></div>
-            <div class="carousel">
-                <img src="" alt="" id="left" data-value="none">
-                <img src="" alt="" id="front" data-value="none">
-                <img src="" alt="" id="right" data-value="none">
-            </div>
-            <div id="swipe-right"></div>
-        </div>
-
+        
     </main>
 
+    <div class="carousel-wrapper">
+        <div id="swipe-left"></div>
+        <div class="carousel">
+            <img class="carousel-img" src="" alt="" id="left" data-value="none">
+            <img class="carousel-img" src="" alt="" id="front" data-value="none">
+            <img class="carousel-img" src="" alt="" id="right" data-value="none">
+        </div>
+        <div id="swipe-right"></div>
+    </div>
+    
     <br>
     <br>
 

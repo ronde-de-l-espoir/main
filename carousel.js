@@ -136,5 +136,5 @@ class Carousel {
     }
 }
 
-const carousel = new Carousel(pictureList, './img/', '.jpeg', 1200);
+const carousel = new Carousel(pictureList, './img/carousel/', '.jpeg', 1200);
 carousel.__INIT__();
