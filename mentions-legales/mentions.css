@@ -27,3 +27,10 @@ h2 {
     padding-left: 6mm;
 }
 
+main{
+    background-image: none;
+}
+
+body{
+    background-color: #EEE;
+}
