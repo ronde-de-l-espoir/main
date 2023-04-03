@@ -97,8 +97,38 @@
 
 /** CAROUSEL STYLE **/
 
+.carousel-wrapper {
+    border: #777 solid 2px;
+    width: 75vw;
+    height: 500px;
+    margin: auto;
+}
 
+.carousel {
+    border: #BBB 2px solid;
+    border-block: none;
+    width: 50vw;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
 
+.carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    transition: --delay ease-out;
+}
+
+#left {
+    left: -100%;
+}
+
+#right {
+    right: -100%;
+}
 
 /* 
 .carousel {
