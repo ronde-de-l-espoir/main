@@ -127,7 +127,11 @@
 
         <div class="carousel-title"><h1>Here is a carousel!</h1></div>
         <div class="carousel-wrapper">
-            <div id="swipe-left"></div>
+            <div id="swipe-left">
+                <span class="material-symbols-outlined">
+                    chevron_left
+                </span>
+            </div>
             <div class="carousel">
                 <img class="carousel-img" src="" alt="" id="left" data-value="none">
                 <img class="carousel-img" src="" alt="" id="front" data-value="none">

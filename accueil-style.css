@@ -117,18 +117,15 @@ main {
 }
 
 #swipe-left {
-    width: 250px;
-    height: 100%;
 }
 
 #swipe-right {
-    width: 250px;
-    height: 100%;
 }
 
 .carousel {
     border-block: none;
-    width: 100%;
+    width: 70vw;
+    margin: auto;
     height: 100%;
     overflow: hidden;
     position: relative;
@@ -155,7 +152,8 @@ main {
 }
 
 .carousel-legend {
-    margin-inline: 200px;
+    margin-inline: auto;
+    width: 70vw;
 }
 
 /* 
