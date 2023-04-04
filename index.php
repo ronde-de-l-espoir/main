@@ -1,8 +1,8 @@
 <?php
-    if($_SERVER["HTTPS"] != "on") {
-        header("Location: https://" . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]);
-        exit();
-    }
+    // if($_SERVER["HTTPS"] != "on") {
+    //     header("Location: https://" . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]);
+    //     exit();
+    // }
     include "./get_total.php";
 ?>
 
@@ -29,6 +29,25 @@
     <script src="./swiped-events.min.js"></script>
     <script src="./app.js" defer></script>
     <script src="./carousel.js" defer></script>
+    <script src="./lib/odometer/odometer.min.js"></script>
+    <link rel="stylesheet" href="./lib/odometer/odometer-theme-default.css">
+    <script>
+        window.odometerOptions = {
+            auto: true,
+            // selector: '.totalDisplay',
+            // duration: '3000',
+            // animation: 'count'
+            format: '( ddd),dd'
+        }
+        setTimeout(function(){
+            var total = <?php 
+                //echo json_encode($totalDonations);
+                echo 18000;
+            ?>;
+            // var total = total.split(',')[0]
+            odometer.innerHTML = total;
+        }, 1);
+    </script>
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-6XM6CLQWYR"></script>
@@ -93,7 +112,7 @@
             <div id="counter">
                 <div class="count-box">
                     <div class="totalDisplay">
-                        <div style="display: inline;">
+                        <div class="odometer odometer-default" id="odometer" style="display: inline;" >
                             <?php echo $totalDonations; ?> 
                         </div>
                         <div style="font-size: 70%; position: relative; padding-left: -10px; display: inline; top: -20px">€</div>
