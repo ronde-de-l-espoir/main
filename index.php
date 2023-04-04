@@ -127,8 +127,8 @@
 
         <div class="carousel-title"><h1>Here is a carousel!</h1></div>
         <div class="carousel-wrapper">
-            <div id="swipe-left">
-                <span class="material-symbols-outlined">
+            <div class="swipe" id="swipe-left">
+                <span class="material-symbols-outlined" onclick="carousel.swipeRight();">
                     chevron_left
                 </span>
             </div>
@@ -137,7 +137,11 @@
                 <img class="carousel-img" src="" alt="" id="front" data-value="none">
                 <img class="carousel-img" src="" alt="" id="right" data-value="none">
             </div>
-            <div id="swipe-right"></div>
+            <div class="swipe" id="swipe-right">
+                <span class="material-symbols-outlined" onclick="carousel.swipeLeft();">
+                    chevron_right
+                </span>
+            </div>
         </div>
         <div class="carousel-legend">
             <h3 style="font-weight: 400;">Here is some stuff about the pictures:</h3>

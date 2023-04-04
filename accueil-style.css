@@ -114,12 +114,37 @@ main {
     height: 500px;
     display: flex;
     padding-block: 40px;
+    position: relative;
+}
+
+.swipe {
+    user-select: none;
+    --size: 6rem;
+    width: var(--size);
+    height: var(--size);
+    position: absolute;
+    font-size: var(--size);
+    mask: ;
+    color: rgba(70, 70, 70, 0.8);
+    top: calc(50% - 2.8rem);
+    -webkit-text-stroke: 2px rgba(255, 255, 255, 0.7);
+}
+
+.swipe:hover {
+    cursor: pointer;
+}
+
+.swipe span {
+    font-size: inherit !important;
 }
 
 #swipe-left {
+    left: 20vw;
+    z-index: 1;
 }
 
 #swipe-right {
+    right: 20vw;
 }
 
 .carousel {
