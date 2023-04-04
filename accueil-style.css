@@ -124,7 +124,6 @@ main {
     height: var(--size);
     position: absolute;
     font-size: var(--size);
-    mask: ;
     color: rgba(70, 70, 70, 0.8);
     top: calc(50% - 2.8rem);
     -webkit-text-stroke: 2px rgba(255, 255, 255, 0.7);
