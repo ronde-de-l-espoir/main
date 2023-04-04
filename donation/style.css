@@ -193,6 +193,8 @@ main {
             [fifth] auto 
             [sixth] 20px 
             [seventh] auto 
+            [eigth] 40px 
+            [ninth] auto 
         [last];
     }
 
@@ -234,6 +236,13 @@ main {
         grid-column-start: first;
         grid-column-end: last;
         grid-row-start: seventh;
+        grid-row-end: eigth;
+    }
+    
+    #QRshare {
+        grid-column-start: first;
+        grid-column-end: last;
+        grid-row-start: ninth;
         grid-row-end: last;
     }
 }
@@ -258,7 +267,9 @@ main {
             [fourth] 35px
             [fifth] auto 
             [sixth] 20px 
-            [seventh] auto 
+            [seventh] auto
+            [eigth] 20px 
+            [ninth] auto 
         [last];
     }
 
@@ -273,5 +284,9 @@ main {
 
     #cheque .indented-paragraph {
         font-size: 0.75rem;
+    }
+
+    #QRshare {
+        font-size: 0.95rem;
     }
 }

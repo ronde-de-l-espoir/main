@@ -90,7 +90,7 @@
 
                 <div class="grid-item payment-method" id="cheque">
                     <div class="payment-method-wrapper">
-                        <p class="bigger-font">Nous envoyer un chèque à l'adresse <span class="nowrap">suivante</span> :</p>
+                        <p class="bigger-font">Nous envoyer un chèque à l'adresse <span class="nowrap">suivante :</span></p>
                         <p id="small-line-break"></p>
                         <p class="indented-paragraph">Unité Informatique<br>Ronde de l'Espoir<br>Lycée La Merci Littoral<br>Av. de la Petite Motte<br>34280 La Grande Motte</p>
                     </div>
@@ -99,7 +99,7 @@
                 <div class="grid-item payment-method" id="QRshare">
                     <div class="QRshare-wrapper">
                         <p>Vous pouvez aussi partager notre site grâce au QR code suivant : </p>
-                        <div class="share-button-wrapper"><a href="../img/QR code.jpg" download="Ronde-de-l-espoir.png - QR Code" class="share-button"><i class="fa fa-download"></i> Télécharger</a></div>
+                        <div class="share-button-wrapper"><a href="../img/QR code.jpg" download="Ronde-de-l-espoir.png - QR Code" class="share-button"><span class="nowrap"><i class="fa fa-download"></i> Télécharger</a></span></div>
                     </div>
                 </div>
 
