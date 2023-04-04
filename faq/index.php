@@ -71,21 +71,27 @@
     <main>
         <div class="main-wrapper">
             <div id="title">
-                <h2>les questions que vous vous posez </h2>
+                <h2>Suite à un versement, je n’ai pas reçu de relevé fiscale, que puis-je faire?</h2>
             </div>
-            <p>il faudra remplir ici la faq mais je sais pas quoi mettre pour l'instant</p>
+            <p>Merci d’avoir contribuer! Dans l’ordre, vous pouvez :
+- Contacter l’association au 06 49 86 87 68
+- Envoyer un message à contact@ronde-de-l-espoir.fr</p>
             <div id="title">
-                <h2>une autre question que vous vous posez</h2>
+                <h2>Quelle est la date limite pour faire un versement ?</h2>
             </div>
-            <p>il faudra remplir ici la faq mais je sais pas quoi mettre pour l'instant</p>
+            <p>Le Vendredi 2 Juin 2023 à 18h.</p>
             <div id="title">
-                <h2>une autre question que vous vous posez</h2>
+                <h2>Mes informations seront-elles visibles par d’autres personnes ?</h2>
             </div>
-            <p>il faudra remplir ici la faq mais je sais pas quoi mettre pour l'instant</p>
+            <p>Non, seule l’association qui délivre la reconnaissance de don aura connaissance de vos informations et s’engage à ne pas les divulguer.</p>
             <div id="title">
-                <h2>une autre question que vous vous posez</h2>
+                <h2>Les dons peuvent-ils être effectués par chèque ?</h2>
             </div>
-            <p>il faudra remplir ici la faq mais je sais pas quoi mettre pour l'instant</p>
+            <p>Effectivement, les dons peuvent être effectués sous forme de chèque que vous pouvez libeller à “DMF 34”.</p>
+            <div id="title">
+                <h2>Pourquoi dois-je rentrer mon adresse mail deux fois ?</h2>
+            </div>
+            <p>Pour que vous puissiez vous envoyer une réduction d’impôts, nous devons récupérer votre adresse mail. La société de transfert Stripe de leur côté ont aussi besoin de votre adresse mail pour vous envoyer un reçu. Cependant, dû à des questions de sécurité, nous ne pouvons pas donner à Stripe votre mail, et vice-versa. Cela permet de sécuriser le paiement.</p>
 
         </div>
     </main>
