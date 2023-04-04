@@ -40,11 +40,8 @@
             format: '( ddd),dd'
         }
         setTimeout(function(){
-            var total = <?php 
-                //echo json_encode($totalDonations);
-                echo 18000;
-            ?>;
-            // var total = total.split(',')[0]
+            var total = <?php echo json_encode($totalDonations);?>;
+            var total = total.split(',')[0]
             odometer.innerHTML = total;
         }, 1);
     </script>
@@ -112,7 +109,7 @@
             <div id="counter">
                 <div class="count-box">
                     <div class="totalDisplay">
-                        <div class="odometer odometer-default" id="odometer" style="display: inline;" >
+                        <div class="odometer" id="odometer" style="display: inline-block;" >
                             <?php echo $totalDonations; ?> 
                         </div>
                         <div style="font-size: 70%; position: relative; padding-left: -10px; display: inline; top: -20px">€</div>
