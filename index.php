@@ -40,8 +40,7 @@
             format: '( ddd),dd'
         }
         setTimeout(function(){
-            var total = <?php echo json_encode($totalDonations);?>;
-            var total = total.split(',')[0]
+            var total = <?php echo $totalDonations;?>;
             odometer.innerHTML = total;
         }, 1);
     </script>
@@ -109,9 +108,7 @@
             <div id="counter">
                 <div class="count-box">
                     <div class="totalDisplay">
-                        <div class="odometer" id="odometer" style="display: inline-block;" >
-                            <?php echo $totalDonations; ?> 
-                        </div>
+                        <div class="odometer" id="odometer" style="display: inline-block;" ></div>
                         <div style="font-size: 70%; position: relative; padding-left: -10px; display: inline; top: -20px">€</div>
                     </div>
                     <p id="more-infos">ont été récoltés pour la Ronde de l'Espoir !</p>
