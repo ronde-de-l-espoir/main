@@ -60,7 +60,7 @@
     <div id="social-bar">
         <p>Rejoignez-nous : </p>
         <img src="<?php echo $prefix . "img/facebook.svg" ?>" onclick="window.location='https://facebook.com/LaRondedelEspoir'">
-        <img src="<?php echo $prefix . "img/instagram.svg" ?>" onclick="window.location='https://instagram.com/@ronde-de-l-espoir'">
+        <img src="<?php echo $prefix . "img/instagram.svg" ?>" onclick="window.location='https://www.instagram.com/larondedelespoir/'">
 
     </div>
 </div>
