@@ -75,7 +75,7 @@
 					</div>
 					<div class="article-start">
 						<h3>Qu'est-ce que la Ronde de l'Espoir ?</h3>
-						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex quod cum consectetur labore consequuntur a, ad expedita iste unde autem laboriosam beatae eos eligendi officiis rem in itaque? Aspernatur, earum? Lorem Ipsum...</p>
+						<p>La Ronde de l’Espoir est née voilà 22 ans d’un écueil de la vie. D’une situation désespérante d’injustice et de malheur ; le décès d’un enfant. Cette manifestation se déroule tous les trois ans dans notre lycée et est vouée à venir en aide à des enfants malades...</p>
 					</div>
 				</div>
 				<div class="article" id="dmf-34" onclick="window.location.href = './dmf-34'">
@@ -84,7 +84,7 @@
 					</div>
 					<div class="article-start">
 						<h3>Dyspraxique Mais Fantastique</h3>
-						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex quod cum consectetur labore consequuntur a, ad expedita iste unde autem laboriosam beatae eos eligendi officiis rem in itaque? Aspernatur, earum? Lorem Ipsum...</p>
+						<p>Dyspraxique Mais Fantastique est une association qui rassemble et aide les familles touchées par la dyspraxie. Elle aide les familles en les mettant en relation avec d'autres familles et des médecins spécialisés dans cette maladie...</p>
 					</div>
 				</div>
 				<div class="article" id="kite-surf" onclick="window.location.href = './kite-surf'">
@@ -104,7 +104,7 @@
 					</div>
 					<div class="article-start">
 						<h3>La Ronde de l'Espoir : le Record du Monde d'ergo-aviron</h3>
-						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem, iste cumque doloribus, architecto eum harum labore at esse, voluptate nesciunt adipisci sunt perferendis earum delectus! Corporis perspiciatis aliquam dolorum magni?</p>
+						<p>Depuis la première édition de la Ronde de L’espoir en 2002, les lycéens qui y ont participé ont toujours fait le maximum pour...</p>
 					</div>
 				</div>
 				<div class="article" id="le-lycee" onclick="window.location.href = './le-lycee'">
@@ -113,7 +113,7 @@
 					</div>
 					<div class="article-start">
 						<h3>Le Lycée La Merci Littoral</h3>
-						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt voluptatibus sunt consequuntur fugit. Facere nisi dolores expedita a. Pariatur dolores magni aliquid ab incidunt deleniti dolore id error doloremque architecto.</p>
+						<p>C’est en 2004 que le lycée La Merci Littoral a ouvert ses portes à La Grande Motte, établissement fondé par l’institution Notre Dame de La Merci de Montpellier. Depuis son ouverture, ce lycée...</p>
 					</div>
 				</div>
 				<div class="article" id="cap-ou-cap" onclick="window.location.href = './cap-ou-cap'">
@@ -122,7 +122,7 @@
 					</div>
 					<div class="article-start">
 						<h3>DMF : Cap ou Cap ?</h3>
-						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt voluptatibus sunt consequuntur fugit. Facere nisi dolores expedita a. Pariatur dolores magni aliquid ab incidunt deleniti dolore id error doloremque architecto.</p>
+						<p>« Cap ou cap ? » a pour objectif de faire vivre les émotions fortes de l’escalade à une dizaine de jeunes avec dyspraxie et leurs familles. Après avoir formé l’équipe d’encadrement aux difficultés...</p>
 					</div>
 				</div>
 				<div class="article" id="cap-st-lary" onclick="window.location.href = './cap-st-lary'">
