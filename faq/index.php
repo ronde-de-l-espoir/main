@@ -19,8 +19,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800;900&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="img/LRDE-logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="common.css">
+    <link rel="shortcut icon" href="../img/LRDE-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../common.css">
     <script src="../swiped-events.min.js"></script>
     <script src="../app.js" defer></script>
     <link rel="stylesheet" href="faq.css">
@@ -34,12 +34,12 @@
 
         <nav>
             <div class="nav-wrapper">
-                <img src="img/clean_logo_littoral.png" alt="Logo La Merci Littoral" onclick="javascript:window.location='https://lamerci.com/littoral/accueil';">
+                <img src="../img/clean_logo_littoral.png" alt="Logo La Merci Littoral" onclick="javascript:window.location='https://lamerci.com/littoral/accueil';">
                 <div class="link-wrapper">
                     <a href="#" class="underline-anim" data-isFocus="true">Accueil</a>
-                    <a href="./infos/" class="underline-anim" data-isFocus="false">Infos</a>
-                    <a href="./galerie/" class="underline-anim" data-isFocus="false">Galerie</a>
-                    <a href="./donation/" id="donate-btn" data-isFocus="false">Faire un don</a>  <!-- C'est plus pratique de rajouter un "./" devant les liens. -->
+                    <a href="../infos/" class="underline-anim" data-isFocus="false">Infos</a>
+                    <a href="../galerie/" class="underline-anim" data-isFocus="false">Galerie</a>
+                    <a href="../donation/" id="donate-btn" data-isFocus="false">Faire un don</a>  <!-- C'est plus pratique de rajouter un "./" devant les liens. -->
                 </div>
             </div>
         </nav>
@@ -47,21 +47,21 @@
             <div class="trigger-wrapper" onclick="triggerSideMenu()" data-hidden>
                 <div id="menu-trigger" data-isOpen='false' data-hidden></div>
             </div>
-            <img class="nav-logo" src="./img/LRDE-logo.png" data-hidden>
+            <img class="nav-logo" src="../img/LRDE-logo.png" data-hidden>
         </div>
 
         <div id="side-nav" data-hidden>
             <div class="side-nav-wrapper" data-hidden>
                 <div class="separation" data-hidden></div>
-                <a href="#" data-isFocus="true" data-hidden>Accueil</a>
+                <a href="../" data-isFocus="true" data-hidden>Accueil</a>
                 <div class="separation" data-hidden></div>
-                <a href="./infos/" data-isFocus="false" data-hidden>Infos</a>
+                <a href="../infos/" data-isFocus="false" data-hidden>Infos</a>
                 <div class="separation" data-hidden></div>
-                <a href="./galerie/" data-isFocus="false" data-hidden>Galerie</a>
+                <a href="../galerie/" data-isFocus="false" data-hidden>Galerie</a>
                 <div class="separation" data-hidden></div>
             </div>
 
-            <a href="./donation/" id="side-nav-donation" class="btn-grad">Faites un don!</a>
+            <a href="../donation/" id="side-nav-donation" class="btn-grad">Faites un don!</a>
             
         </div>
         
@@ -99,7 +99,7 @@
     <footer>
         <?php 
             $currentPage = "faq";
-            include('./footer.php');
+            include('../footer.php');
         ?>
     </footer>
 
