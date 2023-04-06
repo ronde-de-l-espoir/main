@@ -6,7 +6,7 @@
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 8mm;
-    border-radius: 1%;
+    border-radius: 10px;
 }
 
 .main-wrapper * {
@@ -25,4 +25,11 @@
 
 h2 {
     padding-left: 6mm;
+}
+
+@media only screen and (max-width: 768px) {
+    .main-wrapper  {
+    font-size: 0,7rem;
+    width: 200vw;
+  }
 }
