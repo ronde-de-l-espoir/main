@@ -33,7 +33,7 @@
 		</div>
 		<div id="suggestions-column">
 			<h3>Ces articles pourraient vous intéresser :</h3>
-			<div class="recommended-article hidden-article" id="qu-est-ce-donc" onclick="window.location.href = '../quesako'">
+			<div class="recommended-article hidden-article" id="quesako" onclick="window.location.href = '../quesako'">
 				<div class="img-div">
 					<img src="../../img/ptit-bg.png">
 				</div>

@@ -1,6 +1,7 @@
 var articlesJSON = []
-var recommenedArticlesID = ['qu-est-ce-donc', 'dmf-34', 'kite-surf', 'record-du-monde-ergo-aviron', 'le-lycee', 'cap-ou-cap', 'equipe']
-
+var currentPage = window.location.pathname.split('/').slice(-2, -1)[0]
+var recommenedArticlesID = ['quesako', 'dmf-34', 'kite-surf', 'record-du-monde-ergo-aviron', 'le-lycee', 'cap-ou-cap', 'equipe']
+recommenedArticlesID.splice(recommenedArticlesID.indexOf(currentPage), 1)
 
 for (var i=0; i < 3; i++){
 	var articleToBeShow = recommenedArticlesID[Math.floor(Math.random() * recommenedArticlesID.length)]
@@ -21,7 +22,7 @@ for (var i=0; i < 3; i++){
 // }
 // xhr.send(null)
 
-var currentPage = window.location.pathname.split('/').slice(-2, -1)[0]
+
 
 const URL = 'https://docs.google.com/spreadsheets/d/14wG0Ywy1BxvxptXbvi7smP4fv6kOcQyyt5Yh0TL3OXE/gviz/tq?tqx=out:json'
 
