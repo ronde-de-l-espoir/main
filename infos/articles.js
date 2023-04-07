@@ -1,5 +1,5 @@
 var articlesJSON = []
-var recommenedArticlesID = ['qu-est-ce-donc', 'dmf-34', 'kite-surf', 'record-du-monde-ergo-aviron', 'le-lycee', 'cap-ou-cap', 'cap-st-lary']
+var recommenedArticlesID = ['qu-est-ce-donc', 'dmf-34', 'kite-surf', 'record-du-monde-ergo-aviron', 'le-lycee', 'cap-ou-cap', 'equipe']
 
 
 for (var i=0; i < 3; i++){
