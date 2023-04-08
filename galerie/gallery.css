@@ -43,6 +43,7 @@ main {
     /* background: linear-gradient(0deg, rgba(255,255,255,0.927608543417367) 0%, rgba(255, 255, 255, 0.781) 76%); */
     max-height: 100%;
     transition: max-height 1s;
+    font-size: 1.1em;
 }
 
 .hidden {
