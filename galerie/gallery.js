@@ -1,6 +1,8 @@
 const URL = 'https://docs.google.com/spreadsheets/d/1l6PfRKvyKB042l8pC-WhLzxSRt4YrqNbtwGudRe4Jjo/gviz/tq?tqx=out:json'
 let photoNames = []
 let captionsJSON = {}
+let imgBlocks = []
+const images = document.getElementsByClassName('images')[0]
 
 async function getNames() {
     return fetch('./gallery-photos')
@@ -11,7 +13,7 @@ async function getNames() {
             var match;
             while ((match = regex.exec(html)) !== null) {
                 if (match[2] !== '../') { // exclude parent directory link
-                    photoNames.push(match[2]);
+                    photoNames.push("./gallery-photos/" + match[2]);
                 }
             }
             photoNames.splice(0, 5)
@@ -34,37 +36,38 @@ async function getCaptions() {
     });
 }
 
-class photoGallery {
-	divimages = document.querySelector(".images");
-
-	async add_imgs_to_DOM(img_data) {
-		// Adds new images to DOM
-		let divs = "";
-		// if (captions.length == 0){
-		// 	await sheetToArray();
-		// }
-		captions = []
-		await sheetToArray();
-		img_data.forEach((img) => {
-			globalThis.searchValue = String.raw`${img}`
-			const caption = captions.find(c => c[0] == searchValue)[1]
-			var html = `
+function createDOMArray(photoNames, captionsJSON) {
+    console.log(captionsJSON)
+    console.log(photoNames)
+    for (let i = 1; i < captionsJSON.rows.length; i++) {
+        var url = captionsJSON.rows[i].c[0].v
+        if (photoNames.find(photo => photo == url)){
+            var html = `
 			<div class="img-block">
 				<div class="sub-img-block">
-					<img src="${img}" alt="${caption}">
+					<img src="${url}" alt="${captionsJSON.rows[i].c[1].v} loading="lazy">
 				</div>
 				<div class="legende hidden">
-					<p>${caption}</p>
+					<p>${captionsJSON.rows[i].c[1].v}</p>
 				</div>
 			</div>
 			\n
 			`;
-			divs += html
-		});
-		this.divimages.innerHTML += divs;
-	}
+            imgBlocks.push(html)
+        }
+    }
+    return imgBlocks
+}
+
+function insertBlocks(imgBlocks) {
+    imgBlocks.forEach(html => {
+        console.log(html)
+        images.innerHTML += html
+    });
+}
 
 async function loadGallery() {
     const [photoNames, captionsJSON] = await Promise.all([getNames(), getCaptions()]);
-    createDOMArray(photoNames, captionsJSON)
+    const imgBlocks = createDOMArray(photoNames, captionsJSON)
+    insertBlocks(imgBlocks)
 }
