@@ -2,84 +2,24 @@ const URL = 'https://docs.google.com/spreadsheets/d/1l6PfRKvyKB042l8pC-WhLzxSRt4
 let photoNames = []
 let captionsJSON = {}
 
-var images = [];
-already_seen = [];
-var captions = [];
-var totalimages = 40;
-times = 0
-nonewimages = false
-// var strDelimiter = ","
-
-// var rawFile = new XMLHttpRequest();
-// rawFile.open("GET", 'https://docs.google.com/spreadsheets/d/1l6PfRKvyKB042l8pC-WhLzxSRt4YrqNbtwGudRe4Jjo/export?exportFormat=csv&delimiter=|');
-// rawFile.open("GET", './captions.csv', false);
-// rawFile.onreadystatechange = function (){
-// 	if(rawFile.readyState === 4)
-// 	{
-// 		if(rawFile.status === 200 || rawFile.status == 0)
-// 		{
-// 			globalThis.strData = rawFile.responseText;
-// 			strDelimiter = (strDelimiter || ",");
-// 			var objPattern = new RegExp(
-// 				(
-// 					"(\\" + strDelimiter + "|\\r?\\n|\\r|^)" +
-
-// 					"(?:\"([^\"]*(?:\"\"[^\"]*)*)\"|" +
-
-// 					"([^\"\\" + strDelimiter + "\\r\\n]*))"
-// 				),
-// 				"gi"
-// 			);
-// 			globalThis.arrData = [[]];
-// 			var arrMatches = null;
-// 			while (arrMatches = objPattern.exec(strData)) {
-// 				var strMatchedDelimiter = arrMatches[1];
-// 				if (
-// 					strMatchedDelimiter.length &&
-// 					strMatchedDelimiter !== strDelimiter
-// 				) {
-// 					arrData.push([]);
-// 				}
-// 				var strMatchedValue;
-// 				if (arrMatches[2]) {
-// 					strMatchedValue = arrMatches[2].replace(
-// 						new RegExp("\"\"", "g"),
-// 						"\""
-// 					);
-// 				} else {
-// 					strMatchedValue = arrMatches[3];
-// 				}
-// 				arrData[arrData.length - 1].push(strMatchedValue);
-// 			}
-// 			return (arrData);
-// 		}
-// 	}
-// }
-// rawFile.send(null);
-
-async function getSheet (){
-	const captionsURL = 'https://docs.google.com/spreadsheets/d/1l6PfRKvyKB042l8pC-WhLzxSRt4YrqNbtwGudRe4Jjo/gviz/tq?tqx=out:json'
-	const fullResponse = await fetch(captionsURL)
-	const textResponse = await fullResponse.text()
-	let json_string = textResponse.substring(47).slice(0, -2);
-	let parsed = await JSON.parse(json_string);
-	return parsed;
-}
-
-// donc là ce qui au dessus ça marche bien
-//ce qui est en dessous aussi
-
-// je te laisse aller voir le shared server et faire dans la console `captions`
-
-async function sheetToArray(params) {
-	// var captions = [];
-	parsed = await getSheet();
-	parsed.table.rows.forEach((row) => {
-		let caption = []
-		caption.push(row.c[0].v)
-		caption.push(row.c[1].v)
-		captions.push(caption)
-	})
+async function getNames() {
+    return fetch('./gallery-photos')
+        .then(response => response.text())
+        .then(html => {
+            var photoNames = [];
+            var regex = /<a href="([^"]+)">([^<]+)/g;
+            var match;
+            while ((match = regex.exec(html)) !== null) {
+                if (match[2] !== '../') { // exclude parent directory link
+                    photoNames.push(match[2]);
+                }
+            }
+            photoNames.splice(0, 5)
+            return photoNames
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
 }
 
 for (let img_n = 0; img_n < totalimages; img_n++) {
