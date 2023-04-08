@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800;900&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="img/LRDE-logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/LRDE-logo.png" type="image/x-icon">
     <link rel="stylesheet" href="../common.css">
     <script src="../swiped-events.min.js"></script>
     <script src="../app.js" defer></script>
