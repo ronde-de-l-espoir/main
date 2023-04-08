@@ -37,8 +37,8 @@ async function getCaptions() {
 }
 
 function createDOMArray(photoNames, captionsJSON) {
-    console.log(captionsJSON)
-    console.log(photoNames)
+    // console.log(captionsJSON)
+    // console.log(photoNames)
     for (let i = 1; i < captionsJSON.rows.length; i++) {
         var url = captionsJSON.rows[i].c[0].v
         if (photoNames.find(photo => photo == url)){
@@ -61,7 +61,6 @@ function createDOMArray(photoNames, captionsJSON) {
 
 function insertBlocks(imgBlocks) {
     imgBlocks.forEach(html => {
-        console.log(html)
         images.innerHTML += html
     });
 }
