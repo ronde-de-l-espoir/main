@@ -65,8 +65,28 @@ function insertBlocks(imgBlocks) {
     });
 }
 
+function checkForCursor() {
+	var timeoutId = null
+	const img_elements = document.querySelectorAll(".img-block")
+	img_elements.forEach(img_block => {
+		img_block.addEventListener('mouseenter',function() {
+			console.log("yes")
+			timeoutId = window.setTimeout(function() {
+				legende = img_block.querySelector(".legende")
+				legende.classList.remove("hidden")
+			}, 1000);
+		});
+		img_block.addEventListener('mouseleave',function() {
+			window.clearTimeout(timeoutId)
+			legende = img_block.querySelector(".legende")
+			legende.classList.add("hidden")
+		})
+	} );
+}
+
 async function loadGallery() {
     const [photoNames, captionsJSON] = await Promise.all([getNames(), getCaptions()]);
     const imgBlocks = createDOMArray(photoNames, captionsJSON)
     insertBlocks(imgBlocks)
+    checkForCursor()
 }
