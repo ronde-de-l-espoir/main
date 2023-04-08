@@ -6,7 +6,7 @@
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 8mm;
-    border-radius: 1%;
+    border-radius: 7px;
 }
 
 .main-wrapper * {
@@ -26,6 +26,7 @@ h2 {
 }
 
 .a {
+    padding-top: 4px;
     padding-left: 25px;
 }
 
@@ -36,4 +37,17 @@ h2 {
 .qa li {
     list-style-type: decimal;
     list-style-position: inside;
+}
+
+@media only screen and (max-width: 660px){
+	.main-wrapper {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .a {
+        padding-left: 0;
+    }
+    .qa ol {
+        padding-left: 25px;
+    }
 }
