@@ -64,59 +64,7 @@ class photoGallery {
 		this.divimages.innerHTML += divs;
 	}
 
-	async get_images(img_cnt) {
-		var imgData = [];
-		for(let i = img_cnt; i > 0; i--) {
-			infiniteTest :
-			while(true) {
-				while(times < totalimages) {
-					var random_image = images[Math.floor(Math.random()*images.length)] // selects random image from the images list
-					if (!(already_seen.includes(random_image))){
-						break infiniteTest; // only allows the photo to be used once
-					}
-					times++;
-				}
-				globalThis.nonewimages = true;
-				return nonewimages;
-			}
-			imgData.push(random_image)
-			already_seen.push(random_image)
-		}
-		this.add_imgs_to_DOM(imgData);
-		return nonewimages;
-	}
+async function loadGallery() {
+    const [photoNames, captionsJSON] = await Promise.all([getNames(), getCaptions()]);
+    createDOMArray(photoNames, captionsJSON)
 }
-			
-
-//Loading handlers
-const loader = document.querySelector(".loader");
-const loadingDots = document.querySelector(".loading-dots");
-
-//Fetch images on pageLoad
-const init_gallery = new photoGallery();
-window.onload = () => {
-	init_gallery
-		.get_images(10)
-		// .catch((err) => {
-		// 	alert("OOPS! Try Again Later");
-		// 	console.log(err);
-		// });
-	checkForCursor()
-};
-
-//show Loading dots and fetch images on scroll
-window.addEventListener("scroll", () => {
-	if (nonewimages == false){
-		const { scrollTop, scrollHeight, clientHeight } = document.documentElement; // checks if new photos should be displayed
-		if (clientHeight + scrollTop >= scrollHeight - 10 ) { 
-			loadingDots.classList.remove("hide");
-			init_gallery
-				.get_images(15)
-				// .catch((err) => alert("OOPS! Please Try Again Later"));
-			checkForCursor()
-			
-		}
-	} else {
-		loadingDots.classList.add("hide");
-	}
-});
