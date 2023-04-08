@@ -22,28 +22,16 @@ async function getNames() {
         });
 }
 
-for (let img_n = 0; img_n < totalimages; img_n++) {
-	var path = `./gallery-photos/photo (${img_n}).jpg`;
-	images.push(path); // save all photos paths in the images list
-}
-
-function checkForCursor() {
-	var timeoutId = null
-	const img_elements = document.querySelectorAll(".img-block")
-	img_elements.forEach(img_block => {
-		img_block.addEventListener('mouseenter',function() {
-			console.log("yes")
-			timeoutId = window.setTimeout(function() {
-				legende = img_block.querySelector(".legende")
-				legende.classList.remove("hidden")
-			}, 1000);
-		});
-		img_block.addEventListener('mouseleave',function() {
-			window.clearTimeout(timeoutId)
-			legende = img_block.querySelector(".legende")
-			legende.classList.add("hidden")
-		})
-	} );
+async function getCaptions() {
+    return fetch(URL)
+    .then(response => response.text().then(textData => {
+        const captionsJSON = JSON.parse(textData.substring(47).slice(0, -2)).table;
+        return captionsJSON
+    })
+    )
+    .catch(error => {
+        console.error('Error fetching and parsing JSON:', error);
+    });
 }
 
 class photoGallery {
