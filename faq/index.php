@@ -93,7 +93,7 @@
             </div>
             <div class="qa">
                 <p class="q">Pourquoi dois-je rentrer mon adresse mail deux fois ?</p>
-                <p class="a">Pour que vous puissiez vous envoyer une réduction d’impôts, nous devons récupérer votre adresse mail. La société de transfert Stripe de leur côté ont aussi besoin de votre adresse mail pour vous envoyer un reçu. Cependant, dû à des questions de sécurité, nous ne pouvons pas donner à Stripe votre mail, et vice-versa. Cela permet de sécuriser le paiement.</p>
+                <p class="a">Pour que nous puissions vous envoyer une attestation de réduction d’impôts, nous devons récupérer votre adresse mail. <br>La société Stripe (qui s'occupent des paiements en ligne) de leur côté ont aussi besoin de votre adresse mail pour vous envoyer un reçu. Cependant, dû à des questions de sécurité, nous ne pouvons pas donner à Stripe votre mail, et vice-versa. Cela permet de sécuriser le paiement.<br>Merci de votre compréhension</p>
             </div>
         </div>
     </main>
