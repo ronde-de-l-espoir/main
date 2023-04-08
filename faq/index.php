@@ -68,6 +68,7 @@
 
     <main>
         <div class="main-wrapper">
+            <h2>FAQ</h2>
             <div class="qa">
                 <p class="q">Suite à un versement, je n’ai pas reçu de relevé fiscale, que puis-je faire?</p>
                 <p class="a">

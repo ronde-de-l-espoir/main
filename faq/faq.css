@@ -13,7 +13,11 @@
     font-family: 'Montserrat';
 }
 
-.qa {
+h2 {
+    text-align: center;
+}
+
+.qa, h2{
     padding-bottom: 30px;
 }
 
