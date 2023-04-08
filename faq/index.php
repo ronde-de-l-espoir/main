@@ -1,10 +1,8 @@
 <?php
-    if($_SERVER["HTTPS"] != "on") {
-        header("Location: https://" . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]);
-        exit();
-    }
-
-    include "./get_total.php";
+    // if($_SERVER["HTTPS"] != "on") {
+    //     header("Location: https://" . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]);
+    //     exit();
+    // }
 ?>
 
 
@@ -23,7 +21,7 @@
     <link rel="stylesheet" href="../common.css">
     <script src="../swiped-events.min.js"></script>
     <script src="../app.js" defer></script>
-    <link rel="stylesheet" href="faq.css">
+    <link rel="stylesheet" href="./faq.css">
 </head>
 <body data-hidden>
 
@@ -70,29 +68,33 @@
 
     <main>
         <div class="main-wrapper">
-            <div id="title">
-                <h2>Suite à un versement, je n’ai pas reçu de relevé fiscale, que puis-je faire?</h2>
+            <h2>FAQ</h2>
+            <div class="qa">
+                <p class="q">Suite à un versement, je n’ai pas reçu de relevé fiscale, que puis-je faire?</p>
+                <p class="a">
+                    Merci d’avoir contribué ! Dans l’ordre, vous pouvez :
+                    <ol>
+                        <li>Contacter directement l’association au <a href="tel:0649868768">06 49 86 87 68</a></li>
+                        <li>Envoyer un message à <a href="mailto:contact@ronde-de-l-espoir.fr">contact@ronde-de-l-espoir.fr</a></li>
+                    </ol>
+                </p>
             </div>
-            <p>Merci d’avoir contribuer! Dans l’ordre, vous pouvez :
-- Contacter l’association au 06 49 86 87 68
-- Envoyer un message à contact@ronde-de-l-espoir.fr</p>
-            <div id="title">
-                <h2>Quelle est la date limite pour faire un versement ?</h2>
+            <div class="qa">
+                <p class="q">Quelle est la date limite pour faire un versement ?</p>
+                <p class="a">Le vendredi 2 Juin 2023 à 18h</p>
             </div>
-            <p>Le Vendredi 2 Juin 2023 à 18h.</p>
-            <div id="title">
-                <h2>Mes informations seront-elles visibles par d’autres personnes ?</h2>
+            <div class="qa">
+                <p class="q">Mes informations seront-elles visibles par d’autres personnes ?</p>
+                <p class="a">Non, seule l’association qui délivre la reconnaissance de don aura connaissance de vos informations et s’engage à ne pas les divulguer.</p>
             </div>
-            <p>Non, seule l’association qui délivre la reconnaissance de don aura connaissance de vos informations et s’engage à ne pas les divulguer.</p>
-            <div id="title">
-                <h2>Les dons peuvent-ils être effectués par chèque ?</h2>
+            <div class="qa">
+                <p class="q">Les dons peuvent-ils être effectués par chèque ?</p>
+                <p class="a">Effectivement, les dons peuvent être effectués sous forme de chèque : plus d'informations <a href="../donation/">ici</a></p>
             </div>
-            <p>Effectivement, les dons peuvent être effectués sous forme de chèque que vous pouvez libeller à “DMF 34”.</p>
-            <div id="title">
-                <h2>Pourquoi dois-je rentrer mon adresse mail deux fois ?</h2>
+            <div class="qa">
+                <p class="q">Pourquoi dois-je rentrer mon adresse mail deux fois ?</p>
+                <p class="a">Pour que nous puissions vous envoyer une attestation de réduction d’impôts, nous devons récupérer votre adresse mail. <br>La société Stripe (qui s'occupent des paiements en ligne) de leur côté ont aussi besoin de votre adresse mail pour vous envoyer un reçu. Cependant, dû à des questions de sécurité, nous ne pouvons pas donner à Stripe votre mail, et vice-versa. Cela permet de sécuriser le paiement.<br>Merci de votre compréhension</p>
             </div>
-            <p>Pour que vous puissiez vous envoyer une réduction d’impôts, nous devons récupérer votre adresse mail. La société de transfert Stripe de leur côté ont aussi besoin de votre adresse mail pour vous envoyer un reçu. Cependant, dû à des questions de sécurité, nous ne pouvons pas donner à Stripe votre mail, et vice-versa. Cela permet de sécuriser le paiement.</p>
-
         </div>
     </main>
 
