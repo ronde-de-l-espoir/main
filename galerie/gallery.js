@@ -1,91 +1,79 @@
-const URL = 'https://docs.google.com/spreadsheets/d/1l6PfRKvyKB042l8pC-WhLzxSRt4YrqNbtwGudRe4Jjo/gviz/tq?tqx=out:json'
-let photoNames = []
-let captionsJSON = {}
-let imgBlocks = []
-const images = document.getElementsByClassName('images')[0]
+// Thanks to Gopi3k (https://github.com/Gopi3k) for this JS script !
+// It has been "modified", but the base is the same...
 
-async function getNames() {
-    return fetch('./gallery-photos')
-        .then(response => response.text())
-        .then(html => {
-            var photoNames = [];
-            var regex = /<a href="([^"]+)">([^<]+)/g;
-            var match;
-            while ((match = regex.exec(html)) !== null) {
-                if (match[2] !== '../') { // exclude parent directory link
-                    photoNames.push("./gallery-photos/" + match[2]);
-                }
-            }
-            photoNames.splice(0, 5)
-            return photoNames
-        })
-        .catch(error => {
-            console.error('Error:', error);
-        });
+var images = [];
+already_seen = [];
+var totalimages = 27;
+times = 0
+nonewimages = false
+
+for (let img_n = 1; img_n < totalimages; img_n++) {
+	var path = `./gallery-photos/photo (${img_n}).jpg`;
+	images.push(path); // save all photos paths in the images list
 }
 
-async function getCaptions() {
-    return fetch(URL)
-    .then(response => response.text().then(textData => {
-        const captionsJSON = JSON.parse(textData.substring(47).slice(0, -2)).table;
-        return captionsJSON
-    })
-    )
-    .catch(error => {
-        console.error('Error fetching and parsing JSON:', error);
-    });
+class photoGallery {
+	divimages = document.querySelector(".images");
+
+	add_imgs_to_DOM(img_data) {
+		// Adds new images to DOM
+		let divs = "";
+		img_data.forEach(
+			(img) => (divs += `<img src="${img}" alt="">`)
+		);
+		this.divimages.innerHTML += divs;
+	}
+
+	get_images(img_cnt) {
+		var imgData = [];
+		for(let i = img_cnt; i > 0; i--) {
+			infiniteTest :
+			while(true) {
+				while(times < totalimages) {
+//					var random_image = images[Math.floor(Math.random()*images.length)] // selects random image from the images list
+					var image = images[times]
+					if (!(already_seen.includes(image))){
+						break infiniteTest; // only allows the photo to be used once
+					}
+					times++;
+				}
+				globalThis.nonewimages = true;
+				return nonewimages;
+			}
+			imgData.push(image)
+			already_seen.push(image)
+		}
+		this.add_imgs_to_DOM(imgData);
+		return nonewimages;
+	}
 }
 
-function createDOMArray(photoNames, captionsJSON) {
-    // console.log(captionsJSON)
-    // console.log(photoNames)
-    for (let i = 1; i < captionsJSON.rows.length; i++) {
-        var url = captionsJSON.rows[i].c[0].v
-        if (photoNames.find(photo => photo == url)){
-            var html = `
-			<div class="img-block">
-				<div class="sub-img-block">
-					<img src="${url}" alt="${captionsJSON.rows[i].c[1].v} loading="lazy">
-				</div>
-				<div class="legende hidden">
-					<p>${captionsJSON.rows[i].c[1].v}</p>
-				</div>
-			</div>
-			\n
-			`;
-            imgBlocks.push(html)
-        }
-    }
-    return imgBlocks
-}
+//Loading handlers
+const loader = document.querySelector(".loader");
+const loadingDots = document.querySelector(".loading-dots");
 
-function insertBlocks(imgBlocks) {
-    imgBlocks.forEach(html => {
-        images.innerHTML += html
-    });
-}
-
-function checkForCursor() {
-	var timeoutId = null
-	const img_elements = document.querySelectorAll(".img-block")
-	img_elements.forEach(img_block => {
-		img_block.addEventListener('mouseenter',function() {
-			timeoutId = window.setTimeout(function() {
-				legende = img_block.querySelector(".legende")
-				legende.classList.remove("hidden")
-			}, 1000);
+//Fetch images on pageLoad
+const init_gallery = new photoGallery();
+window.onload = () => {
+	init_gallery
+		.get_images(10)
+		.catch((err) => {
+			alert("OOPS! Try Again Later");
+			console.log(err);
 		});
-		img_block.addEventListener('mouseleave',function() {
-			window.clearTimeout(timeoutId)
-			legende = img_block.querySelector(".legende")
-			legende.classList.add("hidden")
-		})
-	} );
-}
+};
 
-async function loadGallery() {
-    const [photoNames, captionsJSON] = await Promise.all([getNames(), getCaptions()]);
-    const imgBlocks = createDOMArray(photoNames, captionsJSON)
-    insertBlocks(imgBlocks)
-    checkForCursor()
-}
+//show Loading dots and fetch images on scroll
+window.addEventListener("scroll", () => {
+	if (nonewimages == false){
+		const { scrollTop, scrollHeight, clientHeight } = document.documentElement; // checks if new photos should be displayed
+		if (clientHeight + scrollTop >= scrollHeight - 10 ) { 
+			loadingDots.classList.remove("hide");
+			init_gallery
+				.get_images(10)
+				// .catch((err) => alert("OOPS! Please Try Again Later"));
+		}
+	} else {
+		loadingDots.classList.add("hide");
+	}
+});
