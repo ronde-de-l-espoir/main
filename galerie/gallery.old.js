@@ -65,7 +65,13 @@ async function getSheet (){
 	return parsed;
 }
 
+// donc là ce qui au dessus ça marche bien
+//ce qui est en dessous aussi
+
+// je te laisse aller voir le shared server et faire dans la console `captions`
+
 async function sheetToArray(params) {
+	// var captions = [];
 	parsed = await getSheet();
 	parsed.table.rows.forEach((row) => {
 		let caption = []
@@ -84,8 +90,6 @@ function checkForCursor() {
 	var timeoutId = null
 	const img_elements = document.querySelectorAll(".img-block")
 	img_elements.forEach(img_block => {
-		console.log(img_block)
-
 		img_block.addEventListener('mouseenter',function() {
 			console.log("yes")
 			timeoutId = window.setTimeout(function() {
@@ -107,11 +111,14 @@ class photoGallery {
 	async add_imgs_to_DOM(img_data) {
 		// Adds new images to DOM
 		let divs = "";
+		// if (captions.length == 0){
+		// 	await sheetToArray();
+		// }
+		captions = []
 		await sheetToArray();
 		img_data.forEach((img) => {
 			globalThis.searchValue = String.raw`${img}`
-			const caption = captions.find(c => c[0] == searchValue)
-			console.log(caption)
+			const caption = captions.find(c => c[0] == searchValue)[1]
 			var html = `
 			<div class="img-block">
 				<div class="sub-img-block">
@@ -128,7 +135,7 @@ class photoGallery {
 		this.divimages.innerHTML += divs;
 	}
 
-	get_images(img_cnt) {
+	async get_images(img_cnt) {
 		var imgData = [];
 		for(let i = img_cnt; i > 0; i--) {
 			infiniteTest :
@@ -154,7 +161,7 @@ class photoGallery {
 
 //Loading handlers
 const loader = document.querySelector(".loader");
-const loadingDots = document.querySelector(".loading-dots"); // touche à ton cul async/await
+const loadingDots = document.querySelector(".loading-dots");
 
 //Fetch images on pageLoad
 const init_gallery = new photoGallery();
