@@ -16,7 +16,7 @@
     <script src="../app.js" defer></script>
 </head>
 
-<body>
+<body onload="loadGallery()">
 
     <header>
         <div class="title">
