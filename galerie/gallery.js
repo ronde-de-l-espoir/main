@@ -70,7 +70,6 @@ function checkForCursor() {
 	const img_elements = document.querySelectorAll(".img-block")
 	img_elements.forEach(img_block => {
 		img_block.addEventListener('mouseenter',function() {
-			console.log("yes")
 			timeoutId = window.setTimeout(function() {
 				legende = img_block.querySelector(".legende")
 				legende.classList.remove("hidden")
