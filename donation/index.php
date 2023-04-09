@@ -99,7 +99,7 @@
                 <div class="grid-item payment-method" id="QRshare">
                     <div class="QRshare-wrapper">
                         <p>Vous pouvez aussi partager notre site grâce au QR code suivant : </p>
-                        <div class="share-button-wrapper"><a href="../img/QR code.jpg" download="Ronde-de-l-espoir.png - QR Code" class="share-button"><span class="nowrap"><i class="fa fa-download"></i> Télécharger</a></span></div>
+                        <div class="share-button-wrapper"><a href="../img/QR code.jpg" download="Ronde-de-l-espoir - QR Code.png" class="share-button"><span class="nowrap"><i class="fa fa-download"></i> Télécharger</a></span></div>
                     </div>
                 </div>
 
