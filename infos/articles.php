@@ -57,7 +57,7 @@
 				</div>
 				<div class="article-start">
 					<h4>Objectif KiteLoop</h4>
-					<p>Objectif Kiteloop est une association à but non lucratif, qui regroupe des hommes et des femmes partageant une même passion “le Kite”. Situé à La Grande Motte, Objectif Kiteloop a été créé en août 2009 par un groupe d’amis dans le but de s’amuser et de rencontrer et retrouver des personnes partageant cette passion pour ce sport.</p>
+					<p>Objectif Kiteloop est une association fondée en 2009 et basée à La Grande-Motte, qui regroupe sportifs partageant une même passion : “le Kite Surf”.</p>
 				</div>
 			</div>
 			<div class="recommended-article hidden-article" id="record-du-monde-ergo-aviron" onclick="window.location.href = '../record-du-monde-ergo-aviron'">

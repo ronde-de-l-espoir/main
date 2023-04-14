@@ -93,7 +93,7 @@
 					</div>
 					<div class="article-start">
 						<h3>Objectif KiteLoop</h3>
-						<p>Cet article est en cours de création...</p>
+						<p>Objectif Kiteloop est une association fondée en 2009 et basée à La Grande-Motte, qui regroupe sportifs partageant une même passion : “le Kite Surf”.</p>
 					</div>
 				</div>
 			</div>
