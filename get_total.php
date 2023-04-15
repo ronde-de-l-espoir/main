@@ -5,7 +5,7 @@
         die("Connection failed: " . $conn->connect_error);
     }
 
-    $sql = 'SELECT SUM(amount_donated) AS value_sum FROM donations';
+    $sql = 'SELECT SUM(real_amount) AS value_sum FROM donations';
     $results = mysqli_fetch_all(mysqli_query($conn, $sql));
     global $totalDonations;
     global $bareTotal;
