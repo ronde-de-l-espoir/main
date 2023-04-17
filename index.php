@@ -124,16 +124,7 @@
     </main>
 
     <section class="video-section">
-
-        <div class="video-title"><h1>Here is a carousel!</h1></div>
-        <div class="video-wrapper">
-            <iframe src="" frameborder="0"></iframe>
-        </div>
-        <div class="video-legend">
-            <h3 style="font-weight: 400;">Here is some stuff about the pictures:</h3>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quibusdam ea reiciendis minus quod? Similique necessitatibus, nisi nihil accusamus odit, vero ullam possimus ipsam quae, laborum maxime recusandae dolorem blanditiis!
-        </div>
-
+        <iframe src="https://www.youtube.com/embed/uCkzxuAp8mw?autoplay=1&modestbranding=1&rel=0&controls=0&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
     </section>
 
     <footer>
