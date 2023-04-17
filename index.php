@@ -123,27 +123,13 @@
         
     </main>
 
-    <section class="carousel-section">
+    <section class="video-section">
 
-        <div class="carousel-title"><h1>Here is a carousel!</h1></div>
-        <div class="carousel-wrapper">
-            <div class="swipe" id="swipe-left">
-                <span class="material-symbols-outlined" onclick="carousel.swipeRight();">
-                    chevron_left
-                </span>
-            </div>
-            <div class="carousel">
-                <img class="carousel-img" src="" alt="" id="left" data-value="none">
-                <img class="carousel-img" src="" alt="" id="front" data-value="none">
-                <img class="carousel-img" src="" alt="" id="right" data-value="none">
-            </div>
-            <div class="swipe" id="swipe-right">
-                <span class="material-symbols-outlined" onclick="carousel.swipeLeft();">
-                    chevron_right
-                </span>
-            </div>
+        <div class="video-title"><h1>Here is a carousel!</h1></div>
+        <div class="video-wrapper">
+            <iframe src="" frameborder="0"></iframe>
         </div>
-        <div class="carousel-legend">
+        <div class="video-legend">
             <h3 style="font-weight: 400;">Here is some stuff about the pictures:</h3>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quibusdam ea reiciendis minus quod? Similique necessitatibus, nisi nihil accusamus odit, vero ullam possimus ipsam quae, laborum maxime recusandae dolorem blanditiis!
         </div>

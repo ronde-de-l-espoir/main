@@ -101,14 +101,14 @@ main {
 
 /** CAROUSEL STYLE **/
 
-.carousel-section {
+.video-section {
     width: 100%;
     height: max-content;
     background-color: #EEE;
     padding-block: 50px;
 }
 
-.carousel-wrapper {
+.video-wrapper {
     background-color: #EEE;
     width: 100%;
     height: 500px;
@@ -117,156 +117,11 @@ main {
     position: relative;
 }
 
-.swipe {
-    user-select: none;
-    --size: 6rem;
-    width: var(--size);
-    height: var(--size);
-    position: absolute;
-    font-size: var(--size);
-    color: rgba(70, 70, 70, 0.8);
-    top: calc(50% - 2.8rem);
-    -webkit-text-stroke: 2px rgba(255, 255, 255, 0.7);
-}
-
-.swipe:hover {
-    cursor: pointer;
-}
-
-.swipe span {
-    font-size: inherit !important;
-}
-
-#swipe-left {
-    left: 20vw;
-    z-index: 1;
-}
-
-#swipe-right {
-    right: 20vw;
-}
-
-.carousel {
-    border-block: none;
-    width: 70vw;
-    margin: auto;
-    height: 100%;
-    overflow: hidden;
-    position: relative;
-}
-
-.carousel .carousel-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    transition: --delay ease-out;
-}
-
-#left {
-    left: -100%;
-}
-
-#right {
-    right: -100%;
-}
-
-.carousel-title {
+.video-title {
     text-align: center;
 }
 
-.carousel-legend {
+.video-legend {
     margin-inline: auto;
     width: 70vw;
 }
-
-/* 
-.carousel {
-    width: 100%;
-    height: 500px;
-    display: grid;
-    grid-template-columns:
-        [first] 16vw
-        [image-margin-left] 150px
-        [image-start] auto
-        [image-margin-right] 150px
-        [image-end] 16vw
-    [last];
-    grid-template-rows: [first] auto [last];
-}
-
-.carousel #left {
-    grid-column-start: image-margin-left;
-    grid-column-end: image-start;
-}
-
-.carousel .swipe {
-    background-color: rgba(200, 200, 200, 0.7);
-    border: 2px solid #EEE;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3rem;
-    color: #3c4853;
-}
-
-.carousel .swipe * {
-    font-size: inherit;
-}
-
-.carousel .swipe .swipe-arrow {
-    --length: 60px;
-    width: var(--length);
-    height: var(--length);
-    border: 3px var(--LM-color) solid;
-    border-radius: var(--length);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.carousel .swipe .swipe-arrow:hover {
-    cursor: pointer;
-}
-
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48
-}
-
-.carousel-image {
-    background-color: #EEE;
-    height: 500px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.carousel-image .img-wrapper {
-    width: 99.75%;
-    height: 99%;
-    position: relative;
-}
-
-.carousel-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: 700ms ease-out;
-}
-
-#hidden-picture-left {
-    position: absolute;
-    top: 0;
-    left: -101%;
-}
-
-#hidden-picture-right {
-    position: absolute;
-    top: 0;
-    right: -101%;
-} */
