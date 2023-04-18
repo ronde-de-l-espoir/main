@@ -1,8 +1,8 @@
 <?php
-    if($_SERVER["HTTPS"] != "on") {
-        header("Location: https://" . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]);
-        exit();
-    }
+    // if($_SERVER["HTTPS"] != "on") {
+    //     header("Location: https://" . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]);
+    //     exit();
+    // }
     include "./get_total.php";
 ?>
 
@@ -14,16 +14,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    
+    
     <link rel="shortcut icon" href="img/LRDE-logo.png" type="image/x-icon">
     <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="accueil-style.css">
     <link rel="stylesheet" href="count-box.css">
     <script src="./swiped-events.min.js"></script>
     <script src="./app.js" defer></script>
+    <script src="./carousel.js" defer></script>
+    <script src="./lib/odometer/odometer.min.js"></script>
+    <link rel="stylesheet" href="./lib/odometer/odometer-theme-default.css">
+    <script>
+        window.odometerOptions = {
+            auto: true,
+            // selector: '.totalDisplay',
+            // duration: '3000',
+            // animation: 'count'
+            format: '( ddd),dd'
+        }
+        setTimeout(function(){
+            var total = <?php echo $totalDonations;?>;
+            odometer.innerHTML = total;
+        }, 1);
+    </script>
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-6XM6CLQWYR"></script>
@@ -88,9 +108,7 @@
             <div id="counter">
                 <div class="count-box">
                     <div class="totalDisplay">
-                        <div style="display: inline;">
-                            <?php echo $totalDonations; ?> 
-                        </div>
+                        <div class="odometer" id="odometer" style="display: inline-block;" ></div>
                         <div style="font-size: 70%; position: relative; padding-left: -10px; display: inline; top: -20px">€</div>
                     </div>
                     <p id="more-infos">ont été récoltés pour la Ronde de l'Espoir !</p>
@@ -101,7 +119,13 @@
             </div>
 
         </div>
+
+        
     </main>
+
+    <section class="video-section">
+        <iframe src="https://www.youtube.com/embed/uCkzxuAp8mw?autoplay=1&modestbranding=1&rel=0&controls=0&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+    </section>
 
     <footer>
         <?php 

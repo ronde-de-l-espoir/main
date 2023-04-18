@@ -41,6 +41,8 @@ main {
         [third] 30px
         [fourth] 35px
         [fifth] auto 
+        [sixth] 50px
+        [seventh] auto
     [last];
 }
 
@@ -68,14 +70,26 @@ main {
     grid-column-start: first;
     grid-column-end: first-separation;
     grid-row-start: fifth;
-    grid-row-end: last;
+    grid-row-end: sixth;
+
+    display: flex;
+    align-items: center;
 }
 
 #cheque {
     grid-column-start: second-separation;
     grid-column-end: last;
     grid-row-start: fifth;
+    grid-row-end: sixth;
+}
+
+#QRshare {
+    grid-column-start: first;
+    grid-column-end: last;
+    grid-row-start: seventh;
     grid-row-end: last;
+    height: max-content;
+    font-size: 1.1rem;
 }
 
 .grid-item {
@@ -138,6 +152,24 @@ main {
     height: 0.5rem;
 }
 
+.QRshare-wrapper {
+    padding: 20px;
+}
+
+.share-button-wrapper {
+    margin-block: 25px 10px;
+}
+
+.QRshare-wrapper .share-button {
+    background-color: var(--LM-color);
+    border: none;
+    border-radius: 3px;
+    padding-block: 12px;
+    padding-inline: 15px;
+    font-size: inherit;
+    color: #EEE;
+}
+
 @media only screen and (max-width: 820px) {
     main {
         margin-block: 40px;
@@ -161,6 +193,8 @@ main {
             [fifth] auto 
             [sixth] 20px 
             [seventh] auto 
+            [eigth] 40px 
+            [ninth] auto 
         [last];
     }
 
@@ -202,6 +236,13 @@ main {
         grid-column-start: first;
         grid-column-end: last;
         grid-row-start: seventh;
+        grid-row-end: eigth;
+    }
+    
+    #QRshare {
+        grid-column-start: first;
+        grid-column-end: last;
+        grid-row-start: ninth;
         grid-row-end: last;
     }
 }
@@ -226,7 +267,9 @@ main {
             [fourth] 35px
             [fifth] auto 
             [sixth] 20px 
-            [seventh] auto 
+            [seventh] auto
+            [eigth] 20px 
+            [ninth] auto 
         [last];
     }
 
@@ -241,5 +284,9 @@ main {
 
     #cheque .indented-paragraph {
         font-size: 0.75rem;
+    }
+
+    #QRshare {
+        font-size: 0.95rem;
     }
 }

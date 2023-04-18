@@ -24,7 +24,7 @@
 
   gtag('config', 'G-6XM6CLQWYR');
 </script>
-<body data-hidden>
+<body data-hidden onload="loadGallery()">
 
     <header data-hidden>
         <div class="title">
@@ -67,16 +67,8 @@
 
     <main>
         <div class="main-wrapper">
-            <div class="gallery-box">
-                <div class="images">
-                    <!-- Here ./gallery.js will inject random photos of the ./gallery-photos -->
-                </div>
-                <div class="loading-dots hide">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
+            <div class="images">
+                <!-- Here ./gallery.js will inject photos from ./gallery-photos -->
             </div>
             <script src="./gallery.js"></script>
         </div>

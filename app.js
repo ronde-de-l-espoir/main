@@ -1,6 +1,11 @@
 const warmWelcome = "Hello world! How u doin'?";
 console.log(warmWelcome);
 
+// Creates a sleep function usable in async functions
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 // To have visual hint as to which page is currently being viewed
 const links = document.querySelectorAll('a');
 links.forEach(link => {
