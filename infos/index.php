@@ -84,7 +84,7 @@
 					</div>
 					<div class="article-start">
 						<h3>Dyspraxique Mais Fantastique</h3>
-						<p>Dyspraxique Mais Fantastique est une association qui rassemble et aide les familles touchées par la dyspraxie. Elle aide les familles en les mettant en relation avec d'autres familles et des médecins spécialisés dans cette maladie.</p>
+						<p>DMF est une association qui rassemble et aide les familles touchées par la dyspraxie. Elle aide les familles en les mettant en relation avec d'autres familles et des médecins spécialisés dans cette maladie.</p>
 					</div>
 				</div>
 				<div class="article" id="kite-surf" onclick="window.location.href = './kite-surf'">
@@ -92,8 +92,8 @@
 						<img src="./photos/kitesurf.jpg">
 					</div>
 					<div class="article-start">
-						<h3>KiteLoop</h3>
-						<p>Pas encore d'aperçu de l'article...</p>
+						<h3>Objectif KiteLoop</h3>
+						<p>Objectif Kiteloop est une association fondée en 2009 et basée à La Grande-Motte, qui regroupe sportifs partageant une même passion : “le Kite Surf”.</p>
 					</div>
 				</div>
 			</div>
@@ -130,7 +130,7 @@
 						<img src="../img/ptit-bg.png">
 					</div>
 					<div class="article-start">
-						<h3>L'Equipe de la Ronde</h3>
+						<h3>La Fine Equipe</h3>
 						<p>Article à venir...</p>
 					</div>
 				</div>
@@ -146,6 +146,3 @@
 </body>
 
 </html>
-
-<!--porg-->
-<!-- Verification -->

@@ -107,16 +107,6 @@ main {
     font-size: .8rem;
 }
 
-.article-start::after {
-	content: "";
-	width: 150px;
-	height: 1rem;
-	background: linear-gradient(to right, #ffffff05 0%, #dddddd78 60%, #ddddddff 90%);
-	position: absolute;
-	bottom: 1rem;
-	right: 0;
-}
-
 
 #second-row {
     display: grid;
