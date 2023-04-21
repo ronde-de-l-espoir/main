@@ -64,11 +64,16 @@ main {
     background-color: #0099D7;
     padding: 10px 15px;
     font-size: 175%;
+    text-align: center;
     color: #DEDEDE;
     border-radius: 5px;
     margin-top: 20px;
     margin-bottom: 35px;
     transition: 300ms ease-in;
+}
+
+#tax-evasion-text {
+    font-size: 70%;
 }
 
 #contribute-button:hover {

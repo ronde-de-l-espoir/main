@@ -83,8 +83,9 @@
 
                 <div class="grid-item payment-method" id="online">
                     <div class="payment-method-wrapper bigger-font">
-                        <p>Passer par notre plateforme de don 100% en ligne :</p>
+                        <p>Passer par notre plateforme de don 100% en ligne et profitez d'une déduction fiscale de jusqu'à 66% :</p>
                         <button class="paiement-redirect-btn" onclick="window.location='https://paiement.ronde-de-l-espoir.fr'">Accéder au portail</button>
+                        <p></p>
                     </div>
                 </div>
 
