@@ -37,7 +37,7 @@
 
     <header data-hidden>
         <div class="title">
-            <h1><a href="">La Ronde de l'Espoir</a></h1>
+            <h1><a href="../">La Ronde de l'Espoir</a></h1>
         </div> <!-- Ne pas changer le lien au-dessus, il fonctionne comme il   -->
 
         <nav>
@@ -92,7 +92,7 @@
 </ul>
 <br><br><b>ARTICLE 2 - L'HEBERGEUR</b>
 <ul>
-<br><li>L'hébergeur du Site est la société o2switch, accessible au lien suivant : https://www.o2switch.fr</li>
+<br><li>L'hébergeur du Site est la société o2switch, accessible au lien suivant : <a href="https://www.o2switch.fr">https://www.o2switch.fr</a></li>
 </ul>
 <br><br><b>ARTICLE 3 - ACCES AU SITE</b>
 <ul> 
@@ -102,7 +102,7 @@
 <ul>
 <br><li>Ce Site s'engage à ne pas collecter, ni sauvegarder les données entrées sur ledit Site dans un autre but que de les communiquer aux associations citées en vue d'une déduction fiscale ou dans le but d'améliorer l'expérience de l'Utilisateur.</li>
 <br><li>La phrase susmentionné n’est valable que dans le cas où l'option de formulaire "Anonyme" n'aurait pas été sélectionnée.</li>
-<br><li>La législation référant à la collecte de données présente dans cet article n'inclue pas les données récoltées sous nom de "cookies" dont la politique sur le Site est disponible dans la rubrique Cookies.</li>
+<br><li>La législation référant à la collecte de données présente dans cet article n'inclue pas les données récoltées sous nom de "cookies" dont la politique sur le Site est disponible dans la rubrique <a href="../cookies/">Cookies</a>.</li>
 </ul>
 <br><br><b>ARTICLE 5 - PROPRIETE INTELLECTUELLE</b> 
 <ul>
