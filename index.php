@@ -101,7 +101,7 @@
         <div class="main-wrapper">
 
             <div id="slogan">
-                <p>Mobilisons-nous pour les enfants en situation de handicap</p>
+                <p>Mobilisons-nous pour les enfants en situation de handicap !</p>
                 <a id="learn-more" href="./infos">En apprendre plus</a>
             </div>
 
