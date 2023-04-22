@@ -114,7 +114,7 @@
                     <p id="more-infos">ont été récoltés pour la Ronde de l'Espoir !</p>
                 </div>
                 <div style="visibility: hidden; padding: 5px;"></div>
-                <p class="peopleInfos">Déjà <span id="peopleTotal"><?php echo 13 // echo $totalParticipants ?></span> participants ! Qu'attendez-vous ?</p>
+                <p class="peopleInfos">Déjà <span id="peopleTotal"><?php echo $totalParticipants ?></span> participants ! Qu'attendez-vous ?</p>
                 <a href="./donation/" id="contribute-button">Contribuez <br><span id="tax-evasion-text">en profitant de jusqu'à <b>66%</b> de déduction fiscale !</span></a>
             </div>
 
