@@ -88,7 +88,7 @@
 
 <br><br><b>ARTICLE 1 - L'EDITEUR</b>
 <ul>
-<br><li>L’édition et la direction de la publication du Site est assurée par Jean-Christophe Darnatigues, ci-après l' "Editeur".</li>
+<br><li>L’édition et la direction de la publication du Site est assurée par Jean-Christophe Darnatigues, ci-après l' "Editeur". <br>Contact : <a href="mailto:darnatigues@lamerci.com">darnatigues@lamerci.com</a></li>
 </ul>
 <br><br><b>ARTICLE 2 - L'HEBERGEUR</b>
 <ul>
