@@ -37,7 +37,7 @@
 
     <header data-hidden>
         <div class="title">
-            <h1><a href="">La Ronde de l'Espoir</a></h1>
+            <h1><a href="../">La Ronde de l'Espoir</a></h1>
         </div> <!-- Ne pas changer le lien au-dessus, il fonctionne comme il   -->
 
         <nav>
