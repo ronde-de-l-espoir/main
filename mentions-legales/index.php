@@ -84,7 +84,7 @@
             </div>
             <p>
             Conformément aux dispositions des Articles 6 et 19 de la Loi n°2004-575 du 21 juin 2004 pour la Confiance dans l’économie numérique, dite L.C.E.N., il est porté à la connaissance des utilisateurs et visiteurs, ci-après l' "Utilisateur", du site https://ronde-de-l-espoir.fr/, ci-après le "Site", les présentes mentions légales.
-<br>La connexion et la navigation sur le Site par l’Utilisateur implique l’acceptation intégrale et sans réserve des présentes mentions légales. Ces dernières sont accessibles sur le Site à la rubrique « Mentions légales ». 
+<br>La connexion et la navigation sur le Site par l’Utilisateur implique l’acceptation intégrale et sans réserve des présentes mentions légales. 
 
 <br><br><b>ARTICLE 1 - L'EDITEUR</b>
 <ul>
@@ -101,10 +101,10 @@
 <br><br><b>ARTICLE 4 - COLLECTE DES DONNEES</b>
 <ul>
 <br><li>Tout utilisateur de ce site internet a le choix de saisir des données personnelles de manière anonyme ou non anonyme. En choisissant l'option "Je participe en tant qu'individu", l'utilisateur accepte expressément la collecte de données personnelles le concernant ainsi que la transmission de ces mêmes données à l’association DMF 34 conformément au RGPD.</li>
-<br><li>Les données personnelles collectées et transmises peuvent inclure, sans s'y limiter, le nom, l'adresse électronique, l'adresse postale, le numéro de téléphone, ou toute autre information pertinente fournie par l'utilisateur notamment dans l'objetcif d'une déduction fiscale.</li>
+<br><li>Les données personnelles collectées et transmises peuvent inclure, sans s'y limiter, le nom, l'adresse électronique, l'adresse postale, le numéro de téléphone, ou toute autre information pertinente fournie par l'utilisateur notamment dans l'objectif d'une déduction fiscale.</li>
 <br><li>En vertu du Règlement Général sur la Protection des Données (RGPD) et de la loi Informatique et Libertés du 6 janvier 1978, telle que modifiée par la loi du 20 juin 2018 relative à la protection des données personnelles, les utilisateurs disposent d'un droit d'accès, de rectification, d'opposition et de suppression de leurs données personnelles.</li>
 <br><li>Pour exercer ces droits ou pour toute question concernant la collecte et l'utilisation de vos données personnelles, vous pouvez contacter notre équipe à l'adresse suivante : <a href="mailto:rgpd@ronde-de-l-espoir.fr">rgpd@ronde-de-l-espoir.fr.</a></li>
-<br><li>La phrase susmentionné n’est valable que dans le cas où l'option de formulaire "Anonyme" n'aurait pas été sélectionnée.</li>
+<br><li>Les phrases susmentionnées ne sont valables que dans le cas où l'option de formulaire "Anonyme" n'aurait pas été sélectionnée.</li>
 <br><li>La législation référant à la collecte de données présente dans cet article n'inclue pas les données récoltées sous nom de "cookies" dont la politique sur le Site est disponible dans la rubrique <a href="../cookies/">Cookies</a>.</li>
 </ul>
 <br><br><b>ARTICLE 5 - PROPRIETE INTELLECTUELLE</b> 
