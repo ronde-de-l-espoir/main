@@ -1,7 +1,8 @@
 .main-wrapper {
     background-color: white;
-    margin-left: 20%;
-    margin-right: 20%;
+    width: 52vw;
+    margin-inline: auto;
+    min-width: 450px;
     margin-top: 1cm;
     padding-left: 5%;
     padding-right: 5%;
@@ -27,9 +28,15 @@ h2 {
     padding-left: 6mm;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 550px) {
     .main-wrapper  {
-    font-size: 0,7rem;
-    width: 200vw;
+        box-sizing: border-box;
+        width: 100%;
+        min-width: 0;
+        padding-inline: 5vw;
+        border-radius: 0;
+        margin-top: 0;
+        margin-inline: auto;
   }
 }
+
