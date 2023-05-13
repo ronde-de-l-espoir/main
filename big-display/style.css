@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+    font-size: 108%;
+}
+
+html, body, main {
+    height: 100vh !important;
+    width: 100%;
+}
+
+main {
+    padding-top: 25vh;
+}
+
+.count-box {
+    height: 450px !important;
+}
+
+.totalDisplay {
+    font-size: 250% !important;
+}

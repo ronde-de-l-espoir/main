@@ -1,6 +1,10 @@
 <?php
-    require("../db_config.php");
-    
+    if (!isset($big_display)) {
+        require("../db_config.php");
+    } else {
+        require("../../db_config.php");
+    }
+
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     }
