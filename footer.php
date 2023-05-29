@@ -33,7 +33,7 @@
                 <br>
                 <ul>
                     <li><a href="<?php echo $prefix . "faq" ?>">FAQ</a></li>
-                    <li><a href="mailto:contact@ronde-de-l-espoir.fr">Contact</a></li>
+                    <li><a href="<?php echo $prefix . "contact" ?>">Contact</a></li>
                     <li><a href="https://github.com/ronde-de-l-espoir">GitHub</a></li>
                 </ul>
             </span>
