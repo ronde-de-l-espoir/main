@@ -35,7 +35,6 @@
 					<a href="../" class="underline-anim" data-isFocus="false">Accueil</a>
 					<a href="#" class="underline-anim" data-isFocus="true">Infos</a>
 					<a href="../galerie/" class="underline-anim" data-isFocus="false">Galerie</a>
-					<a href="../donation/" id="donate-btn" data-isFocus="false">Faire un don</a>
 				</div>
 			</div>
 		</nav>
@@ -59,7 +58,6 @@
 
 
 
-			<a href="../donation/" id="side-nav-donation" class="btn-grad">Faites un don!</a>
 
 		</div>
 
