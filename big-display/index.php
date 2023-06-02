@@ -15,6 +15,21 @@
     <link rel="stylesheet" href="../count-box.css">
     <link rel="stylesheet" href="../common.css">
     <link rel="stylesheet" href="../accueil-style.css">
+    <script src="./lib/odometer/odometer.min.js"></script>
+    <link rel="stylesheet" href="./lib/odometer/odometer-theme-default.css">
+    <script>
+        window.odometerOptions = {
+            auto: true,
+            // selector: '.totalDisplay',
+            // duration: '3000',
+            // animation: 'count'
+            format: '( ddd),dd'
+        }
+        setTimeout(function(){
+            var total = <?php echo $totalDonations;?>;
+            odometer.innerHTML = total;
+        }, 1);
+    </script>
     <title>Big Display</title>
 </head>
 <body>
@@ -25,7 +40,8 @@
             <div id="counter">
                 <div class="count-box">
                     <div class="totalDisplay">
-                        <div class="totalDisplay"><?php echo $totalDonations ?>€</div>
+                        <div class="odometer" id="odometer" style="display: inline-block;" ></div>
+                        <div style="font-size: 70%; position: relative; padding-left: -10px; display: inline; top: -20px">€</div>
                     </div>
                     <p id="more-infos">ont été récoltés pour la Ronde de l'Espoir !</p>
                 </div>
