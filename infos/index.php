@@ -1,3 +1,7 @@
+<?php
+// THE BEGINNING OF THIS PAGE IS THE SAME AS THE HOME PAGE : THE COMMENTS ARE THE SAME
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -66,14 +70,15 @@
 
 	<main>
 		<div class="wrapper">
-			<div id="first-row">
+			<div id="first-row"> <!-- defines the first row of articles with 3 of them -->
 				<div class="article" id="qu-est-ce-donc" onclick="window.location.href = './quesako'">
 					<div class="img-div">
-						<img src="../img/ptit-bg.png">
+						<img src="../img/ptit-bg.png"> <!-- cover image -->
 					</div>
 					<div class="article-start">
-						<h3>La Ronde de l'Espoir : Quésako ?</h3>
+						<h3>La Ronde de l'Espoir : Quésako ?</h3> <!-- article title -->
 						<p>Cette manifestation se déroule tous les trois ans dans notre lycée et est vouée à venir en aide à des enfants malades, affectés de pathologies handicapantes etc…</p>
+						<!-- the beginning of the article, kind of teaser -->
 					</div>
 				</div>
 				<div class="article" id="dmf-34" onclick="window.location.href = './dmf-34'">
@@ -95,7 +100,7 @@
 					</div>
 				</div>
 			</div>
-			<div id="second-row">
+			<div id="second-row"> <!-- defines the second row of articles, with 4 of them -->
 				<div class="article" id="record-du-monde-ergo-aviron" onclick="window.location.href = './record-du-monde-ergo-aviron'">
 					<div class="img-div">
 						<img src="./photos/aviron.png">
@@ -132,6 +137,7 @@
 						<p>Article à venir...</p>
 					</div>
 				</div>
+				<!-- ⬆⬆ please do this article ! -->
 			</div>
 	</main>
 
