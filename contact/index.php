@@ -79,6 +79,7 @@
             <div id="title">Nous contacter</div>
             <div id="subtitle">Veuillez choisir l'adresse mail qui correspond le mieux à votre demande</div>
         </div>
+        <!-- this shouldn't have to change, just make sure the emails are correct -->
         <div id="options">
             <div class="option" id="contact" onclick="window.location = 'mailto:contact@ronde-de-l-espoir.fr'">
                 <div class="option-name">Contact</div>
