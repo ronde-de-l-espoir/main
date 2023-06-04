@@ -122,7 +122,7 @@
     </main>
 
     <section class="video-section">
-        <iframe src="https://www.youtube.com/embed/uCkzxuAp8mw?autoplay=1&modestbranding=1&rel=0&controls=0&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+        <video src="./media/LRDE2023.mp4" controls autoplay></video>
     </section>
 
     <footer>
