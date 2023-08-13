@@ -84,7 +84,7 @@ The code gets all the `<a>` tags on page, and the `href` attributes that belong 
 
 The list of the files actually starts 5 links after the beginning of the document :
 
-!['Screenshot of the headers of the Apache file lister'](./media/ApacheListGallery.png)
+!['Screenshot of the headers of the Apache file lister'](./non-source-code/media/ApacheListGallery.png)
 
 That is why `splice(0, 5)` is used.
 
