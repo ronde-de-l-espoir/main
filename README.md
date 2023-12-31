@@ -130,6 +130,6 @@ The process to get this Spreadsheet's JSON-output URL is the same than for galle
 A few caveats (that you should try to fix) :
 * The article-teaser-cards on the `./infos/index.php` are not dynamic : please implement the same Javascript than `articles.php` to `index.php`
 * The article's text in the Google Spreadsheet must be in HTML, so maybe instead of copy-pasting the whole article in a single cell, you could store a link to a Google Docs queried by the JS ?... That would be much more readable (for example, if a grammar mistake is corrected in one of the 2 places, there is a great chance that it will be overwritten by an edit in the other place)
-* Can't think of another...
+* Each article is directory in `/infos` with the exact same PHP file inside ; you should to implement an Apache L&AQ redirect (see <a href='https://github.com/ronde-de-l-espoir/inscription/.htaccess'>inscription</a>) so that the URL will look the same than it is now to the client, but to the code it will be `/infos/?artID=cap-ou-cap` for example. But is that parameter even necessary ? As the PHP doen't care about the article the client is viewing, and to the JS it will still look like `/infos/cap-ou-cap`...Please look into it.
 
 Right, so that's `./infos` discussed !
