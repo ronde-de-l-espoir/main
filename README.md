@@ -2,6 +2,13 @@
 
 ## Home
 
+The main page features a central box with the current total amount collected.
+
+For the spinning animation, we are using Hubspot's [odometer](https://github.com/HubSpot/odometer).
+
+It works, but isn't very consistent : sometimes the animation will start, sometimes it won't.
+
+Please consider finding an alternative
 
 ## Gallery
 
@@ -14,7 +21,7 @@ The photos can be names whatever you want and must be placed in the `./gallery-p
 The JS is entirely asynchronous, so the page loads, *and then*, the photos. These photos are accompanied by captions, invisible at first.
 
 The relationship between photo-URL and caption is described in a Google Spreadsheet.
-To recreate this spreasheet and system, there are a few rules :
+To recreate this spreadsheet and system, there are a few rules :
 * one single sheet
 * no headers line (the data starts on the first row)
 * column A : the relative URLs of the photos (i.e. : `'./gallery-photos/<name>.<extension>`)
@@ -58,7 +65,7 @@ google.visualization.Query.setResponse({
 });
 ```
 
-The first 2 lines make the JSON invalid and unparseable.
+The first 2 lines make the JSON invalid and unparsable.
 We remove them using `JSON.parse(<result>.substring(47).slice(0, -2))`.
 
 The structure of each row is the following :
@@ -88,7 +95,7 @@ The list of the files actually starts 5 links after the beginning of the documen
 
 That is why `splice(0, 5)` is used.
 
-There is a varification to make sure which photos to show : say a photo a.jpg : it must be in both the `gallery-photos` and in column A of the spreadsheet.
+There is a verification to make sure which photos to show : say a photo a.jpg : it must be in both the `gallery-photos` and in column A of the spreadsheet.
 
 This allows anybody, say M. Darnatigues, to type his captions and delete a photo if he wants to hide it from the website... but this doesn't remove it from the server, it just hides it from view !
 
@@ -107,7 +114,7 @@ The idea behind the order and theme of the articles is as follows :
   1. Ronde de l'Espoir
   1. First association supported
   1. Second association supported
-* Second row : additionnal details
+* Second row : additional details
   1. Explanation of the world record to beat
   1. Presentation of the school
   1. Explanation of a big project (of one of the associations supported)
@@ -119,7 +126,7 @@ It would look something like this :
 
 If you open an article's subfolder, and open the `index.php` inside, you won't see many lines of code, but rather just a simple `include()`. This is because the articles page is dynamic : only one HTML file for all the pages, and the text on the page is different following the URL.
 
-This is what `articles.js` does : using the same mechanism than the gallery, the articles titles, texts and sources are all stored in a Google Spreasheet ; the structure must be the following :
+This is what `articles.js` does : using the same mechanism than the gallery, the articles titles, texts and sources are all stored in a Google Spreadsheet ; the structure must be the following :
 
 | URL | Title | Text | Source | Extra columns if you want |
 |--|--|--|--|--|
@@ -130,6 +137,17 @@ The process to get this Spreadsheet's JSON-output URL is the same than for galle
 A few caveats (that you should try to fix) :
 * The article-teaser-cards on the `./infos/index.php` are not dynamic : please implement the same Javascript than `articles.php` to `index.php`
 * The article's text in the Google Spreadsheet must be in HTML, so maybe instead of copy-pasting the whole article in a single cell, you could store a link to a Google Docs queried by the JS ?... That would be much more readable (for example, if a grammar mistake is corrected in one of the 2 places, there is a great chance that it will be overwritten by an edit in the other place)
-* Each article is directory in `/infos` with the exact same PHP file inside ; you should to implement an Apache L&AQ redirect (see <a href='https://github.com/ronde-de-l-espoir/inscription/.htaccess'>inscription</a>) so that the URL will look the same than it is now to the client, but to the code it will be `/infos/?artID=cap-ou-cap` for example. But is that parameter even necessary ? As the PHP doen't care about the article the client is viewing, and to the JS it will still look like `/infos/cap-ou-cap`...Please look into it.
+* Each article is directory in `/infos` with the exact same PHP file inside ; you should to implement an Apache L&AQ redirect (see <a href='https://github.com/ronde-de-l-espoir/inscription/.htaccess'>inscription</a>) so that the URL will look the same than it is now to the client, but to the code it will be `/infos/?artID=cap-ou-cap` for example. But is that parameter even necessary ? As the PHP doesn't care about the article the client is viewing, and to the JS it will still look like `/infos/cap-ou-cap`...Please look into it.
 
 Right, so that's `./infos` discussed !
+
+
+## Big Display
+
+This page was originally meant to show the total on the TV in the main hall at school : the amount is bigger, the navbar isn't there, and the donation button either.
+
+It turns out the TV was just running a PowerPoint, so it wasn't in realtime : Mr. Pedreira had to do a screenshot every morning.
+
+But it was used on *the* D-Day in the conference room.
+
+I suggest you add some confetti animation at the end of the animation for 2026's D-Day !
