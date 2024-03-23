@@ -112,7 +112,7 @@
                     <br><br>
                     Demandes relatives :
                     <ul>
-                        <li>• A des factures, des reçus fiscausx</li>
+                        <li>• A des factures, des reçus fiscaux</li>
                         <li>• Au fonctionnement de la déductibilité d'impôts</li>
                     </ul>
                 </div>
