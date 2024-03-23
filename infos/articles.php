@@ -18,7 +18,7 @@
 				<a href="https://ronde-de-l-espoir.fr/infos">
 					<span class="material-symbols-outlined">arrow_back</span>
 				</a>
-			</span>
+			</span> <!-- simplified nav, make for people to concentrate on the reading, not the incredible beauty of the website -->
 
 			<span class="nav-image">
 				<img src="../../img/LRDE-logo.png" alt="">
@@ -27,13 +27,14 @@
 	</header>
 	<main id="main">
 		<div id="article">
-			<h2></h2>
-			<div id="article-text"></div>
-			<p id="source"></p>
+			<h2></h2> <!-- the title of the article -->
+			<div id="article-text"></div> <!-- the actual article -->
+			<p id="source"></p> <!-- the article's source -->
 		</div>
 		<div id="suggestions-column">
 			<h3>Ces articles pourraient vous intéresser :</h3>
-			<div class="recommended-article hidden-article" id="quesako" onclick="window.location.href = '../quesako'">
+			<!-- these are the same cards than on the previous page -->
+			<div class="recommended-article hidden-article" id="quesako" onclick="window.location.href = '../quesako'"> <!-- the recommended articles have the hidden-article class by default -->
 				<div class="img-div">
 					<img src="../../img/ptit-bg.png">
 				</div>
@@ -105,6 +106,7 @@
 	<?php
 	// $currentPage = "infos";
 	// include('../../footer.php');
+	// no footer ?
 	?>
 </footer>
 

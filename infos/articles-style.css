@@ -102,6 +102,7 @@ header {
 main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+    /* grid magic : auto-responsiveness */
     gap: 4px;
     /* height: 90vh; */
     margin: 10vw;

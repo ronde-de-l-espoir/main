@@ -27,6 +27,7 @@ function openSideNav() {
             everything[i].classList.add('hidden');
         }
     }
+    // ⬆⬆ This is for compatibility with Firefox : it hides all the elements except the ones with the data-hidden attribute (all the sidenav elements)
 
     // console.log(everything);
     const body = document.querySelector("body");
@@ -53,6 +54,8 @@ function closeSideNav() {
             everything[i].classList.remove('hidden');
         }
     }
+    // inverted process : shows everything
+
     const body = document.querySelector("body");
     body.style.overflow = "auto";
     trigger.setAttribute('data-isOpen', 'false');
@@ -69,7 +72,7 @@ function closeSideNav() {
     trigger.style.position = "relative";
     setTimeout( () => { 
         sideNav.style.display = "none" ;
-    }, 600);
+    }, 600); // hides the sidenav completely after 600ms
 };
 
 function triggerSideMenu() {
@@ -83,10 +86,10 @@ function triggerSideMenu() {
 };
 
 
-document.addEventListener('swiped-left', function(e){
+document.addEventListener('swiped-left', function(e){ // event returned by the swiped-events.min.js lib
     closeSideNav();
 });
 
-document.addEventListener('swiped-right', function(e){
+document.addEventListener('swiped-right', function(e){ // event returned by the swiped-events.min.js lib
     openSideNav();
 });

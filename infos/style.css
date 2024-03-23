@@ -30,6 +30,7 @@ main {
     display: grid;
     /* grid-template-columns: repeat(auto-fill, minmax(250px, calc((100vw - 40px - 0.14vw)/3))); */
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* ⬆⬆ this allows for automatic grid responsiveness : it fits as many children as it can on each row, knowin that their maximum width is 1fr (so basically no maximum) and their minimum 250 px */
     column-gap: var(--grid-gap);
     row-gap: 40px;
     padding: 40px 7vw 0;
