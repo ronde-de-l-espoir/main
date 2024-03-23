@@ -68,6 +68,7 @@
                     <a href="#" class="underline-anim" data-isFocus="true">Accueil</a>
                     <a href="./infos/" class="underline-anim" data-isFocus="false">Infos</a>
                     <a href="./galerie/" class="underline-anim" data-isFocus="false">Galerie</a>
+                    <a href="./donation/" id="donate-btn" data-isFocus="false">Faire un don</a>  <!-- C'est plus pratique de rajouter un "./" devant les liens. -->
                 </div>
             </div>
         </nav>
@@ -89,7 +90,7 @@
                 <div class="separation" data-hidden></div>
             </div>
 
-
+            <a href="./donation/" id="side-nav-donation" class="btn-grad">Faites un don!</a>
             
         </div>
         
@@ -113,7 +114,8 @@
                     <p id="more-infos">ont été récoltés pour la Ronde de l'Espoir !</p>
                 </div>
                 <div style="visibility: hidden; padding: 5px;"></div>
-                <p class="peopleInfos">Grâce à <span id="peopleTotal"><?php echo $totalParticipants ?></span> participants !</p>
+                <p class="peopleInfos">Déjà <span id="peopleTotal"><?php echo $totalParticipants ?></span> participants ! Qu'attendez-vous ?</p>
+                <a href="./donation/" id="contribute-button">Contribuez <br><span id="tax-evasion-text">et profitez jusqu'à <b>66%</b> de déduction fiscale !</span></a>
             </div>
 
         </div>
