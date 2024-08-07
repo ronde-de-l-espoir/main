@@ -3,7 +3,9 @@
     //     header("Location: https://" . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]);
     //     exit();
     // }
-    include "./get_total.php";
+    // this should be reactivated to have an automatic redirect towards the http*s* protocol
+
+    include "./get_total.php"; // gets the total and number of participants
 ?>
 
 
@@ -23,25 +25,25 @@
     
     
     <link rel="shortcut icon" href="img/LRDE-logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="common.css">
-    <link rel="stylesheet" href="accueil-style.css">
-    <link rel="stylesheet" href="count-box.css">
-    <script src="./swiped-events.min.js"></script>
+    <link rel="stylesheet" href="common.css"> <!-- general, all-pages CSS -->
+    <link rel="stylesheet" href="accueil-style.css"> <!-- page-specific CSS -->
+    <link rel="stylesheet" href="count-box.css"> <!-- CSS for the count-box, as this is only used here, please add it to this page's CSS -->
+    <script src="./swiped-events.min.js"></script> <!-- JS lib to open side-nav on swipe -->
     <script src="./app.js" defer></script>
-    <script src="./carousel.js" defer></script>
-    <script src="./lib/odometer/odometer.min.js"></script>
+    <!-- <script src="./carousel.js" defer></script> -->
+    <script src="./lib/odometer/odometer.min.js"></script> <!-- JS lib for the spinning total -->
     <link rel="stylesheet" href="./lib/odometer/odometer-theme-default.css">
     <script>
         window.odometerOptions = {
-            auto: true,
+            auto: true, // starts automatically
             // selector: '.totalDisplay',
             // duration: '3000',
             // animation: 'count'
-            format: '( ddd),dd'
+            format: '( ddd),dd' // french formatting, sometimes this isn't applied due to cache
         }
         setTimeout(function(){
             var total = <?php echo $totalDonations;?>;
-            odometer.innerHTML = total;
+            odometer.innerHTML = total; // feed the total to the odometer lib
         }, 1);
     </script>
 </head>
@@ -52,14 +54,14 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-6XM6CLQWYR');
+  gtag('config', 'G-6XM6CLQWYR'); // Google Analytics tag, replace accordingly
 </script>
 <body data-hidden>
 
     <header data-hidden>
         <div class="title">
             <h1><a href="">La Ronde de l'Espoir</a></h1>
-        </div> <!-- Ne pas changer le lien au-dessus, il fonctionne comme il   -->
+        </div>
 
         <nav>
             <div class="nav-wrapper">
@@ -89,9 +91,7 @@
                 <a href="./galerie/" data-isFocus="false" data-hidden>Galerie</a>
                 <div class="separation" data-hidden></div>
             </div>
-
             <a href="./donation/" id="side-nav-donation" class="btn-grad">Faites un don!</a>
-            
         </div>
         
     </header>
@@ -109,7 +109,7 @@
                 <div class="count-box">
                     <div class="totalDisplay">
                         <div class="odometer" id="odometer" style="display: inline-block;" ></div>
-                        <div style="font-size: 70%; position: relative; padding-left: -10px; display: inline; top: -20px">€</div>
+                        <div style="font-size: 70%; position: relative; padding-left: -10px; display: inline; top: -20px">€</div> <!-- positions the € correctly (not at the same height as the total is please think subconscionsly it is another 0...) -->
                     </div>
                     <p id="more-infos">ont été récoltés pour la Ronde de l'Espoir !</p>
                 </div>
@@ -124,13 +124,13 @@
     </main>
 
     <section class="video-section">
-        <video src="./media/LRDE2023.mp4" controls autoplay></video>
+        <video src="./media/LRDE2023.mp4" controls autoplay></video> <!-- video to replace accordingly, right now it is the 2023 one. It isn't in the repo, please place it in the ./media directory and rename it -->
     </section>
 
     <footer>
         <?php 
-            $currentPage = "accueil";
-            include('./footer.php');
+            $currentPage = "accueil"; // imports the footer and specifies which page we are on
+            include('./footer.php'); 
         ?>
     </footer>
 

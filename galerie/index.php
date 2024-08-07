@@ -24,7 +24,7 @@
 
   gtag('config', 'G-6XM6CLQWYR');
 </script>
-<body data-hidden onload="loadGallery()">
+<body data-hidden onload="loadGallery()"> <!-- starts the function that loads all the images -->
 
     <header data-hidden>
         <div class="title">
