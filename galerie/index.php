@@ -38,6 +38,7 @@
                     <a href="../" class="underline-anim" data-isFocus="false">Accueil</a>
                     <a href="../infos/" class="underline-anim" data-isFocus="false">Infos</a>
                     <a href="#" class="underline-anim" data-isFocus="true">Galerie</a>
+                    <a href="../donation/" id="donate-btn" data-isFocus="false">Faire un don</a> <!-- C'est plus pratique de rajouter un "./" devant les liens. -->
                 </div>
             </div>
         </nav>
@@ -59,6 +60,7 @@
                 <div class="separation" data-hidden></div>
             </div>
 
+            <a href="../donation/" id="side-nav-donation" class="btn-grad">Faites un don!</a>
         </div>
 
     </header>
